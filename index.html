@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earnings Calendar 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['system-ui','-apple-system','Segoe UI','Roboto','sans-serif'] },
+  colors: { ink: '#0f172a' }
+}}};
+</script>
+<style>
+  
+  .chip { transition: all .12s ease; cursor: pointer; user-select: none; }
+  .chip:hover { transform: translateY(-1px); }
+  .tickerchip { cursor: pointer; }
+  .tickerchip:hover { filter: brightness(0.92); }
+  dialog::backdrop { background: rgba(15,23,42,.45); }
+  .scrollbar-thin::-webkit-scrollbar { height: 8px; width: 8px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius:4px; }
+  @media (max-width: 640px) { .cal-grid { display:none; } }
+</style>
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans">
+
+<!-- ======================= HEADER ======================= -->
+<header class="bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 py-5 flex flex-wrap items-center gap-4">
+    <div class="flex-1 min-w-[240px]">
+      <h1 class="text-2xl font-bold tracking-tight">📅 Earnings Calendar <span class="text-slate-400 font-normal">2026</span></h1>
+      <p id="refreshedAt" class="text-sm text-slate-500 mt-0.5">loading data…</p>
+    </div>
+    <div class="relative w-full sm:w-72">
+      <input id="search" type="text" placeholder="Search ticker or company…" autocomplete="off"
+        class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
+      <div id="searchResults" class="absolute z-40 mt-1 w-full bg-white rounded-xl shadow-xl border border-slate-200 hidden max-h-80 overflow-auto scrollbar-thin"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= FILTER BAR ======================= -->
+<div class="sticky top-0 z-30 bg-white border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 space-y-2">
+    <div class="flex flex-wrap items-center gap-1.5">
+      <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 w-16 shrink-0">Models</span>
+      <div id="modelChips" class="flex flex-wrap gap-1.5"></div>
+    </div>
+    <div class="flex flex-wrap items-center gap-1.5">
+      <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 w-16 shrink-0">Sectors</span>
+      <div id="sectorChips" class="flex flex-wrap gap-1.5"></div>
+    </div>
+    <div id="filterSummary" class="text-xs text-slate-500"></div>
+  </div>
+</div>
+
+<main class="max-w-7xl mx-auto px-4 pb-24">
+
+  <!-- ======================= UPCOMING STRIP ======================= -->
+  <section class="mt-6">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-2">Next 14 days</h2>
+    <div id="upcomingStrip" class="flex gap-3 overflow-x-auto pb-2 scrollbar-thin"></div>
+  </section>
+
+  <!-- ======================= CALENDAR ======================= -->
+  <section class="mt-8">
+    <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+      <div class="flex items-center gap-2">
+        <button id="prevMonth" class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-50">←</button>
+        <h2 id="monthTitle" class="text-xl font-bold w-48 text-center"></h2>
+        <button id="nextMonth" class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-50">→</button>
+      </div>
+      <div class="flex items-center gap-3 text-xs text-slate-500">
+        <span class="inline-flex items-center gap-1"><span class="w-3 h-3 rounded bg-blue-600 inline-block"></span> confirmed</span>
+        <span class="inline-flex items-center gap-1"><span class="w-3 h-3 rounded border-2 border-dashed border-blue-500 inline-block"></span> estimated</span>
+        <button id="viewToggle" class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">Agenda view</button>
+      </div>
+    </div>
+    <div id="calGrid" class="cal-grid bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm"></div>
+    <div id="agendaList" class="hidden space-y-2"></div>
+  </section>
+
+  <!-- ======================= MODELS ======================= -->
+  <section class="mt-12">
+    <h2 class="text-xl font-bold mb-1">Model Portfolios</h2>
+    <p class="text-sm text-slate-500 mb-4">Extracted from your printed model sheet. Rows marked <span class="text-amber-600 font-medium">⚠</span> had hard-to-read marks — click any stock to review &amp; correct its memberships (saved locally).
+      <button onclick="exportCorrections()" class="underline text-blue-600 hover:text-blue-800">Export my corrections</button></p>
+    <div id="modelTabs" class="flex flex-wrap gap-1.5 mb-4"></div>
+    <div id="modelTableWrap" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto scrollbar-thin"></div>
+  </section>
+</main>
+
+<!-- ======================= DAY PANEL ======================= -->
+<dialog id="dayDialog" class="rounded-2xl p-0 w-full max-w-lg shadow-2xl">
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-3">
+      <h3 id="dayTitle" class="text-lg font-bold"></h3>
+      <button onclick="dayDialog.close()" class="text-slate-400 hover:text-slate-700 text-xl leading-none">✕</button>
+    </div>
+    <div id="dayBody" class="space-y-2 max-h-[60vh] overflow-auto scrollbar-thin"></div>
+  </div>
+</dialog>
+
+<!-- ======================= STOCK MODAL ======================= -->
+<dialog id="stockDialog" class="rounded-2xl p-0 w-full max-w-xl shadow-2xl">
+  <div id="stockBody" class="p-6"></div>
+</dialog>
+
+<script src="data/stocks.js"></script>
+<script src="data/live.js" onerror="window.LIVE={refreshedAt:null,data:{}}"></script>
+<script>
+// ============================================================
+// State
+// ============================================================
+const LIVE = window.LIVE || { refreshedAt: null, data: {} };
+const MODELS = window.MODELS, SECTORS = window.SECTORS;
+const overrides = JSON.parse(localStorage.getItem("modelOverrides") || "{}");
+const STOCKS = window.STOCKS
+  .filter(s => s.sector) // drop unresolvable placeholder rows
+  .map(s => ({ ...s,
+    name: s.name || (window.LIVE?.data?.[s.t]?.name) || "",
+    models: overrides[s.t] ? overrides[s.t] : s.models }));
+const byT = Object.fromEntries(STOCKS.map(s => [s.t, s]));
+
+let activeModels = new Set();
+let activeSectors = new Set();
+let curMonth = 6;                 // July = 6 (0-indexed), year 2026
+const YEAR = 2026;
+const TODAY = new Date();
+let agendaMode = false;
+let activeModelTab = "CORE";
+
+// live helpers
+const live = t => LIVE.data[t] || {};
+const nextEarnings = t => (live(t).earnings || [])[0] || null;
+const earningsOn = {};  // date -> [tickers]
+for (const s of STOCKS) {
+  for (const e of (live(s.t).earnings || [])) {
+    (earningsOn[e.date] = earningsOn[e.date] || []).push({ t: s.t, ...e });
+  }
+}
+
+// ============================================================
+// Filtering
+// ============================================================
+function passesFilter(s) {
+  if (s.fund || s.delisted) return false;
+  if (activeModels.size && !s.models.some(m => activeModels.has(m))) return false;
+  if (activeSectors.size && !activeSectors.has(s.sector)) return false;
+  return true;
+}
+const filtered = () => STOCKS.filter(passesFilter);
+
+// ============================================================
+// Rendering — filter chips
+// ============================================================
+function chipCls(active, color) {
+  return active
+    ? `chip rounded-full px-3 py-1 text-xs font-semibold text-white ${color || "bg-blue-600"} shadow`
+    : "chip rounded-full px-3 py-1 text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200";
+}
+const MODEL_COLORS = { CORE:"bg-blue-600", DSIP:"bg-emerald-600", GROWTH:"bg-violet-600", FOCUS:"bg-orange-500", INTL:"bg-cyan-600", SMID:"bg-pink-600", VALUE:"bg-amber-600", HYLD:"bg-teal-600" };
+
+function renderChips() {
+  const mc = document.getElementById("modelChips");
+  mc.innerHTML = "";
+  for (const m of MODELS) {
+    const b = document.createElement("button");
+    b.className = chipCls(activeModels.has(m.key), MODEL_COLORS[m.key]);
+    b.textContent = m.label;
+    b.onclick = () => { activeModels.has(m.key) ? activeModels.delete(m.key) : activeModels.add(m.key); renderAll(); };
+    mc.appendChild(b);
+  }
+  const sc = document.getElementById("sectorChips");
+  sc.innerHTML = "";
+  for (const sec of SECTORS) {
+    const b = document.createElement("button");
+    b.className = chipCls(activeSectors.has(sec), "bg-slate-700");
+    b.textContent = sec.replace("Information Technology","Tech").replace("Communication Services","Comm Svcs").replace("Consumer Discretionary","Cons Disc").replace("Consumer Staples","Staples");
+    b.onclick = () => { activeSectors.has(sec) ? activeSectors.delete(sec) : activeSectors.add(sec); renderAll(); };
+    sc.appendChild(b);
+  }
+  const n = filtered().length;
+  const parts = [];
+  if (activeModels.size) parts.push([...activeModels].map(k => MODELS.find(m=>m.key===k).label).join(", "));
+  if (activeSectors.size) parts.push([...activeSectors].join(", "));
+  document.getElementById("filterSummary").innerHTML =
+    parts.length
+      ? `Showing <b>${n}</b> stocks · ${parts.join(" · ")} · <button class="underline text-blue-600" onclick="clearFilters()">clear</button>`
+      : `Showing all <b>${n}</b> stocks — tap chips to filter`;
+}
+function clearFilters(){ activeModels.clear(); activeSectors.clear(); renderAll(); }
+
+// ============================================================
+// Perf badge
+// ============================================================
+function perfBadge(v, label) {
+  if (v == null) return `<span class="text-[10px] text-slate-400">${label} –</span>`;
+  const up = v >= 0;
+  return `<span class="inline-flex items-center gap-0.5 rounded-md px-1.5 py-0.5 text-[10px] font-semibold ${up?"bg-emerald-50 text-emerald-700":"bg-red-50 text-red-600"}">${label} ${up?"+":""}${v.toFixed(1)}%</span>`;
+}
+
+// ============================================================
+// Upcoming strip
+// ============================================================
+function renderUpcoming() {
+  const wrap = document.getElementById("upcomingStrip");
+  wrap.innerHTML = "";
+  const now = new Date(); now.setHours(0,0,0,0);
+  const horizon = new Date(now.getTime() + 14*86400e3);
+  const items = [];
+  for (const s of filtered()) {
+    const e = nextEarnings(s.t);
+    if (!e) continue;
+    const d = new Date(e.date + "T12:00:00");
+    if (d >= now && d <= horizon) items.push({ s, e, d });
+  }
+  items.sort((a,b) => a.d - b.d);
+  items.length = Math.min(items.length, 40);
+  if (!items.length) {
+    wrap.innerHTML = `<div class="text-sm text-slate-400 py-6">No reports in the next two weeks for the current filter.</div>`;
+    return;
+  }
+  for (const { s, e, d } of items) {
+    const l = live(s.t);
+    const el = document.createElement("button");
+    el.className = "shrink-0 w-44 bg-white rounded-xl border border-slate-200 shadow-sm p-3 text-left hover:shadow-md hover:border-blue-300 transition";
+    el.onclick = () => openStock(s.t);
+    el.innerHTML = `
+      <div class="flex items-baseline justify-between">
+        <span class="font-bold">${s.t}</span>
+        <span class="text-[11px] ${e.estimated?"text-slate-400":"text-blue-600 font-semibold"}">${d.toLocaleDateString("en-US",{month:"short",day:"numeric"})}${e.time?" · "+e.time:""}${e.estimated?" (est)":""}</span>
+      </div>
+      <div class="text-[11px] text-slate-500 truncate">${s.name || ""}</div>
+      <div class="mt-1.5 flex gap-1">${perfBadge(l.perf30,"30d")}${perfBadge(l.perf60,"60d")}</div>`;
+    wrap.appendChild(el);
+  }
+}
+
+// ============================================================
+// Calendar
+// ============================================================
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function renderCalendar() {
+  document.getElementById("monthTitle").textContent = `${MONTHS[curMonth]} ${YEAR}`;
+  document.getElementById("prevMonth").disabled = curMonth <= 6;
+  document.getElementById("nextMonth").disabled = curMonth >= 11;
+  document.getElementById("prevMonth").classList.toggle("opacity-30", curMonth <= 6);
+  document.getElementById("nextMonth").classList.toggle("opacity-30", curMonth >= 11);
+  agendaMode ? renderAgenda() : renderGrid();
+  document.getElementById("calGrid").classList.toggle("hidden", agendaMode);
+  document.getElementById("agendaList").classList.toggle("hidden", !agendaMode);
+  document.getElementById("viewToggle").textContent = agendaMode ? "Calendar view" : "Agenda view";
+}
+
+function dateKey(y,m,d){ return `${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`; }
+
+function renderGrid() {
+  const grid = document.getElementById("calGrid");
+  const first = new Date(YEAR, curMonth, 1);
+  const startDow = first.getDay();
+  const daysInMonth = new Date(YEAR, curMonth+1, 0).getDate();
+  const fset = new Set(filtered().map(s=>s.t));
+  let html = `<div class="grid grid-cols-7 text-center text-[11px] font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-200">` +
+    ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d=>`<div class="py-2">${d}</div>`).join("") + `</div><div class="grid grid-cols-7">`;
+  let cell = 0;
+  for (let i=0;i<startDow;i++,cell++) html += `<div class="min-h-[96px] border-b border-r border-slate-100 bg-slate-50/50"></div>`;
+  for (let d=1; d<=daysInMonth; d++, cell++) {
+    const key = dateKey(YEAR, curMonth, d);
+    const todays = (earningsOn[key]||[]).filter(e=>fset.has(e.t));
+    const isToday = TODAY.getFullYear()===YEAR && TODAY.getMonth()===curMonth && TODAY.getDate()===d;
+    const shown = todays.slice(0,6);
+    const more = todays.length - shown.length;
+    html += `<div class="min-h-[96px] border-b border-r border-slate-100 p-1.5 align-top ${todays.length?"cursor-pointer hover:bg-blue-50/60":""}" ${todays.length?`onclick="openDay('${key}')"`:""}>
+      <div class="text-xs ${isToday?"font-bold text-white bg-blue-600 rounded-full w-5 h-5 flex items-center justify-center":"text-slate-400"}">${d}</div>
+      <div class="mt-1 flex flex-wrap gap-1">` +
+      shown.map(e=>`<span class="tickerchip text-[10px] font-semibold rounded px-1 py-px ${e.estimated?"border border-dashed border-blue-400 text-blue-600":"bg-blue-600 text-white"}" onclick="event.stopPropagation();openStock('${e.t}')">${e.t}</span>`).join("") +
+      (more>0?`<span class="text-[10px] text-slate-400 font-medium">+${more}</span>`:"") +
+      `</div></div>`;
+  }
+  while (cell % 7 !== 0) { html += `<div class="min-h-[96px] border-b border-r border-slate-100 bg-slate-50/50"></div>`; cell++; }
+  html += `</div>`;
+  grid.innerHTML = html;
+}
+
+function renderAgenda() {
+  const list = document.getElementById("agendaList");
+  const fset = new Set(filtered().map(s=>s.t));
+  const daysInMonth = new Date(YEAR, curMonth+1, 0).getDate();
+  let html = "";
+  for (let d=1; d<=daysInMonth; d++) {
+    const key = dateKey(YEAR, curMonth, d);
+    const todays = (earningsOn[key]||[]).filter(e=>fset.has(e.t));
+    if (!todays.length) continue;
+    const date = new Date(YEAR, curMonth, d);
+    html += `<div class="bg-white rounded-xl border border-slate-200 shadow-sm p-4">
+      <div class="text-sm font-bold mb-2">${date.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric"})}</div>
+      <div class="flex flex-wrap gap-2">` +
+      todays.map(e => {
+        const l = live(e.t);
+        return `<button onclick="openStock('${e.t}')" class="flex items-center gap-2 rounded-lg border ${e.estimated?"border-dashed border-blue-300":"border-slate-200"} px-2.5 py-1.5 hover:bg-blue-50">
+          <span class="font-bold text-sm">${e.t}</span>
+          ${e.time?`<span class="text-[10px] text-slate-500">${e.time}</span>`:""}
+          ${e.estimated?`<span class="text-[10px] text-slate-400">est</span>`:""}
+          ${perfBadge(l.perf30,"30d")}</button>`;
+      }).join("") + `</div></div>`;
+  }
+  list.innerHTML = html || `<div class="text-sm text-slate-400 bg-white rounded-xl border border-slate-200 p-6">No reports this month for the current filter.</div>`;
+}
+
+// ============================================================
+// Day panel
+// ============================================================
+function openDay(key) {
+  const d = new Date(key+"T12:00:00");
+  document.getElementById("dayTitle").textContent = d.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric",year:"numeric"});
+  const fset = new Set(filtered().map(s=>s.t));
+  const todays = (earningsOn[key]||[]).filter(e=>fset.has(e.t));
+  document.getElementById("dayBody").innerHTML = todays.map(e => {
+    const s = byT[e.t], l = live(e.t);
+    return `<button onclick="openStock('${e.t}')" class="w-full text-left flex items-center justify-between rounded-xl border border-slate-200 px-3 py-2.5 hover:bg-blue-50">
+      <div>
+        <div class="font-bold">${e.t} <span class="font-normal text-slate-500 text-sm">${s?.name||""}</span></div>
+        <div class="text-xs text-slate-500">${s?.sector||""}${e.time?" · "+e.time:""}${e.estimated?" · estimated":""}</div>
+      </div>
+      <div class="flex gap-1">${perfBadge(l.perf30,"30d")}${perfBadge(l.perf60,"60d")}</div>
+    </button>`;
+  }).join("") || "<p class='text-sm text-slate-400'>Nothing for the current filter.</p>";
+  dayDialog.showModal();
+}
+
+// ============================================================
+// Stock modal (with editable model membership)
+// ============================================================
+function openStock(t) {
+  const s = byT[t]; if (!s) return;
+  const l = live(t);
+  const earnings = l.earnings || [];
+  const upside = tp => (tp && l.price) ? ` <span class="${tp>=l.price?"text-emerald-600":"text-red-500"}">(${tp>=l.price?"+":""}${(((tp-l.price)/l.price)*100).toFixed(0)}%)</span>` : "";
+  const ratingRow = (label, r) => r && (r[0] || r[1]) ? `<div class="flex justify-between py-1.5 border-b border-slate-100 text-sm"><span class="text-slate-500">${label}</span><span class="font-medium">${r[0]||""}${r[1]?` · $${r[1]}`:""}${upside(r[1])}</span></div>` : "";
+  const msRow = s.ms ? `<div class="flex justify-between py-1.5 border-b border-slate-100 text-sm"><span class="text-slate-500">Morningstar</span><span class="font-medium">${"★".repeat(s.ms[0]||0)}${"☆".repeat(5-(s.ms[0]||0))}${s.ms[1]?` · $${s.ms[1]}`:""}${upside(s.ms[1])}</span></div>` : "";
+
+  document.getElementById("stockBody").innerHTML = `
+    <div class="flex items-start justify-between">
+      <div>
+        <h3 class="text-2xl font-bold">${s.t} ${s.verify?'<span class="text-amber-500 text-sm align-middle" title="data read from photo was ambiguous — please verify">⚠ verify</span>':""}</h3>
+        <p class="text-slate-500 text-sm">${s.name||""} · ${s.sector||""}</p>
+      </div>
+      <button onclick="stockDialog.close()" class="text-slate-400 hover:text-slate-700 text-xl leading-none">✕</button>
+    </div>
+    <div class="mt-4 flex items-end gap-4 flex-wrap">
+      <div class="text-3xl font-bold">${l.price!=null?"$"+l.price.toLocaleString():"–"}</div>
+      <div class="flex gap-1.5 mb-1">${perfBadge(l.perf30,"30 day")}${perfBadge(l.perf60,"60 day")}</div>
+    </div>
+    <div class="mt-4">
+      <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Earnings — rest of 2026</div>
+      <div class="flex flex-wrap gap-2">${
+        earnings.length ? earnings.map(e => {
+          const d = new Date(e.date+"T12:00:00");
+          return `<span class="rounded-lg px-2.5 py-1.5 text-sm font-medium ${e.estimated?"border border-dashed border-blue-400 text-blue-700 bg-blue-50/50":"bg-blue-600 text-white"}">${d.toLocaleDateString("en-US",{month:"short",day:"numeric"})}${e.time?" · "+e.time:""}${e.estimated?" · est":""}</span>`;
+        }).join("") : `<span class="text-sm text-slate-400">No date available yet — re-run refresh closer to earnings season.</span>`
+      }</div>
+    </div>
+    <div class="mt-4">
+      <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Model membership <span class="normal-case font-normal">(click to toggle — corrections saved on this computer)</span></div>
+      <div class="flex flex-wrap gap-1.5">${
+        MODELS.map(m => {
+          const on = s.models.includes(m.key);
+          return `<button onclick="toggleModel('${s.t}','${m.key}')" class="chip rounded-full px-3 py-1 text-xs font-semibold ${on?`text-white ${MODEL_COLORS[m.key]}`:"bg-slate-100 text-slate-400 border border-slate-200"}">${m.label}</button>`;
+        }).join("")
+      }</div>
+    </div>
+    ${(ratingRow("Wells Fargo", s.wfs)+ratingRow("Evercore ISI", s.isi)+msRow) ? `<div class="mt-4"><div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1">Street targets</div>${ratingRow("Wells Fargo", s.wfs)}${ratingRow("Evercore ISI", s.isi)}${msRow}</div>` : ""}
+  `;
+  stockDialog.showModal();
+}
+
+function toggleModel(t, key) {
+  const s = byT[t];
+  const i = s.models.indexOf(key);
+  i >= 0 ? s.models.splice(i,1) : s.models.push(key);
+  overrides[t] = [...s.models];
+  localStorage.setItem("modelOverrides", JSON.stringify(overrides));
+  openStock(t); renderAll();
+}
+
+// ============================================================
+// Models section
+// ============================================================
+let sortCol = "next", sortAsc = true;
+function renderModels() {
+  const tabs = document.getElementById("modelTabs");
+  tabs.innerHTML = "";
+  for (const m of MODELS) {
+    const count = STOCKS.filter(s => s.models.includes(m.key)).length;
+    const b = document.createElement("button");
+    const on = activeModelTab === m.key;
+    b.className = on
+      ? `chip rounded-lg px-3.5 py-2 text-sm font-semibold text-white ${MODEL_COLORS[m.key]} shadow`
+      : "chip rounded-lg px-3.5 py-2 text-sm font-medium bg-white text-slate-600 border border-slate-200 hover:bg-slate-50";
+    b.innerHTML = `${m.label} <span class="opacity-70 text-xs">${count}</span>`;
+    b.onclick = () => { activeModelTab = m.key; renderModels(); };
+    tabs.appendChild(b);
+  }
+  const rows = STOCKS.filter(s => s.models.includes(activeModelTab));
+  const val = s => {
+    const l = live(s.t), e = nextEarnings(s.t);
+    switch (sortCol) {
+      case "t": return s.t;
+      case "sector": return s.sector||"";
+      case "price": return l.price ?? -1;
+      case "p30": return l.perf30 ?? -999;
+      case "p60": return l.perf60 ?? -999;
+      case "next": return e ? e.date : "9999";
+      default: return s.t;
+    }
+  };
+  rows.sort((a,b) => { const x=val(a),y=val(b); return (x<y?-1:x>y?1:0) * (sortAsc?1:-1); });
+  const th = (label, col) => `<th class="px-3 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-slate-400 cursor-pointer hover:text-slate-700 whitespace-nowrap" onclick="setSort('${col}')">${label}${sortCol===col?(sortAsc?" ↑":" ↓"):""}</th>`;
+  document.getElementById("modelTableWrap").innerHTML = `
+    <table class="w-full text-sm min-w-[680px]">
+      <thead class="border-b border-slate-200 bg-slate-50">
+        <tr>${th("Ticker","t")}${th("Sector","sector")}${th("Price","price")}${th("30d","p30")}${th("60d","p60")}${th("Next earnings","next")}<th class="px-3 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-slate-400">Targets (WFS / ISI / M★)</th></tr>
+      </thead>
+      <tbody>${rows.map(s => {
+        const l = live(s.t), e = nextEarnings(s.t);
+        const tgt = [s.wfs?.[1], s.isi?.[1], s.ms?.[1]].map(v => v ? "$"+v : "–").join(" / ");
+        return `<tr class="border-b border-slate-100 hover:bg-blue-50/50 cursor-pointer" onclick="openStock('${s.t}')">
+          <td class="px-3 py-2 font-bold whitespace-nowrap">${s.t}${s.verify?' <span class="text-amber-500" title="verify">⚠</span>':""}<span class="block text-[11px] font-normal text-slate-400 truncate max-w-[130px]">${s.name||""}</span></td>
+          <td class="px-3 py-2 text-slate-500 text-xs whitespace-nowrap">${s.sector||""}</td>
+          <td class="px-3 py-2 font-medium">${l.price!=null?"$"+l.price.toLocaleString():"–"}</td>
+          <td class="px-3 py-2">${perfBadge(l.perf30,"")}</td>
+          <td class="px-3 py-2">${perfBadge(l.perf60,"")}</td>
+          <td class="px-3 py-2 whitespace-nowrap ${e&&!e.estimated?"font-semibold text-blue-700":""}">${e?new Date(e.date+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"})+(e.time?" "+e.time:"")+(e.estimated?" (est)":""):"–"}</td>
+          <td class="px-3 py-2 text-xs text-slate-500 whitespace-nowrap">${tgt}</td>
+        </tr>`;
+      }).join("")}</tbody>
+    </table>`;
+}
+function setSort(col){ sortCol===col ? sortAsc=!sortAsc : (sortCol=col, sortAsc=true); renderModels(); }
+
+// ============================================================
+// Search
+// ============================================================
+const searchInput = document.getElementById("search");
+const searchResults = document.getElementById("searchResults");
+searchInput.addEventListener("input", () => {
+  const q = searchInput.value.trim().toUpperCase();
+  if (!q) { searchResults.classList.add("hidden"); return; }
+  const hits = STOCKS.filter(s => s.t.toUpperCase().startsWith(q) || (s.name||"").toUpperCase().includes(q)).slice(0,12);
+  searchResults.innerHTML = hits.map(s => {
+    const e = nextEarnings(s.t);
+    return `<button onclick="openStock('${s.t}');searchResults.classList.add('hidden');" class="w-full text-left px-4 py-2.5 hover:bg-blue-50 flex justify-between items-center">
+      <span><b>${s.t}</b> <span class="text-slate-500 text-sm">${s.name||""}</span></span>
+      <span class="text-xs text-slate-400">${e?new Date(e.date+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"}):""}</span>
+    </button>`;
+  }).join("") || `<div class="px-4 py-3 text-sm text-slate-400">No matches</div>`;
+  searchResults.classList.remove("hidden");
+});
+document.addEventListener("click", e => { if (!e.target.closest("#search") && !e.target.closest("#searchResults")) searchResults.classList.add("hidden"); });
+
+// ============================================================
+// Wire-up + boot
+// ============================================================
+document.getElementById("prevMonth").onclick = () => { if (curMonth>6){curMonth--; renderCalendar();} };
+document.getElementById("nextMonth").onclick = () => { if (curMonth<11){curMonth++; renderCalendar();} };
+document.getElementById("viewToggle").onclick = () => { agendaMode = !agendaMode; renderCalendar(); };
+if (window.innerWidth < 640) agendaMode = true;
+
+document.getElementById("refreshedAt").innerHTML = LIVE.refreshedAt
+  ? `Data as of ${new Date(LIVE.refreshedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})} — run <code class="bg-slate-100 px-1 rounded text-xs">node refresh.mjs</code> to update`
+  : `⚠ No live data yet — run <code class="bg-slate-100 px-1 rounded text-xs">node refresh.mjs</code> in this folder first`;
+
+function exportCorrections(){
+  const blob = new Blob([JSON.stringify(overrides, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "model-corrections.json";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function renderAll(){ renderChips(); renderUpcoming(); renderCalendar(); renderModels(); }
+renderAll();
+</script>
+</body>
+</html>

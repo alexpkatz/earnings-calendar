@@ -1,0 +1,35 @@
+name: Refresh earnings data
+
+on:
+  schedule:
+    # Weekdays at 11:00 UTC (~7:00 AM ET) — before US market open
+    - cron: "0 11 * * 1-5"
+  workflow_dispatch: {}   # allows manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull fresh prices + earnings dates
+        run: node refresh.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet data/live.js; then
+            git add data/live.js
+            git commit -m "Auto-refresh earnings data $(date -u +%F)"
+            git push
+          else
+            echo "No data changes."
+          fi
