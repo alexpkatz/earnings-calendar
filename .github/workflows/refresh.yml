@@ -29,6 +29,7 @@ jobs:
           if ! git diff --quiet data/live.js; then
             git add data/live.js
             git commit -m "Auto-refresh earnings data $(date -u +%F)"
+            git pull --rebase origin main
             git push
           else
             echo "No data changes."
