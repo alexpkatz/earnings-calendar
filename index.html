@@ -470,8 +470,8 @@ document.getElementById("viewToggle").onclick = () => { agendaMode = !agendaMode
 if (window.innerWidth < 640) agendaMode = true;
 
 document.getElementById("refreshedAt").innerHTML = LIVE.refreshedAt
-  ? `Data as of ${new Date(LIVE.refreshedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})} — run <code class="bg-slate-100 px-1 rounded text-xs">node refresh.mjs</code> to update`
-  : `⚠ No live data yet — run <code class="bg-slate-100 px-1 rounded text-xs">node refresh.mjs</code> in this folder first`;
+  ? `Data as of ${new Date(LIVE.refreshedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})} — refreshes automatically every weekday morning`
+  : `⚠ No live data yet`;
 
 function exportCorrections(){
   const blob = new Blob([JSON.stringify(overrides, null, 2)], {type:"application/json"});
