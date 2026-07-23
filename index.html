@@ -108,18 +108,41 @@ tailwind.config = { theme: { extend: {
 </dialog>
 
 <script src="data/stocks.js"></script>
-<script src="data/live.js" onerror="window.LIVE={refreshedAt:null,data:{}}"></script>
 <script>
+// ============================================================
+// Data loading — always fetch fresh live.js, bypassing all caches
+// ============================================================
+async function loadLive() {
+  // cache-busting query + no-store defeats both browser cache and the Pages CDN
+  try {
+    const r = await fetch("data/live.js?_=" + Date.now(), { cache: "no-store" });
+    if (r.ok) {
+      const w = {};
+      new Function("window", await r.text())(w);
+      if (w.LIVE) return w.LIVE;
+    }
+  } catch (e) { /* fall through (e.g., file:// where fetch is blocked) */ }
+  // fallback: classic script tag (works when opened as a local file)
+  return new Promise(resolve => {
+    const s = document.createElement("script");
+    s.src = "data/live.js";
+    s.onload = () => resolve(window.LIVE || { refreshedAt: null, data: {} });
+    s.onerror = () => resolve({ refreshedAt: null, data: {} });
+    document.head.appendChild(s);
+  });
+}
+
+async function main() {
 // ============================================================
 // State
 // ============================================================
-const LIVE = window.LIVE || { refreshedAt: null, data: {} };
+const LIVE = await loadLive();
 const MODELS = window.MODELS, SECTORS = window.SECTORS;
 const overrides = JSON.parse(localStorage.getItem("modelOverrides") || "{}");
 const STOCKS = window.STOCKS
   .filter(s => s.sector) // drop unresolvable placeholder rows
   .map(s => ({ ...s,
-    name: s.name || (window.LIVE?.data?.[s.t]?.name) || "",
+    name: s.name || (LIVE?.data?.[s.t]?.name) || "",
     models: overrides[s.t] ? overrides[s.t] : s.models }));
 const byT = Object.fromEntries(STOCKS.map(s => [s.t, s]));
 
@@ -466,8 +489,14 @@ document.addEventListener("click", e => { if (!e.target.closest("#search") && !e
 // ============================================================
 document.getElementById("prevMonth").onclick = () => { if (curMonth>6){curMonth--; renderCalendar();} };
 document.getElementById("nextMonth").onclick = () => { if (curMonth<11){curMonth++; renderCalendar();} };
-document.getElementById("viewToggle").onclick = () => { agendaMode = !agendaMode; renderCalendar(); };
+let manualView = false;
+document.getElementById("viewToggle").onclick = () => { manualView = true; agendaMode = !agendaMode; renderCalendar(); };
 if (window.innerWidth < 640) agendaMode = true;
+window.addEventListener("resize", () => {
+  if (manualView) return;
+  const want = window.innerWidth < 640;
+  if (want !== agendaMode) { agendaMode = want; renderCalendar(); }
+});
 
 document.getElementById("refreshedAt").innerHTML = LIVE.refreshedAt
   ? `Data as of ${new Date(LIVE.refreshedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})} — refreshes automatically every weekday morning`
@@ -484,6 +513,11 @@ function exportCorrections(){
 
 function renderAll(){ renderChips(); renderUpcoming(); renderCalendar(); renderModels(); }
 renderAll();
+
+// expose handlers referenced by inline onclick attributes
+Object.assign(window, { openStock, openDay, toggleModel, setSort, clearFilters, exportCorrections });
+} // end main()
+main();
 </script>
 </body>
 </html>
