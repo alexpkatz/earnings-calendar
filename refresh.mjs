@@ -37,7 +37,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function fetchJSON(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url, { headers: HEADERS });
+      // hard 12s timeout — some endpoints stall connections from datacenter IPs
+      const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(12000) });
       if (res.status === 429) { await sleep(2000 * (i + 1)); continue; }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
@@ -111,10 +112,10 @@ let yahooAuth = null;
 async function getYahooAuth() {
   if (yahooAuth !== null) return yahooAuth;
   try {
-    const r1 = await fetch("https://fc.yahoo.com/", { headers: HEADERS, redirect: "manual" });
+    const r1 = await fetch("https://fc.yahoo.com/", { headers: HEADERS, redirect: "manual", signal: AbortSignal.timeout(12000) });
     const cookie = (r1.headers.get("set-cookie") || "").split(";")[0];
     const r2 = await fetch("https://query2.finance.yahoo.com/v1/test/getcrumb", {
-      headers: { ...HEADERS, Cookie: cookie },
+      headers: { ...HEADERS, Cookie: cookie }, signal: AbortSignal.timeout(12000),
     });
     const crumb = (await r2.text()).trim();
     yahooAuth = crumb && !crumb.includes("<") ? { cookie, crumb } : false;
@@ -132,7 +133,7 @@ async function getEarningsYahoo(t) {
   ];
   for (const url of urls) {
     try {
-      const res = await fetch(url, { headers: { ...HEADERS, Cookie: auth.cookie } });
+      const res = await fetch(url, { headers: { ...HEADERS, Cookie: auth.cookie }, signal: AbortSignal.timeout(12000) });
       if (!res.ok) continue;
       const j = await res.json();
       const cal = j?.quoteSummary?.result?.[0]?.calendarEvents?.earnings;
