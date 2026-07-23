@@ -30,6 +30,15 @@ model-portfolio and sector filters, 30/60-day performance, and street targets.
   targets with implied upside.
 - **Model tables** — sortable per-model constituent lists.
 
+## The Focus List (second page)
+
+`focus.html` — a separate, black/serif-styled page covering the 30-name focus
+list: earnings dates, live share price, and a three-sentence buy/hold/sell
+note per stock (synthesized from the Wells Fargo / Evercore ISI / Morningstar
+ratings plus public information). Filter by sector or verdict. Shares the same
+auto-refreshing data as the calendar.
+Live: https://alexpkatz.github.io/earnings-calendar/focus.html
+
 ## Data caveats
 
 - Model membership, ratings, and targets were extracted from **photos of

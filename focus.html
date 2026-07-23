@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Focus List</title>
+<style>
+  :root {
+    --gold: #c9a961;
+    --gold-dim: #8a7440;
+    --ink: #e8e4da;
+    --ink-dim: #9a958a;
+    --bg: #000000;
+    --panel: #0d0d0d;
+    --hairline: #2a2620;
+    --buy: #9dc183;
+    --sell: #c17b6f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Times New Roman", Times, Georgia, serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 96px; }
+
+  header { text-align: center; padding: 72px 0 40px; }
+  .rule { width: 72px; height: 1px; background: var(--gold); margin: 0 auto; border: 0; }
+  h1 {
+    font-size: 42px; font-weight: 400; letter-spacing: .14em;
+    text-transform: uppercase; margin: 26px 0 10px; color: var(--ink);
+  }
+  .subtitle {
+    font-style: italic; color: var(--ink-dim); font-size: 16px; letter-spacing: .02em;
+  }
+  .asof {
+    margin-top: 18px; font-size: 12.5px; color: var(--gold-dim);
+    letter-spacing: .22em; text-transform: uppercase;
+  }
+
+  /* filters */
+  .filters { text-align: center; margin: 36px 0 8px; }
+  .filters .label {
+    display: block; font-size: 11px; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--ink-dim); margin: 18px 0 10px;
+  }
+  .chip {
+    display: inline-block; margin: 3px 4px; padding: 6px 16px;
+    border: 1px solid var(--hairline); color: var(--ink-dim);
+    font-size: 13.5px; letter-spacing: .06em; cursor: pointer;
+    background: transparent; font-family: inherit;
+    transition: all .18s ease; border-radius: 1px;
+  }
+  .chip:hover { border-color: var(--gold-dim); color: var(--ink); }
+  .chip.on { border-color: var(--gold); color: var(--gold); }
+  .count { text-align: center; color: var(--ink-dim); font-size: 13px; font-style: italic; margin: 18px 0 6px; }
+  .count button { background:none; border:none; color: var(--gold-dim); font-family: inherit; font-size: 13px; font-style: italic; cursor: pointer; text-decoration: underline; }
+
+  /* sort */
+  .sortrow { text-align: center; margin-bottom: 34px; font-size: 12.5px; color: var(--ink-dim); letter-spacing: .08em; }
+  .sortrow button {
+    background: none; border: none; color: var(--ink-dim); font-family: inherit;
+    font-size: 12.5px; letter-spacing: .08em; cursor: pointer; padding: 2px 8px;
+  }
+  .sortrow button.on { color: var(--gold); }
+  .sortrow button:hover { color: var(--ink); }
+
+  /* stock entries */
+  .entry {
+    border-top: 1px solid var(--hairline);
+    padding: 34px 6px;
+  }
+  .entry:last-of-type { border-bottom: 1px solid var(--hairline); }
+  .entry .top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .tick { font-size: 26px; letter-spacing: .08em; color: var(--ink); }
+  .tick .co { font-size: 16px; color: var(--ink-dim); font-style: italic; letter-spacing: .01em; margin-left: 12px; }
+  .price { font-size: 22px; color: var(--gold); letter-spacing: .04em; white-space: nowrap; }
+
+  .meta { margin-top: 10px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; font-size: 13.5px; }
+  .verdict {
+    display: inline-block; padding: 3px 14px 4px; border: 1px solid;
+    font-size: 12px; letter-spacing: .28em; text-transform: uppercase; text-indent: .28em;
+  }
+  .verdict.BUY  { color: var(--buy); border-color: var(--buy); }
+  .verdict.HOLD { color: var(--gold); border-color: var(--gold-dim); }
+  .verdict.SELL { color: var(--sell); border-color: var(--sell); }
+  .sector { color: var(--ink-dim); letter-spacing: .12em; text-transform: uppercase; font-size: 11.5px; }
+
+  .earnings { margin-top: 14px; font-size: 14.5px; color: var(--ink); }
+  .earnings .lbl { color: var(--ink-dim); font-style: italic; margin-right: 10px; }
+  .edate { color: var(--ink); margin-right: 14px; white-space: nowrap; }
+  .edate.est { color: var(--ink-dim); }
+  .edate.est::after { content: " (est.)"; font-style: italic; font-size: 12px; }
+  .edate.confirmed { color: var(--gold); }
+
+  .eval {
+    margin-top: 14px; font-size: 15.5px; color: var(--ink);
+    font-style: italic; max-width: 760px;
+  }
+
+  footer {
+    margin-top: 64px; text-align: center; color: var(--ink-dim);
+    font-size: 12px; font-style: italic; line-height: 1.8;
+  }
+  footer .rule { margin-bottom: 26px; }
+
+  @media (max-width: 620px) {
+    h1 { font-size: 28px; letter-spacing: .1em; }
+    .tick { font-size: 21px; }
+    .tick .co { display: block; margin-left: 0; margin-top: 2px; }
+    .price { font-size: 18px; }
+    header { padding: 44px 0 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <hr class="rule">
+    <h1>The Focus List</h1>
+    <div class="subtitle">Thirty names · earnings dates &amp; standing views</div>
+    <div class="asof" id="asof">Loading…</div>
+  </header>
+
+  <div class="filters">
+    <span class="label">Sector</span>
+    <div id="sectorChips"></div>
+    <span class="label">View</span>
+    <div id="verdictChips"></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="sortrow" id="sortRow">
+    ORDER BY
+    <button data-k="date" class="on">Earnings date</button> ·
+    <button data-k="ticker">Ticker</button> ·
+    <button data-k="sector">Sector</button>
+  </div>
+
+  <div id="list"></div>
+
+  <footer>
+    <hr class="rule">
+    These notes summarize third-party research ratings (Wells Fargo, Evercore ISI, Morningstar)
+    and public information as of July 2026, refreshed prices notwithstanding.<br>
+    They are informational only and do not constitute personalized investment advice.<br>
+    Earnings dates marked "est." are projections until companies confirm.
+  </footer>
+
+</div>
+
+<script src="data/focus.js"></script>
+<script>
+async function loadLive() {
+  try {
+    const r = await fetch("data/live.js?_=" + Date.now(), { cache: "no-store" });
+    if (r.ok) {
+      const w = {};
+      new Function("window", await r.text())(w);
+      if (w.LIVE) return w.LIVE;
+    }
+  } catch (e) { /* file:// fallback below */ }
+  return new Promise(resolve => {
+    const s = document.createElement("script");
+    s.src = "data/live.js";
+    s.onload = () => resolve(window.LIVE || { refreshedAt: null, data: {} });
+    s.onerror = () => resolve({ refreshedAt: null, data: {} });
+    document.head.appendChild(s);
+  });
+}
+
+(async function () {
+  const LIVE = await loadLive();
+  const live = t => LIVE.data[t] || {};
+  const FOCUS = window.FOCUS;
+
+  let sector = null, verdict = null, sortK = "date";
+
+  document.getElementById("asof").textContent = LIVE.refreshedAt
+    ? "Prices & dates as of " + new Date(LIVE.refreshedAt).toLocaleString("en-US",
+        { month: "long", day: "numeric", hour: "numeric", minute: "2-digit" })
+    : "Live data unavailable";
+
+  const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric" });
+  const nextE = t => (live(t).earnings || [])[0] || null;
+
+  function chips(el, items, cur, onpick) {
+    el.innerHTML = "";
+    for (const it of items) {
+      const b = document.createElement("button");
+      b.className = "chip" + (cur === it ? " on" : "");
+      b.textContent = it;
+      b.onclick = () => onpick(cur === it ? null : it);
+      el.appendChild(b);
+    }
+  }
+
+  function render() {
+    chips(document.getElementById("sectorChips"), window.FOCUS_SECTORS, sector, v => { sector = v; render(); });
+    chips(document.getElementById("verdictChips"), ["BUY", "HOLD", "SELL"], verdict, v => { verdict = v; render(); });
+
+    let rows = FOCUS.filter(s =>
+      (!sector || s.sector === sector) && (!verdict || s.verdict === verdict));
+
+    rows.sort((a, b) => {
+      if (sortK === "ticker") return a.t.localeCompare(b.t);
+      if (sortK === "sector") return a.sector.localeCompare(b.sector) || a.t.localeCompare(b.t);
+      const ea = nextE(a.t), eb = nextE(b.t);
+      return (ea ? ea.date : "9999").localeCompare(eb ? eb.date : "9999");
+    });
+
+    document.getElementById("count").innerHTML =
+      rows.length + " of " + FOCUS.length + " names" +
+      (sector || verdict ? ' &nbsp;—&nbsp; <button id="clearF">show all</button>' : "");
+    const cf = document.getElementById("clearF");
+    if (cf) cf.onclick = () => { sector = null; verdict = null; render(); };
+
+    document.getElementById("list").innerHTML = rows.map(s => {
+      const l = live(s.t);
+      const dates = (l.earnings || []).map(e =>
+        `<span class="edate ${e.estimated ? "est" : "confirmed"}">${fmtDate(e.date)}${e.time ? " · " + (e.time === "BMO" ? "before open" : "after close") : ""}</span>`
+      ).join("");
+      return `<div class="entry">
+        <div class="top">
+          <div class="tick">${s.t}<span class="co">${s.name}</span></div>
+          <div class="price">${l.price != null ? "$" + l.price.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) : "—"}</div>
+        </div>
+        <div class="meta">
+          <span class="verdict ${s.verdict}">${s.verdict}</span>
+          <span class="sector">${s.sector}</span>
+        </div>
+        <div class="earnings"><span class="lbl">Reports</span>${dates || '<span class="edate est">date to be announced</span>'}</div>
+        <div class="eval">${s.evaluation}</div>
+      </div>`;
+    }).join("");
+  }
+
+  document.getElementById("sortRow").addEventListener("click", e => {
+    const b = e.target.closest("button[data-k]");
+    if (!b) return;
+    sortK = b.dataset.k;
+    document.querySelectorAll("#sortRow button").forEach(x => x.classList.toggle("on", x === b));
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
