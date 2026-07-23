@@ -2,8 +2,10 @@ name: Refresh earnings data
 
 on:
   schedule:
-    # Weekdays at 11:00 UTC (~7:00 AM ET) — before US market open
-    - cron: "0 11 * * 1-5"
+    # Weekdays, twice a day. Odd minutes on purpose: GitHub often skips
+    # on-the-hour crons under load.
+    - cron: "43 10 * * 1-5"   # ~6:43 AM ET, before US market open
+    - cron: "43 17 * * 1-5"   # ~1:43 PM ET, midday top-up
   workflow_dispatch: {}   # allows manual runs from the Actions tab
 
 permissions:
