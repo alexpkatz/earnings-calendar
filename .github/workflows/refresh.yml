@@ -22,15 +22,27 @@ jobs:
         with:
           node-version: 20
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install openpyxl
+        run: pip install openpyxl
+
       - name: Pull fresh prices + earnings dates
         run: node refresh.mjs
+
+      - name: Build Excel workbook
+        run: |
+          node tools/dump-json.mjs
+          python tools/build_xlsx.py
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet data/live.js; then
-            git add data/live.js
+          git add data/live.js earnings-data.xlsx
+          if ! git diff --cached --quiet; then
             git commit -m "Auto-refresh earnings data $(date -u +%F)"
             git pull --rebase origin main
             git push

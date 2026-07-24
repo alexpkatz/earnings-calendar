@@ -147,55 +147,72 @@ async function getEarningsYahoo(t) {
   return null;
 }
 
-// Last resort: last reported date (Nasdaq earnings-surprise) + ~91 days, flagged estimated.
-async function getEarningsFromHistory(t) {
+// Historical report dates (Nasdaq earnings-surprise) — used for seasonal projection.
+async function getEarningsHistory(t) {
   const url = `https://api.nasdaq.com/api/company/${encodeURIComponent(t)}/earnings-surprise`;
   const j = await fetchJSON(url, 2);
   const rows = j?.data?.earningsSurpriseTable?.rows || [];
-  let latest = null;
+  const dates = [];
   for (const r of rows) {
     const m = String(r?.dateReported || "").match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-    if (m) {
-      const ms = Date.UTC(+m[3], +m[1] - 1, +m[2], 12);
-      if (latest == null || ms > latest) latest = ms;
-    }
+    if (m) dates.push(Date.UTC(+m[3], +m[1] - 1, +m[2], 12));
   }
-  if (!latest) return null;
-  let next = latest + 91 * 86400e3;
-  const now = Date.now();
-  while (next < now) next += 91 * 86400e3;  // roll forward if stale
-  return { dateMs: next, time: null, estimated: true };
+  return dates.sort((a, b) => a - b);
 }
 
 async function getEarnings(t) {
   let next = null;
   try { next = await getEarningsNasdaq(t); } catch { /* fall through */ }
   if (!next) { try { next = await getEarningsYahoo(t); } catch { /* none */ } }
-  if (!next) { try { next = await getEarningsFromHistory(t); } catch { /* none */ } }
-  return next;
+  let history = [];
+  try { history = await getEarningsHistory(t); } catch { /* none */ }
+  return { next, history };
 }
 
-// ---- project future quarters through end of 2026 ----------------------------
-function projectQuarters(next, endMs) {
-  // next: { dateMs, time, estimated } for the next known report, or null
-  const out = [];
-  if (!next) return out;
-  out.push({ date: isoDay(next.dateMs), estimated: !!next.estimated, time: next.time });
-  // step forward ~91 days for later quarters until end of window
-  let cur = next.dateMs;
-  while (true) {
-    cur = cur + 91 * 86400e3;
-    if (cur > endMs) break;
-    // align to a weekday (Tue-Thu preferred)
-    const d = new Date(cur);
-    const dow = d.getUTCDay();
-    if (dow === 0) d.setUTCDate(d.getUTCDate() + 2);
-    if (dow === 6) d.setUTCDate(d.getUTCDate() + 3);
-    if (dow === 1) d.setUTCDate(d.getUTCDate() + 1);
-    if (dow === 5) d.setUTCDate(d.getUTCDate() - 1);
-    out.push({ date: isoDay(d.getTime()), estimated: true, time: null });
+const DAY = 86400e3, YEAR = 364 * DAY;  // 52 weeks keeps the same weekday
+// nudge weekends onto the adjacent weekday (earnings almost never land on Sat/Sun)
+function snapWeekday(ms) {
+  const d = new Date(ms), dow = d.getUTCDay();
+  if (dow === 6) d.setUTCDate(d.getUTCDate() + 2);
+  else if (dow === 0) d.setUTCDate(d.getUTCDate() + 1);
+  return d.getTime();
+}
+
+// ---- project report dates through end of 2026, seasonally --------------------
+// Companies report on a stable seasonal cadence, so we predict each 2026 date as
+// the matching quarter's date one year earlier + 52 weeks. Any confirmed/expected
+// date from Nasdaq/Yahoo overrides a nearby prediction.
+function projectQuarters(info, endMs, nowMs) {
+  const { next, history } = info;
+  const cand = [];
+  // seasonal predictions from each historical report date
+  for (const h of history) cand.push({ dateMs: snapWeekday(h + YEAR), estimated: true, time: null });
+  // a real confirmed/expected date, if we have one
+  if (next) cand.push({ dateMs: next.dateMs, estimated: !!next.estimated, time: next.time });
+
+  // if no history at all, fall back to stepping the confirmed date forward ~91d
+  if (!history.length) {
+    if (!next) return [];
+    const out = [{ date: isoDay(next.dateMs), estimated: !!next.estimated, time: next.time }];
+    let cur = next.dateMs;
+    while ((cur += 91 * DAY) <= endMs) out.push({ date: isoDay(snapWeekday(cur)), estimated: true, time: null });
+    return out;
   }
-  return out;
+
+  // keep upcoming-through-end-of-window, earliest first
+  const keep = cand
+    .filter(r => r.dateMs >= nowMs - 10 * DAY && r.dateMs <= endMs)
+    .sort((a, b) => a.dateMs - b.dateMs);
+
+  // merge near-duplicates (within 20 days), preferring a confirmed date over an estimate
+  const merged = [];
+  for (const r of keep) {
+    const last = merged[merged.length - 1];
+    if (last && Math.abs(r.dateMs - last.dateMs) < 20 * DAY) {
+      if (!r.estimated && last.estimated) merged[merged.length - 1] = r;
+    } else merged.push(r);
+  }
+  return merged.map(r => ({ date: isoDay(r.dateMs), estimated: r.estimated, time: r.time }));
 }
 
 const isoDay = ms => new Date(ms).toISOString().slice(0, 10);
@@ -223,7 +240,7 @@ for (const t of tickers) {
     Object.assign(rec, pp);
     await sleep(150);
     const e = await getEarnings(t);
-    rec.earnings = projectQuarters(e, END_2026);
+    rec.earnings = projectQuarters(e, END_2026, Date.now());
     out[t] = rec;
     const nd = rec.earnings[0];
     console.log(`$${rec.price}  30d ${fmtPct(rec.perf30)}  60d ${fmtPct(rec.perf60)}  next: ${nd ? nd.date + (nd.estimated ? " (est)" : "") : "—"}`);

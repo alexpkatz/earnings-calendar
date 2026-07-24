@@ -31,6 +31,10 @@ tailwind.config = { theme: { extend: {
     <div class="flex-1 min-w-[240px]">
       <h1 class="text-2xl font-bold tracking-tight">📅 Earnings Calendar <span class="text-slate-400 font-normal">2026</span></h1>
       <p id="refreshedAt" class="text-sm text-slate-500 mt-0.5">loading data…</p>
+      <a href="earnings-data.xlsx" download
+         class="inline-flex items-center gap-1.5 mt-2 text-sm font-medium text-emerald-700 hover:text-emerald-900">
+        <span>⬇</span> Download as Excel (.xlsx)
+      </a>
     </div>
     <div class="relative w-full sm:w-72">
       <input id="search" type="text" placeholder="Search ticker or company…" autocomplete="off"

@@ -30,6 +30,16 @@ model-portfolio and sector filters, 30/60-day performance, and street targets.
   targets with implied upside.
 - **Model tables** — sortable per-model constituent lists.
 
+## Excel export
+
+`earnings-data.xlsx` is a full workbook of the same data, rebuilt automatically
+on every refresh and downloadable from the site header. Sheets: **All Holdings**
+(master table — price, 30/60-day performance, model memberships, ratings/targets,
+2026 earnings dates, filterable & grouped by sector), **Earnings Schedule**
+(chronological, filterable), **Calendar** (month grids Jul–Dec 2026), and **About**.
+Built by `tools/build_xlsx.py` from `tools/dump-json.mjs` output.
+Download: https://alexpkatz.github.io/earnings-calendar/earnings-data.xlsx
+
 ## The Focus List (second page)
 
 `focus.html` — a separate, black/serif-styled page covering the 30-name focus
