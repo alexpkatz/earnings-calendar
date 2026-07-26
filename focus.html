@@ -221,8 +221,9 @@ async function loadLive() {
     document.getElementById("list").innerHTML = rows.map(s => {
       const l = live(s.t);
       const dates = (l.earnings || []).map(e =>
-        `<span class="edate ${e.estimated ? "est" : "confirmed"}">${fmtDate(e.date)}${e.time ? " · " + (e.time === "BMO" ? "before open" : "after close") : ""}</span>`
+        `<span class="edate ${e.estimated ? "est" : "confirmed"}" title="${e.source ? (e.estimated ? "Estimated · " + e.source : e.source) : ""}">${fmtDate(e.date)}${e.time ? " · " + (e.time === "BMO" ? "before open" : "after close") : ""}</span>`
       ).join("");
+      const esrc = (l.earnings || []).map(e => e.source).filter((v,i,a)=>v&&a.indexOf(v)===i).join(", ");
       return `<div class="entry">
         <div class="top">
           <div class="tick">${s.t}<span class="co">${s.name}</span></div>
@@ -232,7 +233,7 @@ async function loadLive() {
           <span class="verdict ${s.verdict}">${s.verdict}</span>
           <span class="sector">${s.sector}</span>
         </div>
-        <div class="earnings"><span class="lbl">Reports</span>${dates || '<span class="edate est">date to be announced</span>'}</div>
+        <div class="earnings"><span class="lbl">Reports</span>${dates || '<span class="edate est">not yet scheduled</span>'}${esrc ? `<span class="lbl" style="margin-left:14px;font-size:12px">source: ${esrc}</span>` : ""}</div>
         <div class="eval">${s.evaluation}</div>
       </div>`;
     }).join("");

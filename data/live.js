@@ -1,5 +1,5 @@
 window.LIVE = {
- "refreshedAt": "2026-07-24T21:45:37.552Z",
+ "refreshedAt": "2026-07-26T17:02:50.289Z",
  "data": {
   "DIS": {
    "price": 94.85,
@@ -10,13 +10,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-12",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -28,9 +24,10 @@ window.LIVE = {
    "name": "Alphabet Inc.",
    "earnings": [
     {
-     "date": "2026-10-28",
+     "date": "2026-10-27",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -43,13 +40,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -62,8 +55,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -76,13 +70,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-20",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -95,13 +85,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -114,8 +100,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -127,14 +114,10 @@ window.LIVE = {
    "name": "Verizon Communications Inc.",
    "earnings": [
     {
-     "date": "2026-07-20",
+     "date": "2026-10-21",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "source": "historical + aggregators"
     }
    ]
   },
@@ -147,13 +130,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -165,14 +144,10 @@ window.LIVE = {
    "name": "Spotify Technology S.A.",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -184,14 +159,10 @@ window.LIVE = {
    "name": "Airbnb, Inc.",
    "earnings": [
     {
-     "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -204,13 +175,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -223,13 +190,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-08",
-     "estimated": true,
-     "time": null
+     "source": "MarketChameleon"
     }
    ]
   },
@@ -242,13 +205,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -260,14 +219,10 @@ window.LIVE = {
    "name": "Booking Holdings Inc.",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -280,13 +235,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -298,14 +249,10 @@ window.LIVE = {
    "name": "Chipotle Mexican Grill, Inc.",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -317,9 +264,10 @@ window.LIVE = {
    "name": "D.R. Horton, Inc.",
    "earnings": [
     {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "date": "2026-10-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "D.R. Horton IR"
     }
    ]
   },
@@ -332,13 +280,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -351,8 +295,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -365,8 +310,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -379,13 +325,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-18",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-17",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -398,13 +340,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-19",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -417,13 +355,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -435,14 +369,10 @@ window.LIVE = {
    "name": "O'Reilly Automotive, Inc.",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -455,13 +385,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-19",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -473,14 +399,10 @@ window.LIVE = {
    "name": "Starbucks Corporation",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -493,13 +415,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-19",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -512,8 +430,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -525,9 +444,10 @@ window.LIVE = {
    "name": "Tesla, Inc.",
    "earnings": [
     {
-     "date": "2026-10-21",
+     "date": "2026-10-28",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -540,13 +460,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -558,14 +474,10 @@ window.LIVE = {
    "name": "NIKE, Inc.",
    "earnings": [
     {
-     "date": "2026-09-29",
+     "date": "2026-09-24",
+     "time": "AMC",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-17",
-     "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -578,13 +490,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -597,8 +505,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -611,13 +520,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-02",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -629,14 +534,10 @@ window.LIVE = {
    "name": "Lennox International Inc.",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -649,13 +550,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -668,13 +565,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -687,13 +580,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-24",
+     "time": "AMC",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-10",
-     "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -706,13 +595,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -724,14 +609,10 @@ window.LIVE = {
    "name": "The Coca-Cola Company",
    "earnings": [
     {
-     "date": "2026-07-21",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-20",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-28",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -744,13 +625,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-10",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -763,13 +640,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -782,8 +655,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-06",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "MarketBeat"
     }
    ]
   },
@@ -796,8 +670,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-08",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -809,14 +684,10 @@ window.LIVE = {
    "name": "The Procter & Gamble Company",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-23",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -828,14 +699,10 @@ window.LIVE = {
    "name": "Sysco Corporation",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -848,13 +715,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-19",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -867,13 +730,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-19",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -886,13 +745,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -904,14 +759,10 @@ window.LIVE = {
    "name": "The Kraft Heinz Company",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -923,14 +774,10 @@ window.LIVE = {
    "name": "Altria Group, Inc.",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-30",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -942,14 +789,10 @@ window.LIVE = {
    "name": "Baker Hughes Company",
    "earnings": [
     {
-     "date": "2026-07-21",
+     "date": "2026-10-21",
+     "time": "AMC",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-22",
-     "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -962,13 +805,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -981,13 +820,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1000,13 +835,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1019,8 +850,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1033,8 +865,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-21",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1046,14 +879,10 @@ window.LIVE = {
    "name": "SLB N.V.",
    "earnings": [
     {
-     "date": "2026-07-17",
-     "estimated": true,
-     "time": null
-    },
-    {
      "date": "2026-10-16",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "historical + aggregators"
     }
    ]
   },
@@ -1066,13 +895,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1085,13 +910,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1103,14 +924,10 @@ window.LIVE = {
    "name": "Enterprise Products Partners L.P.",
    "earnings": [
     {
-     "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-30",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1123,13 +940,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1142,13 +955,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1160,14 +969,10 @@ window.LIVE = {
    "name": "Phillips 66",
    "earnings": [
     {
-     "date": "2026-07-24",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1180,13 +985,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1199,13 +1000,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-02",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-30",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1217,14 +1014,10 @@ window.LIVE = {
    "name": "Aflac Incorporated",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1236,14 +1029,10 @@ window.LIVE = {
    "name": "Aon plc",
    "earnings": [
     {
-     "date": "2026-07-24",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1255,14 +1044,10 @@ window.LIVE = {
    "name": "American Express Company",
    "earnings": [
     {
-     "date": "2026-07-17",
-     "estimated": true,
-     "time": null
-    },
-    {
      "date": "2026-10-16",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "historical + aggregators"
     }
    ]
   },
@@ -1275,8 +1060,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-13",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1286,7 +1072,14 @@ window.LIVE = {
    "perf60": 2.34,
    "currency": "USD",
    "name": "Berkshire Hathaway Inc.",
-   "earnings": []
+   "earnings": [
+    {
+     "date": "2026-08-07",
+     "time": null,
+     "estimated": false,
+     "source": "Nasdaq"
+    }
+   ]
   },
   "BRO": {
    "price": 67.66,
@@ -1297,13 +1090,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1315,9 +1104,10 @@ window.LIVE = {
    "name": "Blackstone Inc.",
    "earnings": [
     {
-     "date": "2026-10-22",
+     "date": "2026-10-15",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1330,8 +1120,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-13",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Citigroup IR"
     }
    ]
   },
@@ -1344,8 +1135,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -1358,8 +1150,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-15",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1372,13 +1165,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1391,8 +1180,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-13",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1404,14 +1194,10 @@ window.LIVE = {
    "name": "Houlihan Lokey, Inc.",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1424,13 +1210,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1443,13 +1225,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-18",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1462,8 +1240,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-13",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1476,13 +1255,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-06",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1495,8 +1270,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -1509,13 +1285,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1528,8 +1300,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-14",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -1542,13 +1315,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1560,9 +1329,10 @@ window.LIVE = {
    "name": "The PNC Financial Services Group, Inc.",
    "earnings": [
     {
-     "date": "2026-10-14",
-     "estimated": true,
-     "time": null
+     "date": "2026-10-15",
+     "time": "BMO",
+     "estimated": false,
+     "source": "PNC Investor Relations"
     }
    ]
   },
@@ -1574,9 +1344,10 @@ window.LIVE = {
    "name": "SEI Investments Company",
    "earnings": [
     {
-     "date": "2026-10-21",
+     "date": "2026-10-28",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1589,13 +1360,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1608,13 +1375,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1627,8 +1390,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-19",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1641,13 +1405,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1660,8 +1420,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-14",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Bank of America IR"
     }
    ]
   },
@@ -1674,8 +1435,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-16",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1688,13 +1450,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1707,8 +1465,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Banco Santander IR"
     }
    ]
   },
@@ -1721,13 +1480,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-06",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1739,14 +1494,10 @@ window.LIVE = {
    "name": "AbbVie Inc.",
    "earnings": [
     {
-     "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-31",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1758,9 +1509,10 @@ window.LIVE = {
    "name": "Abbott Laboratories",
    "earnings": [
     {
-     "date": "2026-10-14",
+     "date": "2026-10-21",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1773,13 +1525,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1792,13 +1540,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1810,14 +1554,10 @@ window.LIVE = {
    "name": "Boston Scientific Corporation",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1830,13 +1570,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1848,14 +1584,10 @@ window.LIVE = {
    "name": "CVS Health Corporation",
    "earnings": [
     {
-     "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1868,8 +1600,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -1881,14 +1614,10 @@ window.LIVE = {
    "name": "DexCom, Inc.",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-30",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1901,13 +1630,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1919,14 +1644,10 @@ window.LIVE = {
    "name": "IDEXX Laboratories, Inc.",
    "earnings": [
     {
-     "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1939,8 +1660,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -1952,9 +1674,10 @@ window.LIVE = {
    "name": "Johnson & Johnson",
    "earnings": [
     {
-     "date": "2026-10-13",
+     "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -1967,13 +1690,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -1985,14 +1704,10 @@ window.LIVE = {
    "name": "Medtronic plc",
    "earnings": [
     {
-     "date": "2026-08-18",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-17",
-     "estimated": true,
-     "time": null
+     "date": "2026-09-01",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2004,14 +1719,10 @@ window.LIVE = {
    "name": "Merck & Co., Inc.",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2024,13 +1735,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2043,13 +1750,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2061,9 +1764,10 @@ window.LIVE = {
    "name": "Thermo Fisher Scientific Inc.",
    "earnings": [
     {
-     "date": "2026-10-21",
+     "date": "2026-10-28",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2076,8 +1780,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-27",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2089,14 +1794,10 @@ window.LIVE = {
    "name": "Zoetis Inc.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2109,13 +1810,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2128,13 +1825,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2147,13 +1840,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2166,13 +1855,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2185,13 +1870,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2204,13 +1885,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-23",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-17",
-     "estimated": true,
-     "time": null
+     "source": "Benzinga"
     }
    ]
   },
@@ -2223,8 +1900,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
-     "estimated": true,
-     "time": "BMO"
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2237,13 +1915,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2256,13 +1930,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2274,9 +1944,10 @@ window.LIVE = {
    "name": "Fastenal Company",
    "earnings": [
     {
-     "date": "2026-10-12",
+     "date": "2026-10-14",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2286,7 +1957,14 @@ window.LIVE = {
    "perf60": -2.28,
    "currency": "USD",
    "name": "FedEx Corporation",
-   "earnings": []
+   "earnings": [
+    {
+     "date": "2026-09-17",
+     "time": "AMC",
+     "estimated": true,
+     "source": "Investing.com"
+    }
+   ]
   },
   "FIX": {
    "price": 1733.6,
@@ -2297,8 +1975,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2310,14 +1989,10 @@ window.LIVE = {
    "name": "General Dynamics Corporation",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-23",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2330,8 +2005,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2344,8 +2020,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-21",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Nasdaq/WebSearch"
     }
    ]
   },
@@ -2357,14 +2034,10 @@ window.LIVE = {
    "name": "W.W. Grainger, Inc.",
    "earnings": [
     {
-     "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2377,13 +2050,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2396,13 +2065,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-23",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2414,14 +2079,10 @@ window.LIVE = {
    "name": "L3Harris Technologies, Inc.",
    "earnings": [
     {
-     "date": "2026-07-23",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2434,8 +2095,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "MarketChameleon/public.com"
     }
    ]
   },
@@ -2448,13 +2110,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2467,13 +2125,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-29",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-18",
-     "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2485,14 +2139,10 @@ window.LIVE = {
    "name": "PACCAR Inc",
    "earnings": [
     {
-     "date": "2026-07-21",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-20",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-28",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2505,13 +2155,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2524,13 +2170,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2543,8 +2185,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-28",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -2556,9 +2199,10 @@ window.LIVE = {
    "name": "RTX Corporation",
    "earnings": [
     {
-     "date": "2026-10-20",
+     "date": "2026-10-27",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -2570,14 +2214,10 @@ window.LIVE = {
    "name": "Trane Technologies plc",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-30",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2590,8 +2230,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -2604,13 +2245,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2622,14 +2259,10 @@ window.LIVE = {
    "name": "Waste Management, Inc.",
    "earnings": [
     {
-     "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-28",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2642,13 +2275,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2660,14 +2289,10 @@ window.LIVE = {
    "name": "Woodward, Inc.",
    "earnings": [
     {
-     "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-23",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2680,13 +2305,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2699,8 +2320,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Quartr/WebSearch"
     }
    ]
   },
@@ -2713,13 +2335,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2731,14 +2349,10 @@ window.LIVE = {
    "name": "AMETEK, Inc.",
    "earnings": [
     {
-     "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-04",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2750,14 +2364,10 @@ window.LIVE = {
    "name": "Fluor Corporation",
    "earnings": [
     {
-     "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-06",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-07",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2770,13 +2380,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2789,13 +2395,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-23",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2808,13 +2410,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2827,13 +2425,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-19",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2846,13 +2440,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-13",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-12",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2865,13 +2455,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2884,13 +2470,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2902,14 +2484,10 @@ window.LIVE = {
    "name": "Amphenol Corporation",
    "earnings": [
     {
-     "date": "2026-07-22",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2922,13 +2500,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-10",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2941,13 +2515,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2960,13 +2530,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-02",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2979,13 +2545,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-01",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -2998,13 +2560,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-12",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-11",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3017,13 +2575,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3036,13 +2590,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-02",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3055,8 +2605,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "IBM Investor Relations"
     }
    ]
   },
@@ -3069,13 +2620,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-24",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-16",
-     "estimated": true,
-     "time": null
+     "source": "TipRanks"
     }
    ]
   },
@@ -3088,13 +2635,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-18",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-23",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3107,13 +2650,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3126,13 +2665,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3145,13 +2680,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-01",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3164,13 +2695,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3183,13 +2710,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3201,14 +2724,10 @@ window.LIVE = {
    "name": "Micron Technology, Inc.",
    "earnings": [
     {
-     "date": "2026-09-22",
+     "date": "2026-09-29",
+     "time": "AMC",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-16",
-     "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -3221,8 +2740,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-28",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -3235,13 +2755,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3254,13 +2770,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-25",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-01",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3273,13 +2785,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-08",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-09",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3292,13 +2800,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-17",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3311,13 +2815,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-17",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3330,13 +2830,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3349,8 +2845,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -3363,13 +2860,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-12-09",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3382,8 +2875,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -3396,13 +2890,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3414,14 +2904,10 @@ window.LIVE = {
    "name": "Western Digital Corporation",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3434,13 +2920,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3452,14 +2934,10 @@ window.LIVE = {
    "name": "Axcelis Technologies, Inc.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3471,14 +2949,10 @@ window.LIVE = {
    "name": "Accenture plc",
    "earnings": [
     {
-     "date": "2026-09-24",
+     "date": "2026-10-01",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-12-17",
-     "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -3491,13 +2965,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-10",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-09",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3510,13 +2980,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3529,13 +2995,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3548,13 +3010,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3567,13 +3025,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3586,13 +3040,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3605,13 +3055,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3624,13 +3070,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-08",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3643,13 +3085,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3662,8 +3100,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-14",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "ASML IR"
     }
    ]
   },
@@ -3676,13 +3115,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3694,14 +3129,10 @@ window.LIVE = {
    "name": "Camtek Ltd.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-09",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-10",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3713,14 +3144,10 @@ window.LIVE = {
    "name": "Check Point Software Technologies Ltd.",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-30",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3733,13 +3160,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-10",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3752,13 +3175,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-13",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-11",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3771,13 +3190,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3790,13 +3205,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-12",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3809,13 +3220,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3828,13 +3235,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3847,13 +3250,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3866,13 +3265,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3885,13 +3280,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3904,13 +3295,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-17",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3923,13 +3310,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3942,13 +3325,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3961,13 +3340,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3979,14 +3354,10 @@ window.LIVE = {
    "name": "GLOBALFOUNDRIES Inc.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-11",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -3999,13 +3370,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4018,13 +3385,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-02",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-01",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4037,13 +3400,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4056,8 +3415,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -4070,13 +3430,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-19",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4089,13 +3445,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4108,13 +3460,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4127,13 +3475,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-11",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4146,13 +3490,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4165,13 +3505,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4184,13 +3520,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-25",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-30",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4203,13 +3535,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4222,13 +3550,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4241,13 +3565,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4260,13 +3580,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4279,13 +3595,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-10",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4297,14 +3609,10 @@ window.LIVE = {
    "name": "Cloudflare, Inc.",
    "earnings": [
     {
-     "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4317,13 +3625,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4336,13 +3640,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4354,14 +3654,10 @@ window.LIVE = {
    "name": "NXP Semiconductors N.V.",
    "earnings": [
     {
-     "date": "2026-07-20",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-28",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4374,13 +3670,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4393,13 +3685,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4412,13 +3700,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-03",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4431,8 +3715,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-20",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -4445,13 +3730,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4464,13 +3745,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4483,13 +3760,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4502,13 +3775,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4521,13 +3790,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-13",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-13",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4540,13 +3805,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-08",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4559,13 +3820,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-11",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-09",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4578,13 +3835,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4597,13 +3850,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4616,13 +3865,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-08",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-08",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4635,13 +3880,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4654,8 +3895,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-21",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "SAP IR"
     }
    ]
   },
@@ -4667,14 +3909,10 @@ window.LIVE = {
    "name": "Super Micro Computer, Inc.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-11",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4687,13 +3925,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-02",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4706,13 +3940,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4725,13 +3955,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4744,13 +3970,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4762,9 +3984,10 @@ window.LIVE = {
    "name": "TE Connectivity plc",
    "earnings": [
     {
-     "date": "2026-10-28",
+     "date": "2026-11-04",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -4777,13 +4000,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4796,13 +4015,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4815,8 +4030,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-15",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -4828,14 +4044,10 @@ window.LIVE = {
    "name": "TTM Technologies, Inc.",
    "earnings": [
     {
-     "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-05",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4848,13 +4060,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4866,14 +4074,10 @@ window.LIVE = {
    "name": "Unity Software Inc.",
    "earnings": [
     {
-     "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-06",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4886,13 +4090,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-19",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4905,13 +4105,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4924,13 +4120,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4943,13 +4135,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-20",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-23",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4962,13 +4150,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-01",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -4981,13 +4165,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-11",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-09",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5000,13 +4180,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5019,13 +4195,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5038,13 +4210,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-24",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5057,13 +4225,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-14",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-10-23",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5076,13 +4240,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-27",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5095,13 +4255,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-09-16",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5111,7 +4267,14 @@ window.LIVE = {
    "perf60": -17.76,
    "currency": "USD",
    "name": "Bitmine Immersion Technologies, Inc.",
-   "earnings": []
+   "earnings": [
+    {
+     "date": "2026-11-20",
+     "time": "AMC",
+     "estimated": true,
+     "source": "SEC EDGAR pattern"
+    }
+   ]
   },
   "CRCL": {
    "price": 62.36,
@@ -5122,13 +4285,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-11",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5141,13 +4300,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5160,13 +4315,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-10",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-10",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5179,13 +4330,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5198,13 +4345,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5217,13 +4360,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5236,13 +4375,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5255,13 +4390,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5274,13 +4405,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-11-03",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5293,13 +4420,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5311,9 +4434,10 @@ window.LIVE = {
    "name": "Packaging Corporation of America",
    "earnings": [
     {
-     "date": "2026-10-21",
+     "date": "2026-10-26",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "Investing.com"
     }
    ]
   },
@@ -5326,13 +4450,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5344,9 +4464,10 @@ window.LIVE = {
    "name": "RPM International Inc.",
    "earnings": [
     {
-     "date": "2026-09-30",
+     "date": "2026-10-07",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -5358,14 +4479,10 @@ window.LIVE = {
    "name": "The Sherwin-Williams Company",
    "earnings": [
     {
-     "date": "2026-07-21",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-28",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5378,13 +4495,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5397,8 +4510,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Dow IR"
     }
    ]
   },
@@ -5410,9 +4524,10 @@ window.LIVE = {
    "name": "Freeport-McMoRan Inc.",
    "earnings": [
     {
-     "date": "2026-10-22",
+     "date": "2026-10-15",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "Investing.com/TipRanks"
     }
    ]
   },
@@ -5425,13 +4540,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-18",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-11-17",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5444,13 +4555,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-20",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5463,13 +4570,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5482,8 +4585,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-22",
+     "time": "AMC",
      "estimated": true,
-     "time": null
+     "source": "CoinCodex"
     }
    ]
   },
@@ -5496,13 +4600,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5515,13 +4615,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-30",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5534,13 +4630,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5553,8 +4645,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-14",
+     "time": "BMO",
      "estimated": true,
-     "time": null
+     "source": "NextEarningsDate.com"
     }
    ]
   },
@@ -5567,13 +4660,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5585,14 +4674,10 @@ window.LIVE = {
    "name": "Simon Property Group, Inc.",
    "earnings": [
     {
-     "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-02",
-     "estimated": true,
-     "time": null
+     "date": "2026-08-10",
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5605,13 +4690,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-26",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5624,13 +4705,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-27",
-     "estimated": true,
-     "time": "AMC"
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5643,13 +4720,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-05",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5662,13 +4735,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5681,13 +4750,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-06",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-06",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5700,13 +4765,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-28",
-     "estimated": true,
-     "time": "BMO"
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5719,13 +4780,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-04",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-05",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5738,13 +4795,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5756,14 +4809,10 @@ window.LIVE = {
    "name": "NextEra Energy, Inc.",
    "earnings": [
     {
-     "date": "2026-07-22",
+     "date": "2026-10-23",
+     "time": "BMO",
      "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "source": "historical + aggregators"
     }
    ]
   },
@@ -5776,13 +4825,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-03",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-18",
-     "estimated": true,
-     "time": null
+     "time": "AMC",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5795,13 +4840,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-30",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5814,13 +4855,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-29",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5833,13 +4870,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-31",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-11-04",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5852,8 +4885,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-10",
-     "estimated": true,
-     "time": "BMO"
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5866,13 +4900,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-07-29",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-10-28",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5885,8 +4915,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-10-27",
-     "estimated": true,
-     "time": null
+     "time": "BMO",
+     "estimated": false,
+     "source": "Novartis IR"
     }
    ]
   },
@@ -5898,14 +4929,10 @@ window.LIVE = {
    "name": "CBRE Group, Inc.",
    "earnings": [
     {
-     "date": "2026-07-28",
-     "estimated": true,
-     "time": null
-    },
-    {
-     "date": "2026-10-22",
-     "estimated": true,
-     "time": null
+     "date": "2026-07-29",
+     "time": "BMO",
+     "estimated": false,
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5918,14 +4945,15 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-13",
+     "time": null,
      "estimated": false,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
   "NXPX": {
    "price": 15.77,
-   "perf30": -18.26,
+   "perf30": -18.25,
    "perf60": -37.3,
    "currency": "USD",
    "name": "Tradr 2X Long NXPI Daily ETF",
@@ -5940,13 +4968,9 @@ window.LIVE = {
    "earnings": [
     {
      "date": "2026-08-26",
+     "time": null,
      "estimated": false,
-     "time": null
-    },
-    {
-     "date": "2026-12-01",
-     "estimated": true,
-     "time": null
+     "source": "Nasdaq"
     }
    ]
   },
@@ -5956,7 +4980,14 @@ window.LIVE = {
    "perf60": -13.4,
    "currency": "USD",
    "name": "Quantinuum Inc.",
-   "earnings": []
+   "earnings": [
+    {
+     "date": "2026-09-02",
+     "time": "AMC",
+     "estimated": true,
+     "source": "CoinCodex"
+    }
+   ]
   }
  }
 };

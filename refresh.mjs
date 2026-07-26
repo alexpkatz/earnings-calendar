@@ -90,160 +90,103 @@ async function getPricePerf(t) {
   };
 }
 
-// ---- earnings dates ---------------------------------------------------------
-// Primary: Nasdaq earnings-date API (gives date, BMO/AMC, and estimated flag).
-// Fallback: Yahoo quoteSummary calendarEvents.
-async function getEarningsNasdaq(t) {
-  // Nasdaq uses dots for share classes (BRK.B) — but its API wants no dots either; try as-is then dashless
-  const url = `https://api.nasdaq.com/api/analyst/${encodeURIComponent(t)}/earnings-date`;
-  const j = await fetchJSON(url, 2);
-  const txt = j?.data?.reportText || "";
-  const m = txt.match(/on\s+(\d{2})\/(\d{2})\/(\d{4})/);
-  if (!m) return null;
-  const dateMs = Date.UTC(+m[3], +m[1] - 1, +m[2], 12);
-  const time = /before market open/i.test(txt) ? "BMO"
-             : /after market close/i.test(txt) ? "AMC" : null;
-  const estimated = /expected\*/.test(txt);
-  return { dateMs, time, estimated };
-}
-
-// Yahoo quoteSummary needs a cookie + crumb pair; fetch once and cache.
-let yahooAuth = null;
-async function getYahooAuth() {
-  if (yahooAuth !== null) return yahooAuth;
-  try {
-    const r1 = await fetch("https://fc.yahoo.com/", { headers: HEADERS, redirect: "manual", signal: AbortSignal.timeout(12000) });
-    const cookie = (r1.headers.get("set-cookie") || "").split(";")[0];
-    const r2 = await fetch("https://query2.finance.yahoo.com/v1/test/getcrumb", {
-      headers: { ...HEADERS, Cookie: cookie }, signal: AbortSignal.timeout(12000),
-    });
-    const crumb = (await r2.text()).trim();
-    yahooAuth = crumb && !crumb.includes("<") ? { cookie, crumb } : false;
-  } catch { yahooAuth = false; }
-  return yahooAuth;
-}
-
-async function getEarningsYahoo(t) {
-  const auth = await getYahooAuth();
-  if (!auth) return null;
-  const sym = encodeURIComponent(ysym(t));
-  const urls = [
-    `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${sym}?modules=calendarEvents&crumb=${encodeURIComponent(auth.crumb)}`,
-    `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${sym}?modules=calendarEvents&crumb=${encodeURIComponent(auth.crumb)}`,
-  ];
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, { headers: { ...HEADERS, Cookie: auth.cookie }, signal: AbortSignal.timeout(12000) });
-      if (!res.ok) continue;
-      const j = await res.json();
-      const cal = j?.quoteSummary?.result?.[0]?.calendarEvents?.earnings;
-      const raw = (cal?.earningsDate || []).map(d => d?.raw).filter(Boolean);
-      if (!raw.length) continue;
-      const dateMs = raw[0] * 1000;
-      const isEst = cal?.isEarningsDateEstimate?.raw ?? cal?.isEarningsDateEstimate ?? false;
-      return { dateMs, time: timeOfDay(dateMs), estimated: !!isEst };
-    } catch { /* try next */ }
-  }
-  return null;
-}
-
-// Historical report dates (Nasdaq earnings-surprise) — used for seasonal projection.
-async function getEarningsHistory(t) {
-  const url = `https://api.nasdaq.com/api/company/${encodeURIComponent(t)}/earnings-surprise`;
-  const j = await fetchJSON(url, 2);
-  const rows = j?.data?.earningsSurpriseTable?.rows || [];
-  const dates = [];
-  for (const r of rows) {
-    const m = String(r?.dateReported || "").match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-    if (m) dates.push(Date.UTC(+m[3], +m[1] - 1, +m[2], 12));
-  }
-  return dates.sort((a, b) => a - b);
-}
-
-async function getEarnings(t) {
-  let next = null;
-  try { next = await getEarningsNasdaq(t); } catch { /* fall through */ }
-  if (!next) { try { next = await getEarningsYahoo(t); } catch { /* none */ } }
-  let history = [];
-  try { history = await getEarningsHistory(t); } catch { /* none */ }
-  return { next, history };
-}
-
-const DAY = 86400e3, YEAR = 364 * DAY;  // 52 weeks keeps the same weekday
-// nudge weekends onto the adjacent weekday (earnings almost never land on Sat/Sun)
-function snapWeekday(ms) {
-  const d = new Date(ms), dow = d.getUTCDay();
-  if (dow === 6) d.setUTCDate(d.getUTCDate() + 2);
-  else if (dow === 0) d.setUTCDate(d.getUTCDate() + 1);
-  return d.getTime();
-}
-
-// ---- project report dates through end of 2026, seasonally --------------------
-// Companies report on a stable seasonal cadence, so we predict each 2026 date as
-// the matching quarter's date one year earlier + 52 weeks. Any confirmed/expected
-// date from Nasdaq/Yahoo overrides a nearby prediction.
-function projectQuarters(info, endMs, nowMs) {
-  const { next, history } = info;
-  const cand = [];
-  // seasonal predictions from each historical report date
-  for (const h of history) cand.push({ dateMs: snapWeekday(h + YEAR), estimated: true, time: null });
-  // a real confirmed/expected date, if we have one
-  if (next) cand.push({ dateMs: next.dateMs, estimated: !!next.estimated, time: next.time });
-
-  // if no history at all, fall back to stepping the confirmed date forward ~91d
-  if (!history.length) {
-    if (!next) return [];
-    const out = [{ date: isoDay(next.dateMs), estimated: !!next.estimated, time: next.time }];
-    let cur = next.dateMs;
-    while ((cur += 91 * DAY) <= endMs) out.push({ date: isoDay(snapWeekday(cur)), estimated: true, time: null });
-    return out;
-  }
-
-  // keep upcoming-through-end-of-window, earliest first
-  const keep = cand
-    .filter(r => r.dateMs >= nowMs - 10 * DAY && r.dateMs <= endMs)
-    .sort((a, b) => a.dateMs - b.dateMs);
-
-  // merge near-duplicates (within 20 days), preferring a confirmed date over an estimate
-  const merged = [];
-  for (const r of keep) {
-    const last = merged[merged.length - 1];
-    if (last && Math.abs(r.dateMs - last.dateMs) < 20 * DAY) {
-      if (!r.estimated && last.estimated) merged[merged.length - 1] = r;
-    } else merged.push(r);
-  }
-  return merged.map(r => ({ date: isoDay(r.dateMs), estimated: r.estimated, time: r.time }));
-}
-
+// ---- earnings dates (Nasdaq calendar + researched overrides) ----------------
 const isoDay = ms => new Date(ms).toISOString().slice(0, 10);
-function timeOfDay(ms) {
-  // Yahoo earnings timestamps encode announce time; before 10:00 ET ≈ BMO, after 15:30 ≈ AMC
-  const d = new Date(ms);
-  const utcH = d.getUTCHours();
-  if (utcH <= 13) return "BMO";       // before market open (≤ 9:00 ET)
-  if (utcH >= 19) return "AMC";       // after market close (≥ 15:00 ET)
+
+function calTime(t) {                       // Nasdaq calendar 'time' -> BMO/AMC
+  if (t === "time-pre-market") return "BMO";
+  if (t === "time-after-hours") return "AMC";
   return null;
+}
+const normSym = s => (s || "").replace("/", ".").toUpperCase();
+
+// Scan Nasdaq's published earnings calendar day-by-day across the window.
+// Returns { TICKER: [ {date, time, estimated:false, source:"Nasdaq"} ] } — real,
+// confirmed dates only; nothing is fabricated.
+async function fetchNasdaqCalendar(universe, startMs, endMs) {
+  const days = [];
+  for (let ms = startMs; ms <= endMs; ms += 86400e3) {
+    const dow = new Date(ms).getUTCDay();
+    if (dow !== 0 && dow !== 6) days.push(isoDay(ms));
+  }
+  const out = {};
+  let idx = 0, done = 0;
+  async function worker() {
+    while (idx < days.length) {
+      const day = days[idx++];
+      try {
+        const j = await fetchJSON(`https://api.nasdaq.com/api/calendar/earnings?date=${day}`, 2);
+        for (const r of (j?.data?.rows || [])) {
+          const sym = normSym(r.symbol);
+          if (universe.has(sym))
+            (out[sym] = out[sym] || []).push({ date: day, time: calTime(r.time), estimated: false, source: "Nasdaq" });
+        }
+      } catch { /* skip day */ }
+      if (++done % 20 === 0) process.stdout.write(`  ...scanned ${done}/${days.length} calendar days\n`);
+      await sleep(120);
+    }
+  }
+  await Promise.all(Array.from({ length: 5 }, worker));   // concurrency 5
+  return out;
+}
+
+// Researched dates for names Nasdaq hasn't scheduled yet (data/earnings-research.js).
+// Shape: window.EARNINGS_RESEARCH = { TICKER: {date,time,estimated,source} | [ ... ] }
+function loadResearch() {
+  const p = join(DATA_DIR, "earnings-research.js");
+  if (!existsSync(p)) return {};
+  try {
+    const w = {};
+    new Function("window", readFileSync(p, "utf8"))(w);
+    return w.EARNINGS_RESEARCH || {};
+  } catch { return {}; }
+}
+
+// Merge Nasdaq calendar hits with researched overrides for one ticker.
+function buildEarnings(t, calendar, research, endMs) {
+  const list = (calendar[t] || []).slice();
+  const rr = research[t];
+  if (rr) {
+    const arr = Array.isArray(rr) ? rr : [rr];
+    for (const e of arr) {
+      if (!e || !e.date) continue;
+      const dms = Date.parse(e.date + "T12:00:00Z");
+      if (isNaN(dms) || dms > endMs) continue;
+      if (list.some(x => Math.abs(Date.parse(x.date + "T12:00:00Z") - dms) < 6 * 86400e3)) continue;
+      list.push({ date: e.date, time: e.time || null,
+                  estimated: e.estimated !== false, source: e.source || "research" });
+    }
+  }
+  return list.sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // ---- main -------------------------------------------------------------------
+const START = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
 const END_2026 = Date.UTC(2026, 11, 31, 23, 59, 59);
 const out = {};
 const failures = [];
 let done = 0;
 
-console.log(`Refreshing ${tickers.length} tickers...`);
+// One pass over Nasdaq's published calendar (real confirmed dates), plus any
+// web-researched dates for names Nasdaq hasn't scheduled yet.
+const universe = new Set(tickers.map(normSym));
+console.log(`Scanning Nasdaq earnings calendar ${isoDay(START)} → ${isoDay(END_2026)}...`);
+const calendar = await fetchNasdaqCalendar(universe, START, END_2026);
+const research = loadResearch();
+console.log(`Calendar: ${Object.keys(calendar).length} tickers with confirmed dates; ` +
+            `${Object.keys(research).length} researched overrides available.\n`);
+
+console.log(`Refreshing ${tickers.length} tickers (prices + earnings)...`);
 for (const t of tickers) {
   process.stdout.write(`  [${++done}/${tickers.length}] ${t.padEnd(6)} `);
   const rec = {};
   try {
     const pp = await getPricePerf(t);
     Object.assign(rec, pp);
-    await sleep(150);
-    const e = await getEarnings(t);
-    rec.earnings = projectQuarters(e, END_2026, Date.now());
+    rec.earnings = buildEarnings(normSym(t), calendar, research, END_2026);
     out[t] = rec;
     const nd = rec.earnings[0];
-    console.log(`$${rec.price}  30d ${fmtPct(rec.perf30)}  60d ${fmtPct(rec.perf60)}  next: ${nd ? nd.date + (nd.estimated ? " (est)" : "") : "—"}`);
+    console.log(`$${rec.price}  next: ${nd ? nd.date + (nd.estimated ? " (est·" + nd.source + ")" : " (" + nd.source + ")") : "not scheduled"}`);
   } catch (err) {
     failures.push(t);
     console.log(`FAILED (${err.message})`);

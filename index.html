@@ -386,9 +386,11 @@ function openStock(t) {
       <div class="flex flex-wrap gap-2">${
         earnings.length ? earnings.map(e => {
           const d = new Date(e.date+"T12:00:00");
-          return `<span class="rounded-lg px-2.5 py-1.5 text-sm font-medium ${e.estimated?"border border-dashed border-blue-400 text-blue-700 bg-blue-50/50":"bg-blue-600 text-white"}">${d.toLocaleDateString("en-US",{month:"short",day:"numeric"})}${e.time?" · "+e.time:""}${e.estimated?" · est":""}</span>`;
-        }).join("") : `<span class="text-sm text-slate-400">No date available yet — re-run refresh closer to earnings season.</span>`
+          const src = e.source ? (e.estimated ? "Est. · " + e.source : e.source) : (e.estimated ? "Estimated" : "");
+          return `<span title="${src}" class="rounded-lg px-2.5 py-1.5 text-sm font-medium ${e.estimated?"border border-dashed border-blue-400 text-blue-700 bg-blue-50/50":"bg-blue-600 text-white"}">${d.toLocaleDateString("en-US",{month:"short",day:"numeric"})}${e.time?" · "+e.time:""}${e.estimated?" · est":""}</span>`;
+        }).join("") : `<span class="text-sm text-slate-400">Not yet scheduled — no source has published this company's next date. It appears automatically once announced.</span>`
       }</div>
+      ${earnings.length && earnings[0].source ? `<div class="text-[11px] text-slate-400 mt-1.5">Source: ${earnings.map(e=>e.source).filter((v,i,a)=>a.indexOf(v)===i).join(", ")}${earnings.some(e=>e.estimated)?" · dashed = analyst-estimated (not yet company-confirmed)":""}</div>` : ""}
     </div>
     <div class="mt-4">
       <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Model membership <span class="normal-case font-normal">(click to toggle — corrections saved on this computer)</span></div>

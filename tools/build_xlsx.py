@@ -89,7 +89,7 @@ model_labels = {m["key"]: m["label"] for m in MODELS}
 
 headers = (
     ["Ticker", "Company", "Sector", "Price", "30D %", "60D %",
-     "Next Earnings", "Status", "All 2026 Dates",
+     "Next Earnings", "Status", "Source", "All 2026 Dates",
      "WFS Rating", "WFS Tgt", "WFS Upside",
      "ISI Rating", "ISI Tgt", "ISI Upside",
      "M*", "M* Tgt"]
@@ -124,6 +124,7 @@ for s in rows:
         (l.get("perf60") / 100 if l.get("perf60") is not None else None),
         (dt.date.fromisoformat(ne["date"]) if ne else None),
         ("Estimated" if ne and ne.get("estimated") else ("Confirmed" if ne else "TBD")),
+        (ne.get("source", "") if ne else ""),
         fmt_dates(es),
         wfs_l, wfs_t, upside(wfs_t),
         isi_l, isi_t, upside(isi_t),
@@ -170,7 +171,7 @@ for rr in range(2, r):
     ws.cell(rr, col["Verify?"]).alignment = Alignment(horizontal="center")
 
 widths = {"Ticker": 9, "Company": 24, "Sector": 22, "Price": 11, "30D %": 8, "60D %": 8,
-          "Next Earnings": 15, "Status": 11, "All 2026 Dates": 30,
+          "Next Earnings": 15, "Status": 11, "Source": 14, "All 2026 Dates": 30,
           "WFS Rating": 13, "WFS Tgt": 9, "WFS Upside": 10,
           "ISI Rating": 12, "ISI Tgt": 9, "ISI Upside": 10, "M*": 7, "M* Tgt": 9, "Verify?": 8}
 for h in headers:
@@ -192,16 +193,17 @@ for s in rows:
     for e in (live_of(s["t"]).get("earnings") or []):
         d = dt.date.fromisoformat(e["date"])
         sched.append((d, s["t"], s.get("name", ""), s["sector"],
-                      e.get("time") or "", "Estimated" if e.get("estimated") else "Confirmed"))
+                      e.get("time") or "", "Estimated" if e.get("estimated") else "Confirmed",
+                      e.get("source", "")))
 sched.sort(key=lambda x: (x[0], x[1]))
 
-sh_headers = ["Date", "Weekday", "Ticker", "Company", "Sector", "Time", "Status"]
+sh_headers = ["Date", "Weekday", "Ticker", "Company", "Sector", "Time", "Status", "Source"]
 for j, h in enumerate(sh_headers, 1):
     hdr_cell(ws2.cell(1, j), h)
 rr = 2
-for d, t, name, sec, time, status in sched:
+for d, t, name, sec, time, status, source in sched:
     time_txt = {"BMO": "Before open", "AMC": "After close"}.get(time, "")
-    vals = [d, d.strftime("%A"), t, name, sec, time_txt, status]
+    vals = [d, d.strftime("%A"), t, name, sec, time_txt, status, source]
     for j, v in enumerate(vals, 1):
         c = ws2.cell(rr, j, value=v)
         c.font = base_font(size=10, bold=(j == 3))
@@ -214,18 +216,18 @@ for d, t, name, sec, time, status in sched:
                          bold=(status == "Confirmed"),
                          color=(GREY if status == "Estimated" else GREEN))
     rr += 1
-for j, w in enumerate([14, 12, 9, 24, 22, 13, 11], 1):
+for j, w in enumerate([14, 12, 9, 24, 22, 13, 11, 14], 1):
     ws2.column_dimensions[get_column_letter(j)].width = w
 ws2.row_dimensions[1].height = 24
 ws2.freeze_panes = "A2"
-ws2.auto_filter.ref = f"A1:G{rr-1}"
+ws2.auto_filter.ref = f"A1:H{rr-1}"
 
 # ============================================================
 # Sheet 3 — Calendar (month grids Jul-Dec 2026)
 # ============================================================
 ws3 = wb.create_sheet("Calendar")
 by_day = {}
-for d, t, name, sec, time, status in sched:
+for d, t, name, sec, time, status, source in sched:
     by_day.setdefault(d, []).append((t, status))
 
 DAYW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
