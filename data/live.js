@@ -1,10 +1,10 @@
 window.LIVE = {
- "refreshedAt": "2026-07-27T21:48:21.725Z",
+ "refreshedAt": "2026-07-28T16:28:47.188Z",
  "data": {
   "DIS": {
-   "price": 96.65,
-   "perf30": -2.17,
-   "perf60": -6.83,
+   "price": 98.75,
+   "perf30": 0.12,
+   "perf60": -3.02,
    "currency": "USD",
    "name": "The Walt Disney Company",
    "earnings": [
@@ -17,9 +17,9 @@ window.LIVE = {
    ]
   },
   "GOOGL": {
-   "price": 326.56,
-   "perf30": -3.21,
-   "perf60": -16.29,
+   "price": 333.86,
+   "perf30": -5.59,
+   "perf60": -12.22,
    "currency": "USD",
    "name": "Alphabet Inc.",
    "earnings": [
@@ -32,9 +32,9 @@ window.LIVE = {
    ]
   },
   "META": {
-   "price": 593.87,
-   "perf30": 7.93,
-   "perf60": -6.52,
+   "price": 596.92,
+   "perf30": 6.1,
+   "perf60": -5.63,
    "currency": "USD",
    "name": "Meta Platforms, Inc.",
    "earnings": [
@@ -47,9 +47,9 @@ window.LIVE = {
    ]
   },
   "NFLX": {
-   "price": 70.4,
-   "perf30": -4.62,
-   "perf60": -18.48,
+   "price": 73.21,
+   "perf30": -0.78,
+   "perf60": -14.9,
    "currency": "USD",
    "name": "Netflix, Inc.",
    "earnings": [
@@ -62,9 +62,9 @@ window.LIVE = {
    ]
   },
   "OMC": {
-   "price": 82.41,
-   "perf30": 12.75,
-   "perf60": 11.23,
+   "price": 86.47,
+   "perf30": 16.96,
+   "perf60": 18.92,
    "currency": "USD",
    "name": "Omnicom Group Inc.",
    "earnings": [
@@ -77,9 +77,9 @@ window.LIVE = {
    ]
   },
   "TKO": {
-   "price": 182.86,
-   "perf30": -15.3,
-   "perf60": -8.82,
+   "price": 186.34,
+   "perf30": -11.95,
+   "perf60": -9.18,
    "currency": "USD",
    "name": "TKO Group Holdings, Inc.",
    "earnings": [
@@ -92,9 +92,9 @@ window.LIVE = {
    ]
   },
   "TMUS": {
-   "price": 177.21,
-   "perf30": -2.99,
-   "perf60": -6.24,
+   "price": 184.25,
+   "perf30": 5.91,
+   "perf60": -1.75,
    "currency": "USD",
    "name": "T-Mobile US, Inc.",
    "earnings": [
@@ -107,9 +107,9 @@ window.LIVE = {
    ]
   },
   "VZ": {
-   "price": 47.32,
-   "perf30": 1.68,
-   "perf60": -1.44,
+   "price": 48.22,
+   "perf30": 9.33,
+   "perf60": 0.85,
    "currency": "USD",
    "name": "Verizon Communications Inc.",
    "earnings": [
@@ -122,9 +122,9 @@ window.LIVE = {
    ]
   },
   "MTCH": {
-   "price": 38.8,
-   "perf30": 4.39,
-   "perf60": 6.71,
+   "price": 39.42,
+   "perf30": 1.78,
+   "perf60": 9.11,
    "currency": "USD",
    "name": "Match Group, Inc.",
    "earnings": [
@@ -137,9 +137,9 @@ window.LIVE = {
    ]
   },
   "SPOT": {
-   "price": 494.72,
-   "perf30": 7.54,
-   "perf60": -4.26,
+   "price": 509.71,
+   "perf30": 10.26,
+   "perf60": 2.42,
    "currency": "USD",
    "name": "Spotify Technology S.A.",
    "earnings": [
@@ -152,9 +152,9 @@ window.LIVE = {
    ]
   },
   "ABNB": {
-   "price": 146.86,
-   "perf30": 0.89,
-   "perf60": 9.19,
+   "price": 151.2,
+   "perf30": 2.73,
+   "perf60": 13.42,
    "currency": "USD",
    "name": "Airbnb, Inc.",
    "earnings": [
@@ -167,9 +167,9 @@ window.LIVE = {
    ]
   },
   "AMZN": {
-   "price": 231.39,
-   "perf30": -0.56,
-   "perf60": -15.55,
+   "price": 231.56,
+   "perf30": -3.57,
+   "perf60": -14.44,
    "currency": "USD",
    "name": "Amazon.com, Inc.",
    "earnings": [
@@ -182,9 +182,9 @@ window.LIVE = {
    ]
   },
   "AZO": {
-   "price": 3075.26,
-   "perf30": -1.71,
-   "perf60": 2.27,
+   "price": 3116.48,
+   "perf30": -1.18,
+   "perf60": 6.18,
    "currency": "USD",
    "name": "AutoZone, Inc.",
    "earnings": [
@@ -197,24 +197,24 @@ window.LIVE = {
    ]
   },
   "BBY": {
-   "price": 88.45,
-   "perf30": 13.82,
-   "perf60": 18.34,
+   "price": 90.26,
+   "perf30": 16.25,
+   "perf60": 15.79,
    "currency": "USD",
    "name": "Best Buy Co., Inc.",
    "earnings": [
     {
      "date": "2026-08-27",
-     "time": null,
+     "time": "BMO",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "BKNG": {
-   "price": 186.79,
-   "perf30": 2.94,
-   "perf60": 9.99,
+   "price": 197.18,
+   "perf30": 8.1,
+   "perf60": 17.77,
    "currency": "USD",
    "name": "Booking Holdings Inc.",
    "earnings": [
@@ -227,9 +227,9 @@ window.LIVE = {
    ]
   },
   "BURL": {
-   "price": 358.01,
-   "perf30": 11.61,
-   "perf60": 19.13,
+   "price": 372.78,
+   "perf30": 18.61,
+   "perf60": 15.12,
    "currency": "USD",
    "name": "Burlington Stores, Inc.",
    "earnings": [
@@ -242,9 +242,9 @@ window.LIVE = {
    ]
   },
   "CMG": {
-   "price": 33.2,
-   "perf30": -0.42,
-   "perf60": 2.41,
+   "price": 33.22,
+   "perf30": 0.76,
+   "perf60": 4.27,
    "currency": "USD",
    "name": "Chipotle Mexican Grill, Inc.",
    "earnings": [
@@ -257,9 +257,9 @@ window.LIVE = {
    ]
   },
   "DHI": {
-   "price": 147.65,
-   "perf30": -11.21,
-   "perf60": 0.5,
+   "price": 151.55,
+   "perf30": -7.72,
+   "perf60": 3.04,
    "currency": "USD",
    "name": "D.R. Horton, Inc.",
    "earnings": [
@@ -272,9 +272,9 @@ window.LIVE = {
    ]
   },
   "DKS": {
-   "price": 205.6,
-   "perf30": -14.04,
-   "perf60": -9.15,
+   "price": 207.86,
+   "perf30": -10.54,
+   "perf60": -8.66,
    "currency": "USD",
    "name": "DICK'S Sporting Goods, Inc.",
    "earnings": [
@@ -287,9 +287,9 @@ window.LIVE = {
    ]
   },
   "GM": {
-   "price": 87.04,
-   "perf30": 11.45,
-   "perf60": 3.19,
+   "price": 90.63,
+   "perf30": 17.18,
+   "perf60": 8.87,
    "currency": "USD",
    "name": "General Motors Company",
    "earnings": [
@@ -302,9 +302,9 @@ window.LIVE = {
    ]
   },
   "GPC": {
-   "price": 127.7,
-   "perf30": 10.07,
-   "perf60": 28.65,
+   "price": 130.01,
+   "perf30": 10.95,
+   "perf60": 31.72,
    "currency": "USD",
    "name": "Genuine Parts Company",
    "earnings": [
@@ -317,9 +317,9 @@ window.LIVE = {
    ]
   },
   "HD": {
-   "price": 336.09,
-   "perf30": -3.66,
-   "perf60": 4.63,
+   "price": 345.51,
+   "perf30": -1.51,
+   "perf60": 8.94,
    "currency": "USD",
    "name": "The Home Depot, Inc.",
    "earnings": [
@@ -332,9 +332,9 @@ window.LIVE = {
    ]
   },
   "LOW": {
-   "price": 211.55,
-   "perf30": -4.91,
-   "perf60": -2.92,
+   "price": 217.57,
+   "perf30": -0.95,
+   "perf60": 1.5,
    "currency": "USD",
    "name": "Lowe's Companies, Inc.",
    "earnings": [
@@ -347,9 +347,9 @@ window.LIVE = {
    ]
   },
   "MCD": {
-   "price": 270.67,
-   "perf30": 0.34,
-   "perf60": -2.63,
+   "price": 273.62,
+   "perf30": 2.41,
+   "perf60": -2,
    "currency": "USD",
    "name": "McDonald's Corporation",
    "earnings": [
@@ -362,9 +362,9 @@ window.LIVE = {
    ]
   },
   "ORLY": {
-   "price": 90.59,
-   "perf30": 1.16,
-   "perf60": 1.52,
+   "price": 92.14,
+   "perf30": 2.2,
+   "perf60": 6.05,
    "currency": "USD",
    "name": "O'Reilly Automotive, Inc.",
    "earnings": [
@@ -377,9 +377,9 @@ window.LIVE = {
    ]
   },
   "ROST": {
-   "price": 243.35,
-   "perf30": 14.11,
-   "perf60": 7.11,
+   "price": 251.81,
+   "perf30": 20.58,
+   "perf60": 8.67,
    "currency": "USD",
    "name": "Ross Stores, Inc.",
    "earnings": [
@@ -392,9 +392,9 @@ window.LIVE = {
    ]
   },
   "SBUX": {
-   "price": 103.65,
-   "perf30": -0.91,
-   "perf60": 2.88,
+   "price": 103.25,
+   "perf30": -0.78,
+   "perf60": 4.12,
    "currency": "USD",
    "name": "Starbucks Corporation",
    "earnings": [
@@ -407,9 +407,9 @@ window.LIVE = {
    ]
   },
   "TJX": {
-   "price": 156.38,
-   "perf30": 0.61,
-   "perf60": 0.96,
+   "price": 159.86,
+   "perf30": 5.71,
+   "perf60": 3.3,
    "currency": "USD",
    "name": "The TJX Companies, Inc.",
    "earnings": [
@@ -422,9 +422,9 @@ window.LIVE = {
    ]
   },
   "TSCO": {
-   "price": 31.8,
-   "perf30": 1.89,
-   "perf60": 1.37,
+   "price": 31.82,
+   "perf30": 1.99,
+   "perf60": 0.92,
    "currency": "USD",
    "name": "Tractor Supply Company",
    "earnings": [
@@ -437,9 +437,9 @@ window.LIVE = {
    ]
   },
   "TSLA": {
-   "price": 309.22,
-   "perf30": -18.56,
-   "perf60": -30.06,
+   "price": 306.42,
+   "perf30": -25.6,
+   "perf60": -29.69,
    "currency": "USD",
    "name": "Tesla, Inc.",
    "earnings": [
@@ -452,9 +452,9 @@ window.LIVE = {
    ]
   },
   "ULTA": {
-   "price": 480.51,
-   "perf30": -1.63,
-   "perf60": -7.62,
+   "price": 501.17,
+   "perf30": 9.16,
+   "perf60": -1.51,
    "currency": "USD",
    "name": "Ulta Beauty, Inc.",
    "earnings": [
@@ -467,9 +467,9 @@ window.LIVE = {
    ]
   },
   "NKE": {
-   "price": 42.14,
-   "perf30": 3.41,
-   "perf60": -11.04,
+   "price": 43.03,
+   "perf30": 3.72,
+   "perf60": -6.93,
    "currency": "USD",
    "name": "NIKE, Inc.",
    "earnings": [
@@ -482,9 +482,9 @@ window.LIVE = {
    ]
   },
   "UBER": {
-   "price": 68.18,
-   "perf30": -10.52,
-   "perf60": -3.86,
+   "price": 69.38,
+   "perf30": -8.11,
+   "perf60": -1.45,
    "currency": "USD",
    "name": "Uber Technologies, Inc.",
    "earnings": [
@@ -497,9 +497,9 @@ window.LIVE = {
    ]
   },
   "POOL": {
-   "price": 184.61,
-   "perf30": -12.76,
-   "perf60": -0.05,
+   "price": 189.58,
+   "perf30": -10.41,
+   "perf60": 4.51,
    "currency": "USD",
    "name": "Pool Corporation",
    "earnings": [
@@ -512,9 +512,9 @@ window.LIVE = {
    ]
   },
   "DLTR": {
-   "price": 125.54,
-   "perf30": 1.35,
-   "perf60": 11.1,
+   "price": 127.68,
+   "perf30": 4.12,
+   "perf60": 9.65,
    "currency": "USD",
    "name": "Dollar Tree, Inc.",
    "earnings": [
@@ -527,9 +527,9 @@ window.LIVE = {
    ]
   },
   "LII": {
-   "price": 547.35,
-   "perf30": -2.93,
-   "perf60": 10.13,
+   "price": 549.95,
+   "perf30": -3.32,
+   "perf60": 9.52,
    "currency": "USD",
    "name": "Lennox International Inc.",
    "earnings": [
@@ -542,9 +542,9 @@ window.LIVE = {
    ]
   },
   "CHD": {
-   "price": 98.7,
-   "perf30": -0.88,
-   "perf60": 1.1,
+   "price": 100.82,
+   "perf30": 2.99,
+   "perf60": 5.43,
    "currency": "USD",
    "name": "Church & Dwight Co., Inc.",
    "earnings": [
@@ -557,9 +557,9 @@ window.LIVE = {
    ]
   },
   "CL": {
-   "price": 91.98,
-   "perf30": -0.1,
-   "perf60": 0.35,
+   "price": 93.88,
+   "perf30": 1.6,
+   "perf60": 4.16,
    "currency": "USD",
    "name": "Colgate-Palmolive Company",
    "earnings": [
@@ -572,9 +572,9 @@ window.LIVE = {
    ]
   },
   "COST": {
-   "price": 951.58,
-   "perf30": -0.1,
-   "perf60": -4.38,
+   "price": 973.05,
+   "perf30": 2.79,
+   "perf60": 1.75,
    "currency": "USD",
    "name": "Costco Wholesale Corporation",
    "earnings": [
@@ -587,9 +587,9 @@ window.LIVE = {
    ]
   },
   "DG": {
-   "price": 123.22,
-   "perf30": 3.1,
-   "perf60": 12.12,
+   "price": 126.73,
+   "perf30": 7.84,
+   "perf60": 14.57,
    "currency": "USD",
    "name": "Dollar General Corporation",
    "earnings": [
@@ -602,9 +602,9 @@ window.LIVE = {
    ]
   },
   "KO": {
-   "price": 84.07,
-   "perf30": 1.74,
-   "perf60": 4.55,
+   "price": 88.29,
+   "perf30": 6.82,
+   "perf60": 11.75,
    "currency": "USD",
    "name": "The Coca-Cola Company",
    "earnings": [
@@ -617,9 +617,9 @@ window.LIVE = {
    ]
   },
   "KR": {
-   "price": 57.98,
-   "perf30": 0.43,
-   "perf60": -8.92,
+   "price": 59.78,
+   "perf30": 6.93,
+   "perf60": -3.81,
    "currency": "USD",
    "name": "The Kroger Co.",
    "earnings": [
@@ -632,9 +632,9 @@ window.LIVE = {
    ]
   },
   "MDLZ": {
-   "price": 60.67,
-   "perf30": -0.2,
-   "perf60": -2.76,
+   "price": 62.33,
+   "perf30": 3.62,
+   "perf60": 1.9,
    "currency": "USD",
    "name": "Mondelez International, Inc.",
    "earnings": [
@@ -647,9 +647,9 @@ window.LIVE = {
    ]
   },
   "MKC": {
-   "price": 50.61,
-   "perf30": -0.86,
-   "perf60": 8.07,
+   "price": 51.42,
+   "perf30": -1.23,
+   "perf60": 8.55,
    "currency": "USD",
    "name": "McCormick & Company, Incorporated",
    "earnings": [
@@ -662,9 +662,9 @@ window.LIVE = {
    ]
   },
   "PEP": {
-   "price": 139.79,
-   "perf30": -1.13,
-   "perf60": -4.44,
+   "price": 142.14,
+   "perf30": 2.49,
+   "perf60": -1.42,
    "currency": "USD",
    "name": "PepsiCo, Inc.",
    "earnings": [
@@ -677,9 +677,9 @@ window.LIVE = {
    ]
   },
   "PG": {
-   "price": 148.63,
-   "perf30": -0.26,
-   "perf60": 1.86,
+   "price": 151.51,
+   "perf30": 2.06,
+   "perf60": 5.54,
    "currency": "USD",
    "name": "The Procter & Gamble Company",
    "earnings": [
@@ -692,9 +692,9 @@ window.LIVE = {
    ]
   },
   "SYY": {
-   "price": 84.09,
-   "perf30": 1.53,
-   "perf60": 10.76,
+   "price": 85.51,
+   "perf30": 2.53,
+   "perf60": 12.8,
    "currency": "USD",
    "name": "Sysco Corporation",
    "earnings": [
@@ -707,9 +707,9 @@ window.LIVE = {
    ]
   },
   "TGT": {
-   "price": 140.34,
-   "perf30": -0.04,
-   "perf60": 9.09,
+   "price": 144.35,
+   "perf30": 7.79,
+   "perf60": 13.6,
    "currency": "USD",
    "name": "Target Corporation",
    "earnings": [
@@ -722,9 +722,9 @@ window.LIVE = {
    ]
   },
   "WMT": {
-   "price": 111.74,
-   "perf30": -3.41,
-   "perf60": -6.02,
+   "price": 113.8,
+   "perf30": -0.7,
+   "perf60": -1.68,
    "currency": "USD",
    "name": "Walmart Inc.",
    "earnings": [
@@ -737,9 +737,9 @@ window.LIVE = {
    ]
   },
   "MNST": {
-   "price": 95.33,
-   "perf30": -1.09,
-   "perf60": 8.34,
+   "price": 98.19,
+   "perf30": 0.56,
+   "perf60": 11.48,
    "currency": "USD",
    "name": "Monster Beverage Corporation",
    "earnings": [
@@ -752,9 +752,9 @@ window.LIVE = {
    ]
   },
   "KHC": {
-   "price": 26.22,
-   "perf30": 10.63,
-   "perf60": 7.15,
+   "price": 27.08,
+   "perf30": 11.97,
+   "perf60": 12.81,
    "currency": "USD",
    "name": "The Kraft Heinz Company",
    "earnings": [
@@ -767,9 +767,9 @@ window.LIVE = {
    ]
   },
   "MO": {
-   "price": 72.89,
-   "perf30": -1.22,
-   "perf60": 1.28,
+   "price": 74.93,
+   "perf30": 1.19,
+   "perf60": 7.69,
    "currency": "USD",
    "name": "Altria Group, Inc.",
    "earnings": [
@@ -782,9 +782,9 @@ window.LIVE = {
    ]
   },
   "BKR": {
-   "price": 60.59,
-   "perf30": 7.13,
-   "perf60": -6.37,
+   "price": 58.12,
+   "perf30": 3.21,
+   "perf60": -9.02,
    "currency": "USD",
    "name": "Baker Hughes Company",
    "earnings": [
@@ -797,9 +797,9 @@ window.LIVE = {
    ]
   },
   "COP": {
-   "price": 115.58,
-   "perf30": 9.08,
-   "perf60": 0.51,
+   "price": 113.41,
+   "perf30": 8.84,
+   "perf60": -0.5,
    "currency": "USD",
    "name": "ConocoPhillips",
    "earnings": [
@@ -812,9 +812,9 @@ window.LIVE = {
    ]
   },
   "CVX": {
-   "price": 190,
-   "perf30": 11.07,
-   "perf60": 3.81,
+   "price": 186.92,
+   "perf30": 10.95,
+   "perf60": 2.44,
    "currency": "USD",
    "name": "Chevron Corporation",
    "earnings": [
@@ -827,9 +827,9 @@ window.LIVE = {
    ]
   },
   "EOG": {
-   "price": 140.31,
-   "perf30": 5.81,
-   "perf60": 4.26,
+   "price": 139.3,
+   "perf30": 5.59,
+   "perf60": 4.44,
    "currency": "USD",
    "name": "EOG Resources, Inc.",
    "earnings": [
@@ -842,9 +842,9 @@ window.LIVE = {
    ]
   },
   "HAL": {
-   "price": 32.13,
-   "perf30": -6.08,
-   "perf60": -18.31,
+   "price": 31.5,
+   "perf30": -7.6,
+   "perf60": -18.92,
    "currency": "USD",
    "name": "Halliburton Company",
    "earnings": [
@@ -857,9 +857,9 @@ window.LIVE = {
    ]
   },
   "KMI": {
-   "price": 31.75,
-   "perf30": -4.34,
-   "perf60": -0.5,
+   "price": 31.58,
+   "perf30": -2.15,
+   "perf60": 1.59,
    "currency": "USD",
    "name": "Kinder Morgan, Inc.",
    "earnings": [
@@ -872,9 +872,9 @@ window.LIVE = {
    ]
   },
   "SLB": {
-   "price": 51.53,
-   "perf30": 9.64,
-   "perf60": -6.51,
+   "price": 50.44,
+   "perf30": 8.75,
+   "perf60": -7.53,
    "currency": "USD",
    "name": "SLB N.V.",
    "earnings": [
@@ -887,9 +887,9 @@ window.LIVE = {
    ]
   },
   "WMB": {
-   "price": 70.79,
-   "perf30": -9.15,
-   "perf60": -3.2,
+   "price": 69.4,
+   "perf30": -7.54,
+   "perf60": -2.79,
    "currency": "USD",
    "name": "The Williams Companies, Inc.",
    "earnings": [
@@ -902,9 +902,9 @@ window.LIVE = {
    ]
   },
   "XOM": {
-   "price": 154.77,
-   "perf30": 13.35,
-   "perf60": 5.31,
+   "price": 152.06,
+   "perf30": 11.76,
+   "perf60": 4.68,
    "currency": "USD",
    "name": "ExxonMobil Holdings Corporation",
    "earnings": [
@@ -917,9 +917,9 @@ window.LIVE = {
    ]
   },
   "EPD": {
-   "price": 38.12,
-   "perf30": 4.24,
-   "perf60": 1.65,
+   "price": 38.49,
+   "perf30": 5.01,
+   "perf60": 4.63,
    "currency": "USD",
    "name": "Enterprise Products Partners L.P.",
    "earnings": [
@@ -932,9 +932,9 @@ window.LIVE = {
    ]
   },
   "ET": {
-   "price": 19.91,
-   "perf30": 3.86,
-   "perf60": 2.52,
+   "price": 19.95,
+   "perf30": 4.7,
+   "perf60": 4.09,
    "currency": "USD",
    "name": "Energy Transfer LP",
    "earnings": [
@@ -947,9 +947,9 @@ window.LIVE = {
    ]
   },
   "FANG": {
-   "price": 195.8,
-   "perf30": 8.83,
-   "perf60": 0.86,
+   "price": 190.57,
+   "perf30": 5.56,
+   "perf60": -0.47,
    "currency": "USD",
    "name": "Diamondback Energy, Inc.",
    "earnings": [
@@ -962,9 +962,9 @@ window.LIVE = {
    ]
   },
   "PSX": {
-   "price": 207.82,
-   "perf30": 21.07,
-   "perf60": 17.61,
+   "price": 205.33,
+   "perf30": 17.97,
+   "perf60": 16.74,
    "currency": "USD",
    "name": "Phillips 66",
    "earnings": [
@@ -977,9 +977,9 @@ window.LIVE = {
    ]
   },
   "VNOM": {
-   "price": 43.04,
-   "perf30": 1.1,
-   "perf60": -4.36,
+   "price": 42.11,
+   "perf30": -0.71,
+   "perf60": -7.45,
    "currency": "USD",
    "name": "Viper Energy, Inc.",
    "earnings": [
@@ -992,9 +992,9 @@ window.LIVE = {
    ]
   },
   "CRDO": {
-   "price": 208.14,
-   "perf30": -12.55,
-   "perf60": -6.39,
+   "price": 195.85,
+   "perf30": -20.28,
+   "perf60": -17.02,
    "currency": "USD",
    "name": "Credo Technology Group Holding Ltd",
    "earnings": [
@@ -1007,9 +1007,9 @@ window.LIVE = {
    ]
   },
   "AFL": {
-   "price": 126.56,
-   "perf30": 5.33,
-   "perf60": 12.37,
+   "price": 129,
+   "perf30": 7.43,
+   "perf60": 14.75,
    "currency": "USD",
    "name": "Aflac Incorporated",
    "earnings": [
@@ -1022,9 +1022,9 @@ window.LIVE = {
    ]
   },
   "AON": {
-   "price": 367.17,
-   "perf30": 11.71,
-   "perf60": 15.35,
+   "price": 380.22,
+   "perf30": 16.07,
+   "perf60": 20.3,
    "currency": "USD",
    "name": "Aon plc",
    "earnings": [
@@ -1037,9 +1037,9 @@ window.LIVE = {
    ]
   },
   "AXP": {
-   "price": 335.39,
-   "perf30": -1.46,
-   "perf60": 6.43,
+   "price": 335.74,
+   "perf30": -1.51,
+   "perf60": 6.09,
    "currency": "USD",
    "name": "American Express Company",
    "earnings": [
@@ -1052,9 +1052,9 @@ window.LIVE = {
    ]
   },
   "BLK": {
-   "price": 1062.14,
-   "perf30": 10.1,
-   "perf60": 1.5,
+   "price": 1096.35,
+   "perf30": 15.39,
+   "perf60": 4.73,
    "currency": "USD",
    "name": "BlackRock, Inc.",
    "earnings": [
@@ -1067,9 +1067,9 @@ window.LIVE = {
    ]
   },
   "BRK.B": {
-   "price": 497.18,
-   "perf30": -0.3,
-   "perf60": 4.14,
+   "price": 508.42,
+   "perf30": 2.5,
+   "perf60": 7.15,
    "currency": "USD",
    "name": "Berkshire Hathaway Inc.",
    "earnings": [
@@ -1082,24 +1082,17 @@ window.LIVE = {
    ]
   },
   "BRO": {
-   "price": 69.7,
-   "perf30": 8.53,
-   "perf60": 22.62,
+   "price": 72.83,
+   "perf30": 13.87,
+   "perf60": 29.48,
    "currency": "USD",
    "name": "Brown & Brown, Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "BX": {
-   "price": 132.6,
-   "perf30": 14.9,
-   "perf60": 14.17,
+   "price": 132.38,
+   "perf30": 15.23,
+   "perf60": 13.17,
    "currency": "USD",
    "name": "Blackstone Inc.",
    "earnings": [
@@ -1112,9 +1105,9 @@ window.LIVE = {
    ]
   },
   "C": {
-   "price": 133.1,
-   "perf30": -6.11,
-   "perf60": 6.75,
+   "price": 132.07,
+   "perf30": -7.31,
+   "perf60": 4.9,
    "currency": "USD",
    "name": "Citigroup Inc.",
    "earnings": [
@@ -1127,9 +1120,9 @@ window.LIVE = {
    ]
   },
   "CB": {
-   "price": 358.91,
-   "perf30": 5.12,
-   "perf60": 13.5,
+   "price": 362.64,
+   "perf30": 5.64,
+   "perf60": 16.33,
    "currency": "USD",
    "name": "Chubb Limited",
    "earnings": [
@@ -1142,9 +1135,9 @@ window.LIVE = {
    ]
   },
   "CBSH": {
-   "price": 59,
-   "perf30": 2.09,
-   "perf60": 13.44,
+   "price": 59.68,
+   "perf30": 2.74,
+   "perf60": 14.29,
    "currency": "USD",
    "name": "Commerce Bancshares, Inc.",
    "earnings": [
@@ -1157,9 +1150,9 @@ window.LIVE = {
    ]
   },
   "CPAY": {
-   "price": 379.71,
-   "perf30": 14.21,
-   "perf60": 7.76,
+   "price": 385.32,
+   "perf30": 14.9,
+   "perf60": 6.5,
    "currency": "USD",
    "name": "Corpay, Inc.",
    "earnings": [
@@ -1172,9 +1165,9 @@ window.LIVE = {
    ]
   },
   "GS": {
-   "price": 1048.23,
-   "perf30": 2.81,
-   "perf60": 3.95,
+   "price": 1042.75,
+   "perf30": 2.21,
+   "perf60": 1.68,
    "currency": "USD",
    "name": "The Goldman Sachs Group, Inc.",
    "earnings": [
@@ -1187,9 +1180,9 @@ window.LIVE = {
    ]
   },
   "HLI": {
-   "price": 141.25,
-   "perf30": 1.95,
-   "perf60": -3.1,
+   "price": 146.31,
+   "perf30": 10.07,
+   "perf60": 3.28,
    "currency": "USD",
    "name": "Houlihan Lokey, Inc.",
    "earnings": [
@@ -1202,9 +1195,9 @@ window.LIVE = {
    ]
   },
   "ICE": {
-   "price": 148.73,
-   "perf30": 20.08,
-   "perf60": 0.29,
+   "price": 152.66,
+   "perf30": 24.21,
+   "perf60": 3.26,
    "currency": "USD",
    "name": "Intercontinental Exchange, Inc.",
    "earnings": [
@@ -1217,9 +1210,9 @@ window.LIVE = {
    ]
   },
   "JKHY": {
-   "price": 152.98,
-   "perf30": 13.32,
-   "perf60": 12.3,
+   "price": 158.21,
+   "perf30": 15.71,
+   "perf60": 16.05,
    "currency": "USD",
    "name": "Jack Henry & Associates, Inc.",
    "earnings": [
@@ -1232,9 +1225,9 @@ window.LIVE = {
    ]
   },
   "JPM": {
-   "price": 356.2,
-   "perf30": 8.25,
-   "perf60": 20.04,
+   "price": 355.75,
+   "perf30": 8,
+   "perf60": 18.86,
    "currency": "USD",
    "name": "JPMorgan Chase & Co.",
    "earnings": [
@@ -1247,9 +1240,9 @@ window.LIVE = {
    ]
   },
   "KKR": {
-   "price": 101.63,
-   "perf30": 12.76,
-   "perf60": 8.08,
+   "price": 102.24,
+   "perf30": 14.95,
+   "perf60": 6.57,
    "currency": "USD",
    "name": "KKR & Co. Inc.",
    "earnings": [
@@ -1262,9 +1255,9 @@ window.LIVE = {
    ]
   },
   "KNSL": {
-   "price": 361.55,
-   "perf30": 10.08,
-   "perf60": 17.39,
+   "price": 373.29,
+   "perf30": 12.43,
+   "perf60": 22.48,
    "currency": "USD",
    "name": "Kinsale Capital Group, Inc.",
    "earnings": [
@@ -1277,9 +1270,9 @@ window.LIVE = {
    ]
   },
   "MA": {
-   "price": 551.71,
-   "perf30": 10.56,
-   "perf60": 11.74,
+   "price": 561.55,
+   "perf30": 10.19,
+   "perf60": 13.68,
    "currency": "USD",
    "name": "Mastercard Incorporated",
    "earnings": [
@@ -1292,9 +1285,9 @@ window.LIVE = {
    ]
   },
   "MS": {
-   "price": 214.56,
-   "perf30": 1.19,
-   "perf60": 5.28,
+   "price": 211.93,
+   "perf30": 0.1,
+   "perf60": 1.89,
    "currency": "USD",
    "name": "Morgan Stanley",
    "earnings": [
@@ -1307,24 +1300,17 @@ window.LIVE = {
    ]
   },
   "PFG": {
-   "price": 111.29,
-   "perf30": 3.29,
-   "perf60": 7.71,
+   "price": 114.21,
+   "perf30": 5.25,
+   "perf60": 10.22,
    "currency": "USD",
    "name": "Principal Financial Group, Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "PNC": {
-   "price": 249.64,
-   "perf30": 1.9,
-   "perf60": 13.59,
+   "price": 251.1,
+   "perf30": 1.77,
+   "perf60": 13.56,
    "currency": "USD",
    "name": "The PNC Financial Services Group, Inc.",
    "earnings": [
@@ -1337,9 +1323,9 @@ window.LIVE = {
    ]
   },
   "SEIC": {
-   "price": 101.52,
-   "perf30": 16.36,
-   "perf60": 14.58,
+   "price": 103.25,
+   "perf30": 19.38,
+   "perf60": 17.49,
    "currency": "USD",
    "name": "SEI Investments Company",
    "earnings": [
@@ -1352,9 +1338,9 @@ window.LIVE = {
    ]
   },
   "SPGI": {
-   "price": 439.83,
-   "perf30": 13.9,
-   "perf60": 11.31,
+   "price": 434.63,
+   "perf30": 12.44,
+   "perf60": 8.35,
    "currency": "USD",
    "name": "S&P Global Inc.",
    "earnings": [
@@ -1367,9 +1353,9 @@ window.LIVE = {
    ]
   },
   "V": {
-   "price": 362.53,
-   "perf30": 7.82,
-   "perf60": 11.56,
+   "price": 368.6,
+   "perf30": 7.89,
+   "perf60": 12.94,
    "currency": "USD",
    "name": "Visa Inc.",
    "earnings": [
@@ -1382,9 +1368,9 @@ window.LIVE = {
    ]
   },
   "WRB": {
-   "price": 75.7,
-   "perf30": 6.22,
-   "perf60": 17.73,
+   "price": 76.77,
+   "perf30": 8.11,
+   "perf60": 20.82,
    "currency": "USD",
    "name": "W. R. Berkley Corporation",
    "earnings": [
@@ -1397,9 +1383,9 @@ window.LIVE = {
    ]
   },
   "XYZ": {
-   "price": 81.24,
-   "perf30": 4.39,
-   "perf60": 9.27,
+   "price": 82.67,
+   "perf30": 5.96,
+   "perf60": 9.18,
    "currency": "USD",
    "name": "Block, Inc.",
    "earnings": [
@@ -1412,9 +1398,9 @@ window.LIVE = {
    ]
   },
   "BAC": {
-   "price": 62.13,
-   "perf30": 7.34,
-   "perf60": 22.38,
+   "price": 62.35,
+   "perf30": 7.73,
+   "perf60": 20.84,
    "currency": "USD",
    "name": "Bank of America Corporation",
    "earnings": [
@@ -1427,9 +1413,9 @@ window.LIVE = {
    ]
   },
   "TFC": {
-   "price": 52.12,
-   "perf30": 3.23,
-   "perf60": 9.04,
+   "price": 52.72,
+   "perf30": 4.22,
+   "perf60": 9.34,
    "currency": "USD",
    "name": "Truist Financial Corporation",
    "earnings": [
@@ -1442,9 +1428,9 @@ window.LIVE = {
    ]
   },
   "HOOD": {
-   "price": 95.65,
-   "perf30": -3.08,
-   "perf60": 12.74,
+   "price": 92.93,
+   "perf30": -8.74,
+   "perf60": -1.45,
    "currency": "USD",
    "name": "Robinhood Markets, Inc.",
    "earnings": [
@@ -1457,9 +1443,9 @@ window.LIVE = {
    ]
   },
   "SAN": {
-   "price": 13.99,
-   "perf30": 4.48,
-   "perf60": 12.73,
+   "price": 13.94,
+   "perf30": 2.14,
+   "perf60": 11.72,
    "currency": "USD",
    "name": "Banco Santander, S.A.",
    "earnings": [
@@ -1472,9 +1458,9 @@ window.LIVE = {
    ]
   },
   "BIP": {
-   "price": 40.41,
-   "perf30": 10.41,
-   "perf60": 2.15,
+   "price": 41.45,
+   "perf30": 13.72,
+   "perf60": 6.17,
    "currency": "USD",
    "name": "Brookfield Infrastructure Partners L.P.",
    "earnings": [
@@ -1487,9 +1473,9 @@ window.LIVE = {
    ]
   },
   "ABBV": {
-   "price": 256.91,
-   "perf30": 1.41,
-   "perf60": 17.51,
+   "price": 264.83,
+   "perf30": 4.14,
+   "perf60": 21.64,
    "currency": "USD",
    "name": "AbbVie Inc.",
    "earnings": [
@@ -1502,9 +1488,9 @@ window.LIVE = {
    ]
   },
   "ABT": {
-   "price": 104.49,
-   "perf30": 11.02,
-   "perf60": 21.08,
+   "price": 107.54,
+   "perf30": 16,
+   "perf60": 25.63,
    "currency": "USD",
    "name": "Abbott Laboratories",
    "earnings": [
@@ -1517,9 +1503,9 @@ window.LIVE = {
    ]
   },
   "AMGN": {
-   "price": 376.26,
-   "perf30": 5,
-   "perf60": 11.82,
+   "price": 390.76,
+   "perf30": 8.38,
+   "perf60": 16.02,
    "currency": "USD",
    "name": "Amgen Inc.",
    "earnings": [
@@ -1532,9 +1518,9 @@ window.LIVE = {
    ]
   },
   "BDX": {
-   "price": 158.92,
-   "perf30": 1.92,
-   "perf60": 7.08,
+   "price": 164.52,
+   "perf30": 6.01,
+   "perf60": 11.83,
    "currency": "USD",
    "name": "Becton, Dickinson and Company",
    "earnings": [
@@ -1547,9 +1533,9 @@ window.LIVE = {
    ]
   },
   "BSX": {
-   "price": 45.51,
-   "perf30": 2.89,
-   "perf60": -7.33,
+   "price": 46.42,
+   "perf30": 6.75,
+   "perf60": -3.92,
    "currency": "USD",
    "name": "Boston Scientific Corporation",
    "earnings": [
@@ -1562,9 +1548,9 @@ window.LIVE = {
    ]
   },
   "COR": {
-   "price": 311.15,
-   "perf30": 8.74,
-   "perf60": 16.23,
+   "price": 318.21,
+   "perf30": 12.98,
+   "perf60": 18.14,
    "currency": "USD",
    "name": "Cencora, Inc.",
    "earnings": [
@@ -1577,9 +1563,9 @@ window.LIVE = {
    ]
   },
   "CVS": {
-   "price": 107.07,
-   "perf30": 2.62,
-   "perf60": 15.17,
+   "price": 108.65,
+   "perf30": 4.9,
+   "perf60": 19.43,
    "currency": "USD",
    "name": "CVS Health Corporation",
    "earnings": [
@@ -1592,9 +1578,9 @@ window.LIVE = {
    ]
   },
   "DHR": {
-   "price": 196.5,
-   "perf30": 0.16,
-   "perf60": 8.79,
+   "price": 200.03,
+   "perf30": 3.76,
+   "perf60": 9.5,
    "currency": "USD",
    "name": "Danaher Corporation",
    "earnings": [
@@ -1607,9 +1593,9 @@ window.LIVE = {
    ]
   },
   "DXCM": {
-   "price": 73.37,
-   "perf30": 4.61,
-   "perf60": 1.42,
+   "price": 75.67,
+   "perf30": 8.12,
+   "perf60": 2.61,
    "currency": "USD",
    "name": "DexCom, Inc.",
    "earnings": [
@@ -1622,9 +1608,9 @@ window.LIVE = {
    ]
   },
   "GILD": {
-   "price": 130.52,
-   "perf30": 2.06,
-   "perf60": -4.18,
+   "price": 133.19,
+   "perf30": 5.43,
+   "perf60": -0.92,
    "currency": "USD",
    "name": "Gilead Sciences, Inc.",
    "earnings": [
@@ -1637,9 +1623,9 @@ window.LIVE = {
    ]
   },
   "IDXX": {
-   "price": 556.2,
-   "perf30": 0.85,
-   "perf60": -2.08,
+   "price": 570.56,
+   "perf30": 6.46,
+   "perf60": 1.25,
    "currency": "USD",
    "name": "IDEXX Laboratories, Inc.",
    "earnings": [
@@ -1652,9 +1638,9 @@ window.LIVE = {
    ]
   },
   "ISRG": {
-   "price": 356.83,
-   "perf30": -11.83,
-   "perf60": -15.77,
+   "price": 364.68,
+   "perf30": -10.17,
+   "perf60": -14.12,
    "currency": "USD",
    "name": "Intuitive Surgical, Inc.",
    "earnings": [
@@ -1667,9 +1653,9 @@ window.LIVE = {
    ]
   },
   "JNJ": {
-   "price": 265.95,
-   "perf30": 4.43,
-   "perf60": 15.23,
+   "price": 269.04,
+   "perf30": 4.07,
+   "perf60": 19.4,
    "currency": "USD",
    "name": "Johnson & Johnson",
    "earnings": [
@@ -1682,9 +1668,9 @@ window.LIVE = {
    ]
   },
   "LLY": {
-   "price": 1197.53,
-   "perf30": -0.88,
-   "perf60": 6.28,
+   "price": 1218.08,
+   "perf30": -0.96,
+   "perf60": 10.23,
    "currency": "USD",
    "name": "Eli Lilly and Company",
    "earnings": [
@@ -1697,9 +1683,9 @@ window.LIVE = {
    ]
   },
   "MDT": {
-   "price": 84.22,
-   "perf30": 4,
-   "perf60": 11.45,
+   "price": 86.89,
+   "perf30": 7.37,
+   "perf60": 17.73,
    "currency": "USD",
    "name": "Medtronic plc",
    "earnings": [
@@ -1712,9 +1698,9 @@ window.LIVE = {
    ]
   },
   "MRK": {
-   "price": 130.76,
-   "perf30": 1.63,
-   "perf60": 9.07,
+   "price": 131.86,
+   "perf30": 1.92,
+   "perf60": 11.07,
    "currency": "USD",
    "name": "Merck & Co., Inc.",
    "earnings": [
@@ -1727,9 +1713,9 @@ window.LIVE = {
    ]
   },
   "PFE": {
-   "price": 24.67,
-   "perf30": 1.56,
-   "perf60": -5.62,
+   "price": 25.17,
+   "perf30": 3.26,
+   "perf60": -3.88,
    "currency": "USD",
    "name": "Pfizer Inc.",
    "earnings": [
@@ -1742,9 +1728,9 @@ window.LIVE = {
    ]
   },
   "SYK": {
-   "price": 336.74,
-   "perf30": 1.21,
-   "perf60": 9.46,
+   "price": 345.48,
+   "perf30": 4.53,
+   "perf60": 13.24,
    "currency": "USD",
    "name": "Stryker Corporation",
    "earnings": [
@@ -1757,9 +1743,9 @@ window.LIVE = {
    ]
   },
   "TMO": {
-   "price": 559.53,
-   "perf30": 9.06,
-   "perf60": 14.84,
+   "price": 576.47,
+   "perf30": 13.83,
+   "perf60": 17.05,
    "currency": "USD",
    "name": "Thermo Fisher Scientific Inc.",
    "earnings": [
@@ -1772,9 +1758,9 @@ window.LIVE = {
    ]
   },
   "UNH": {
-   "price": 417.64,
-   "perf30": -2.4,
-   "perf60": 9.18,
+   "price": 427.15,
+   "perf30": 1.75,
+   "perf60": 12.32,
    "currency": "USD",
    "name": "UnitedHealth Group Incorporated",
    "earnings": [
@@ -1787,9 +1773,9 @@ window.LIVE = {
    ]
   },
   "ZTS": {
-   "price": 76.92,
-   "perf30": 1.09,
-   "perf60": -1.72,
+   "price": 78.17,
+   "perf30": 6.71,
+   "perf60": 0.61,
    "currency": "USD",
    "name": "Zoetis Inc.",
    "earnings": [
@@ -1802,9 +1788,9 @@ window.LIVE = {
    ]
   },
   "ADP": {
-   "price": 254.98,
-   "perf30": 14.06,
-   "perf60": 15.97,
+   "price": 266.4,
+   "perf30": 18.42,
+   "perf60": 20.09,
    "currency": "USD",
    "name": "Automatic Data Processing, Inc.",
    "earnings": [
@@ -1817,9 +1803,9 @@ window.LIVE = {
    ]
   },
   "BA": {
-   "price": 211.5,
-   "perf30": -2.65,
-   "perf60": -7.55,
+   "price": 222.82,
+   "perf30": 3.79,
+   "perf60": -3.6,
    "currency": "USD",
    "name": "The Boeing Company",
    "earnings": [
@@ -1832,9 +1818,9 @@ window.LIVE = {
    ]
   },
   "BR": {
-   "price": 152.78,
-   "perf30": 10.77,
-   "perf60": 2.04,
+   "price": 160.01,
+   "perf30": 18.14,
+   "perf60": 4.1,
    "currency": "USD",
    "name": "Broadridge Financial Solutions, Inc.",
    "earnings": [
@@ -1847,9 +1833,9 @@ window.LIVE = {
    ]
   },
   "CAT": {
-   "price": 873.28,
-   "perf30": -12.45,
-   "perf60": -1.62,
+   "price": 837.93,
+   "perf30": -18.9,
+   "perf60": -4.33,
    "currency": "USD",
    "name": "Caterpillar Inc.",
    "earnings": [
@@ -1862,9 +1848,9 @@ window.LIVE = {
    ]
   },
   "CMI": {
-   "price": 661.84,
-   "perf30": -3.5,
-   "perf60": -1.02,
+   "price": 638.02,
+   "perf30": -7.68,
+   "perf60": -1.33,
    "currency": "USD",
    "name": "Cummins Inc.",
    "earnings": [
@@ -1877,9 +1863,9 @@ window.LIVE = {
    ]
   },
   "CTAS": {
-   "price": 210.98,
-   "perf30": 22.73,
-   "perf60": 21.91,
+   "price": 216.31,
+   "perf30": 27.93,
+   "perf60": 26.31,
    "currency": "USD",
    "name": "Cintas Corporation",
    "earnings": [
@@ -1892,9 +1878,9 @@ window.LIVE = {
    ]
   },
   "DE": {
-   "price": 625.02,
-   "perf30": 1.92,
-   "perf60": 15.96,
+   "price": 640.2,
+   "perf30": 2.17,
+   "perf60": 18.08,
    "currency": "USD",
    "name": "Deere & Company",
    "earnings": [
@@ -1907,9 +1893,9 @@ window.LIVE = {
    ]
   },
   "EMR": {
-   "price": 149.3,
-   "perf30": 4.05,
-   "perf60": 5.3,
+   "price": 151.63,
+   "perf30": 6.17,
+   "perf60": 5.43,
    "currency": "USD",
    "name": "Emerson Electric Co.",
    "earnings": [
@@ -1922,9 +1908,9 @@ window.LIVE = {
    ]
   },
   "ETN": {
-   "price": 398.64,
-   "perf30": -1,
-   "perf60": -0.82,
+   "price": 386.39,
+   "perf30": -5.36,
+   "perf60": -3.55,
    "currency": "USD",
    "name": "Eaton Corporation plc",
    "earnings": [
@@ -1937,9 +1923,9 @@ window.LIVE = {
    ]
   },
   "FAST": {
-   "price": 47.64,
-   "perf30": 1.15,
-   "perf60": 6.43,
+   "price": 48.17,
+   "perf30": 1.64,
+   "perf60": 8.99,
    "currency": "USD",
    "name": "Fastenal Company",
    "earnings": [
@@ -1952,9 +1938,9 @@ window.LIVE = {
    ]
   },
   "FDX": {
-   "price": 310.79,
-   "perf30": -2.43,
-   "perf60": -6.25,
+   "price": 310.54,
+   "perf30": -4.57,
+   "perf60": -6.4,
    "currency": "USD",
    "name": "FedEx Corporation",
    "earnings": [
@@ -1967,9 +1953,9 @@ window.LIVE = {
    ]
   },
   "FIX": {
-   "price": 1730.42,
-   "perf30": -6.68,
-   "perf60": -6.72,
+   "price": 1609.83,
+   "perf30": -17.39,
+   "perf60": -11.94,
    "currency": "USD",
    "name": "Comfort Systems USA, Inc.",
    "earnings": [
@@ -1982,9 +1968,9 @@ window.LIVE = {
    ]
   },
   "GD": {
-   "price": 389.14,
-   "perf30": 12.24,
-   "perf60": 11.51,
+   "price": 392.6,
+   "perf30": 12.79,
+   "perf60": 13.2,
    "currency": "USD",
    "name": "General Dynamics Corporation",
    "earnings": [
@@ -1997,9 +1983,9 @@ window.LIVE = {
    ]
   },
   "GE": {
-   "price": 361.61,
-   "perf30": -2,
-   "perf60": 12.71,
+   "price": 361.18,
+   "perf30": -3.35,
+   "perf60": 11.56,
    "currency": "USD",
    "name": "GE Aerospace",
    "earnings": [
@@ -2012,9 +1998,9 @@ window.LIVE = {
    ]
   },
   "GEV": {
-   "price": 996.57,
-   "perf30": -4.65,
-   "perf60": 0.06,
+   "price": 943.73,
+   "perf30": -14.4,
+   "perf60": -2.54,
    "currency": "USD",
    "name": "GE Vernova Inc.",
    "earnings": [
@@ -2027,9 +2013,9 @@ window.LIVE = {
    ]
   },
   "GWW": {
-   "price": 1398.95,
-   "perf30": 3.35,
-   "perf60": 12.15,
+   "price": 1404.05,
+   "perf30": 3.75,
+   "perf60": 13.76,
    "currency": "USD",
    "name": "W.W. Grainger, Inc.",
    "earnings": [
@@ -2042,9 +2028,9 @@ window.LIVE = {
    ]
   },
   "HUBB": {
-   "price": 497.96,
-   "perf30": -3.69,
-   "perf60": 5.07,
+   "price": 486.85,
+   "perf30": -5.41,
+   "perf60": 2.8,
    "currency": "USD",
    "name": "Hubbell Incorporated",
    "earnings": [
@@ -2057,9 +2043,9 @@ window.LIVE = {
    ]
   },
   "ITW": {
-   "price": 284.82,
-   "perf30": 6.39,
-   "perf60": 14.09,
+   "price": 299.91,
+   "perf30": 12.13,
+   "perf60": 21.28,
    "currency": "USD",
    "name": "Illinois Tool Works Inc.",
    "earnings": [
@@ -2072,9 +2058,9 @@ window.LIVE = {
    ]
   },
   "LHX": {
-   "price": 303.48,
-   "perf30": 4.2,
-   "perf60": -3.59,
+   "price": 305.1,
+   "perf30": 5.43,
+   "perf60": -3.2,
    "currency": "USD",
    "name": "L3Harris Technologies, Inc.",
    "earnings": [
@@ -2087,9 +2073,9 @@ window.LIVE = {
    ]
   },
   "LMT": {
-   "price": 580,
-   "perf30": 14.31,
-   "perf60": 7.97,
+   "price": 580.64,
+   "perf30": 15.65,
+   "perf60": 9.46,
    "currency": "USD",
    "name": "Lockheed Martin Corporation",
    "earnings": [
@@ -2102,9 +2088,9 @@ window.LIVE = {
    ]
   },
   "ODFL": {
-   "price": 226.77,
-   "perf30": 3.65,
-   "perf60": 2.68,
+   "price": 229.39,
+   "perf30": 4.42,
+   "perf60": 1.88,
    "currency": "USD",
    "name": "Old Dominion Freight Line, Inc.",
    "earnings": [
@@ -2117,9 +2103,9 @@ window.LIVE = {
    ]
   },
   "PAYX": {
-   "price": 115.48,
-   "perf30": 15.6,
-   "perf60": 20.91,
+   "price": 119.07,
+   "perf30": 19.3,
+   "perf60": 22.78,
    "currency": "USD",
    "name": "Paychex, Inc.",
    "earnings": [
@@ -2132,9 +2118,9 @@ window.LIVE = {
    ]
   },
   "PCAR": {
-   "price": 133.44,
-   "perf30": 10.57,
-   "perf60": 18.91,
+   "price": 138.59,
+   "perf30": 15.87,
+   "perf60": 25.56,
    "currency": "USD",
    "name": "PACCAR Inc",
    "earnings": [
@@ -2147,9 +2133,9 @@ window.LIVE = {
    ]
   },
   "PH": {
-   "price": 987.31,
-   "perf30": 1.9,
-   "perf60": 15.77,
+   "price": 995.77,
+   "perf30": 3.32,
+   "perf60": 17.89,
    "currency": "USD",
    "name": "Parker-Hannifin Corporation",
    "earnings": [
@@ -2162,9 +2148,9 @@ window.LIVE = {
    ]
   },
   "RBC": {
-   "price": 584.97,
-   "perf30": -7.2,
-   "perf60": 1.24,
+   "price": 578.34,
+   "perf30": -8.89,
+   "perf60": 1.12,
    "currency": "USD",
    "name": "RBC Bearings Incorporated",
    "earnings": [
@@ -2177,9 +2163,9 @@ window.LIVE = {
    ]
   },
   "ROL": {
-   "price": 39.07,
-   "perf30": -9.71,
-   "perf60": -20.94,
+   "price": 38.86,
+   "perf30": -8.09,
+   "perf60": -18.36,
    "currency": "USD",
    "name": "Rollins, Inc.",
    "earnings": [
@@ -2192,9 +2178,9 @@ window.LIVE = {
    ]
   },
   "RTX": {
-   "price": 218.42,
-   "perf30": 16.19,
-   "perf60": 22.05,
+   "price": 217.54,
+   "perf30": 16.13,
+   "perf60": 21.08,
    "currency": "USD",
    "name": "RTX Corporation",
    "earnings": [
@@ -2207,9 +2193,9 @@ window.LIVE = {
    ]
   },
   "TT": {
-   "price": 483.34,
-   "perf30": 1.14,
-   "perf60": 6.87,
+   "price": 467.24,
+   "perf30": -2.73,
+   "perf60": 3.53,
    "currency": "USD",
    "name": "Trane Technologies plc",
    "earnings": [
@@ -2222,9 +2208,9 @@ window.LIVE = {
    ]
   },
   "UNP": {
-   "price": 299.3,
-   "perf30": 11.53,
-   "perf60": 12.1,
+   "price": 298.28,
+   "perf30": 9.38,
+   "perf60": 13.57,
    "currency": "USD",
    "name": "Union Pacific Corporation",
    "earnings": [
@@ -2237,9 +2223,9 @@ window.LIVE = {
    ]
   },
   "VRT": {
-   "price": 287.6,
-   "perf30": -5.38,
-   "perf60": -8.46,
+   "price": 267.4,
+   "perf30": -12.89,
+   "perf60": -15.3,
    "currency": "USD",
    "name": "Vertiv Holdings Co",
    "earnings": [
@@ -2252,9 +2238,9 @@ window.LIVE = {
    ]
   },
   "WM": {
-   "price": 237.9,
-   "perf30": 5.48,
-   "perf60": 10.96,
+   "price": 239.21,
+   "perf30": 7.09,
+   "perf60": 13.13,
    "currency": "USD",
    "name": "Waste Management, Inc.",
    "earnings": [
@@ -2267,9 +2253,9 @@ window.LIVE = {
    ]
   },
   "WSO": {
-   "price": 364.37,
-   "perf30": -11.29,
-   "perf60": -0.29,
+   "price": 367.64,
+   "perf30": -10.46,
+   "perf60": 0.15,
    "currency": "USD",
    "name": "Watsco, Inc.",
    "earnings": [
@@ -2282,9 +2268,9 @@ window.LIVE = {
    ]
   },
   "WWD": {
-   "price": 419.76,
-   "perf30": -2.75,
-   "perf60": 18.26,
+   "price": 410.74,
+   "perf30": -2.97,
+   "perf60": 17.34,
    "currency": "USD",
    "name": "Woodward, Inc.",
    "earnings": [
@@ -2297,9 +2283,9 @@ window.LIVE = {
    ]
   },
   "XYL": {
-   "price": 120.16,
-   "perf30": 3.19,
-   "perf60": 9.99,
+   "price": 124.81,
+   "perf30": 6.92,
+   "perf60": 13.94,
    "currency": "USD",
    "name": "Xylem Inc.",
    "earnings": [
@@ -2312,9 +2298,9 @@ window.LIVE = {
    ]
   },
   "HON": {
-   "price": 245.75,
-   "perf30": 0.91,
-   "perf60": 0.57,
+   "price": 249.06,
+   "perf30": 9.33,
+   "perf60": -0.16,
    "currency": "USD",
    "name": "Honeywell International Inc.",
    "earnings": [
@@ -2327,9 +2313,9 @@ window.LIVE = {
    ]
   },
   "ROK": {
-   "price": 466,
-   "perf30": -2.27,
-   "perf60": 2.46,
+   "price": 471.98,
+   "perf30": -2.15,
+   "perf60": 4.64,
    "currency": "USD",
    "name": "Rockwell Automation, Inc.",
    "earnings": [
@@ -2342,9 +2328,9 @@ window.LIVE = {
    ]
   },
   "AME": {
-   "price": 243.12,
-   "perf30": 2.36,
-   "perf60": 7.84,
+   "price": 243.03,
+   "perf30": 2.23,
+   "perf60": 7.61,
    "currency": "USD",
    "name": "AMETEK, Inc.",
    "earnings": [
@@ -2357,9 +2343,9 @@ window.LIVE = {
    ]
   },
   "FLR": {
-   "price": 51.7,
-   "perf30": -3.62,
-   "perf60": 10.07,
+   "price": 49.6,
+   "perf30": -7.69,
+   "perf60": 8.39,
    "currency": "USD",
    "name": "Fluor Corporation",
    "earnings": [
@@ -2372,9 +2358,9 @@ window.LIVE = {
    ]
   },
   "AGCO": {
-   "price": 120.24,
-   "perf30": 2.46,
-   "perf60": 5.59,
+   "price": 123.83,
+   "perf30": 3.82,
+   "perf60": 10.29,
    "currency": "USD",
    "name": "AGCO Corporation",
    "earnings": [
@@ -2387,9 +2373,9 @@ window.LIVE = {
    ]
   },
   "SYM": {
-   "price": 41.49,
-   "perf30": 0.61,
-   "perf60": -15,
+   "price": 41.1,
+   "perf30": -2.47,
+   "perf60": -11.47,
    "currency": "USD",
    "name": "Symbotic Inc.",
    "earnings": [
@@ -2402,9 +2388,9 @@ window.LIVE = {
    ]
   },
   "AAPL": {
-   "price": 336.91,
-   "perf30": 18.72,
-   "perf60": 7.81,
+   "price": 340.09,
+   "perf30": 20.71,
+   "perf60": 8.98,
    "currency": "USD",
    "name": "Apple Inc.",
    "earnings": [
@@ -2417,9 +2403,9 @@ window.LIVE = {
    ]
   },
   "ADI": {
-   "price": 371.89,
-   "perf30": -3.88,
-   "perf60": -11.25,
+   "price": 369.64,
+   "perf30": -5.65,
+   "perf60": -10.68,
    "currency": "USD",
    "name": "Analog Devices, Inc.",
    "earnings": [
@@ -2432,9 +2418,9 @@ window.LIVE = {
    ]
   },
   "AMAT": {
-   "price": 516.89,
-   "perf30": -17.54,
-   "perf60": 14.95,
+   "price": 475.25,
+   "perf30": -31.58,
+   "perf60": 5.6,
    "currency": "USD",
    "name": "Applied Materials, Inc.",
    "earnings": [
@@ -2447,9 +2433,9 @@ window.LIVE = {
    ]
   },
   "AMD": {
-   "price": 494.95,
-   "perf30": -5.11,
-   "perf60": -4.47,
+   "price": 460.07,
+   "perf30": -14.72,
+   "perf60": -10.86,
    "currency": "USD",
    "name": "Advanced Micro Devices, Inc.",
    "earnings": [
@@ -2462,9 +2448,9 @@ window.LIVE = {
    ]
   },
   "ANET": {
-   "price": 170.76,
-   "perf30": 8.35,
-   "perf60": 9.98,
+   "price": 166.93,
+   "perf30": 1.72,
+   "perf60": 4.68,
    "currency": "USD",
    "name": "Arista Networks, Inc.",
    "earnings": [
@@ -2477,9 +2463,9 @@ window.LIVE = {
    ]
   },
   "APH": {
-   "price": 149.28,
-   "perf30": -8.82,
-   "perf60": 1.08,
+   "price": 143.65,
+   "perf30": -13.69,
+   "perf60": -3.44,
    "currency": "USD",
    "name": "Amphenol Corporation",
    "earnings": [
@@ -2492,9 +2478,9 @@ window.LIVE = {
    ]
   },
   "AVGO": {
-   "price": 383.22,
-   "perf30": 4.99,
-   "perf60": -10.16,
+   "price": 381.36,
+   "perf30": 2.39,
+   "perf60": -14.64,
    "currency": "USD",
    "name": "Broadcom Inc.",
    "earnings": [
@@ -2507,24 +2493,17 @@ window.LIVE = {
    ]
   },
   "CDNS": {
-   "price": 338.61,
-   "perf30": -10.25,
-   "perf60": -9.43,
+   "price": 345.81,
+   "perf30": -7.22,
+   "perf60": -7.77,
    "currency": "USD",
    "name": "Cadence Design Systems, Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "CRM": {
-   "price": 173.6,
-   "perf30": 9.62,
-   "perf60": -1.46,
+   "price": 182.77,
+   "perf30": 15.73,
+   "perf60": -4.36,
    "currency": "USD",
    "name": "Salesforce, Inc.",
    "earnings": [
@@ -2537,9 +2516,9 @@ window.LIVE = {
    ]
   },
   "CRWD": {
-   "price": 180.11,
-   "perf30": 2.76,
-   "perf60": 7.37,
+   "price": 181.42,
+   "perf30": -2.32,
+   "perf60": -0.73,
    "currency": "USD",
    "name": "CrowdStrike Holdings, Inc.",
    "earnings": [
@@ -2552,9 +2531,9 @@ window.LIVE = {
    ]
   },
   "CSCO": {
-   "price": 114.57,
-   "perf30": 0.7,
-   "perf60": -3.43,
+   "price": 116.45,
+   "perf30": -1.06,
+   "perf60": -3.3,
    "currency": "USD",
    "name": "Cisco Systems, Inc.",
    "earnings": [
@@ -2567,9 +2546,9 @@ window.LIVE = {
    ]
   },
   "GWRE": {
-   "price": 149.28,
-   "perf30": 22.88,
-   "perf60": 5.03,
+   "price": 158.09,
+   "perf30": 30.79,
+   "perf60": 3.55,
    "currency": "USD",
    "name": "Guidewire Software, Inc.",
    "earnings": [
@@ -2582,9 +2561,9 @@ window.LIVE = {
    ]
   },
   "HPE": {
-   "price": 48.19,
-   "perf30": 10.25,
-   "perf60": 26.12,
+   "price": 44.75,
+   "perf30": 0.76,
+   "perf60": 3.96,
    "currency": "USD",
    "name": "Hewlett Packard Enterprise Company",
    "earnings": [
@@ -2597,9 +2576,9 @@ window.LIVE = {
    ]
   },
   "IBM": {
-   "price": 216.28,
-   "perf30": -20.38,
-   "perf60": -18.14,
+   "price": 226.03,
+   "perf30": -18.69,
+   "perf60": -24.1,
    "currency": "USD",
    "name": "International Business Machines Corporation",
    "earnings": [
@@ -2612,9 +2591,9 @@ window.LIVE = {
    ]
   },
   "JBL": {
-   "price": 311.49,
-   "perf30": -13.14,
-   "perf60": -14.34,
+   "price": 299.73,
+   "perf30": -19.77,
+   "perf60": -17.78,
    "currency": "USD",
    "name": "Jabil Inc.",
    "earnings": [
@@ -2627,9 +2606,9 @@ window.LIVE = {
    ]
   },
   "KEYS": {
-   "price": 313.68,
-   "perf30": -4.56,
-   "perf60": -7.5,
+   "price": 303.39,
+   "perf30": -10.8,
+   "perf60": -10.33,
    "currency": "USD",
    "name": "Keysight Technologies, Inc.",
    "earnings": [
@@ -2642,9 +2621,9 @@ window.LIVE = {
    ]
   },
   "KLAC": {
-   "price": 203.36,
-   "perf30": -18.21,
-   "perf60": 5.5,
+   "price": 191.13,
+   "perf30": -31.34,
+   "perf60": -0.54,
    "currency": "USD",
    "name": "KLA Corporation",
    "earnings": [
@@ -2657,9 +2636,9 @@ window.LIVE = {
    ]
   },
   "LRCX": {
-   "price": 291.61,
-   "perf30": -23.08,
-   "perf60": -8.3,
+   "price": 267.92,
+   "perf30": -34.8,
+   "perf60": -15.8,
    "currency": "USD",
    "name": "Lam Research Corporation",
    "earnings": [
@@ -2672,9 +2651,9 @@ window.LIVE = {
    ]
   },
   "MRVL": {
-   "price": 189.17,
-   "perf30": -29.09,
-   "perf60": -7.65,
+   "price": 176.66,
+   "perf30": -36.4,
+   "perf60": -13.82,
    "currency": "USD",
    "name": "Marvell Technology, Inc.",
    "earnings": [
@@ -2687,9 +2666,9 @@ window.LIVE = {
    ]
   },
   "MSFT": {
-   "price": 389.1,
-   "perf30": 4.32,
-   "perf60": -8.87,
+   "price": 398.39,
+   "perf30": 8.09,
+   "perf60": -11.52,
    "currency": "USD",
    "name": "Microsoft Corporation",
    "earnings": [
@@ -2702,9 +2681,9 @@ window.LIVE = {
    ]
   },
   "MSI": {
-   "price": 423.8,
-   "perf30": 5.19,
-   "perf60": 2.98,
+   "price": 439.9,
+   "perf30": 6.62,
+   "perf60": 9.08,
    "currency": "USD",
    "name": "Motorola Solutions, Inc.",
    "earnings": [
@@ -2717,9 +2696,9 @@ window.LIVE = {
    ]
   },
   "MU": {
-   "price": 900.2,
-   "perf30": -20.5,
-   "perf60": -2.53,
+   "price": 820.29,
+   "perf30": -28.38,
+   "perf60": -15.52,
    "currency": "USD",
    "name": "Micron Technology, Inc.",
    "earnings": [
@@ -2732,9 +2711,9 @@ window.LIVE = {
    ]
   },
   "NOW": {
-   "price": 105.56,
-   "perf30": 7.34,
-   "perf60": -2.92,
+   "price": 110.54,
+   "perf30": 10.57,
+   "perf60": -11.12,
    "currency": "USD",
    "name": "ServiceNow, Inc.",
    "earnings": [
@@ -2747,24 +2726,24 @@ window.LIVE = {
    ]
   },
   "NVDA": {
-   "price": 196.51,
-   "perf30": 2.07,
-   "perf60": -8.28,
+   "price": 197.26,
+   "perf30": 1.17,
+   "perf60": -6.57,
    "currency": "USD",
    "name": "NVIDIA Corporation",
    "earnings": [
     {
      "date": "2026-08-26",
-     "time": null,
+     "time": "AMC",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "OKTA": {
-   "price": 137.43,
-   "perf30": 10.58,
-   "perf60": 45.09,
+   "price": 135.92,
+   "perf30": 3.51,
+   "perf60": 10.26,
    "currency": "USD",
    "name": "Okta, Inc.",
    "earnings": [
@@ -2777,9 +2756,9 @@ window.LIVE = {
    ]
   },
   "ORCL": {
-   "price": 119.9,
-   "perf30": -19.28,
-   "perf60": -41.14,
+   "price": 120.61,
+   "perf30": -18.37,
+   "perf60": -46.58,
    "currency": "USD",
    "name": "Oracle Corporation",
    "earnings": [
@@ -2792,9 +2771,9 @@ window.LIVE = {
    ]
   },
   "PANW": {
-   "price": 317.32,
-   "perf30": 4.31,
-   "perf60": 23.1,
+   "price": 320.19,
+   "perf30": -3.56,
+   "perf60": 13.67,
    "currency": "USD",
    "name": "Palo Alto Networks, Inc.",
    "earnings": [
@@ -2807,9 +2786,9 @@ window.LIVE = {
    ]
   },
   "Q": {
-   "price": 132.97,
-   "perf30": -15.95,
-   "perf60": -16.35,
+   "price": 127.18,
+   "perf30": -19.63,
+   "perf60": -18.48,
    "currency": "USD",
    "name": "Qnity Electronics, Inc.",
    "earnings": [
@@ -2822,9 +2801,9 @@ window.LIVE = {
    ]
   },
   "QCOM": {
-   "price": 170.04,
-   "perf30": -10.22,
-   "perf60": -30.11,
+   "price": 165.18,
+   "perf30": -12.47,
+   "perf60": -34.2,
    "currency": "USD",
    "name": "QUALCOMM Incorporated",
    "earnings": [
@@ -2837,9 +2816,9 @@ window.LIVE = {
    ]
   },
   "ROP": {
-   "price": 375.02,
-   "perf30": 10.85,
-   "perf60": 17.29,
+   "price": 394.44,
+   "perf30": 17.81,
+   "perf60": 21.17,
    "currency": "USD",
    "name": "Roper Technologies, Inc.",
    "earnings": [
@@ -2852,9 +2831,9 @@ window.LIVE = {
    ]
   },
   "SNPS": {
-   "price": 388.99,
-   "perf30": -14.38,
-   "perf60": -19.07,
+   "price": 385.82,
+   "perf30": -13.74,
+   "perf60": -18.88,
    "currency": "USD",
    "name": "Synopsys, Inc.",
    "earnings": [
@@ -2867,9 +2846,9 @@ window.LIVE = {
    ]
   },
   "TXN": {
-   "price": 279.41,
-   "perf30": -2.11,
-   "perf60": -11.57,
+   "price": 278.54,
+   "perf30": -2.43,
+   "perf60": -8.88,
    "currency": "USD",
    "name": "Texas Instruments Incorporated",
    "earnings": [
@@ -2882,9 +2861,9 @@ window.LIVE = {
    ]
   },
   "TYL": {
-   "price": 315.88,
-   "perf30": 7.3,
-   "perf60": 3.22,
+   "price": 333.65,
+   "perf30": 14.76,
+   "perf60": 6.55,
    "currency": "USD",
    "name": "Tyler Technologies, Inc.",
    "earnings": [
@@ -2897,9 +2876,9 @@ window.LIVE = {
    ]
   },
   "WDC": {
-   "price": 497.92,
-   "perf30": -15.1,
-   "perf60": -6.26,
+   "price": 453.83,
+   "perf30": -30.38,
+   "perf60": -14.57,
    "currency": "USD",
    "name": "Western Digital Corporation",
    "earnings": [
@@ -2912,9 +2891,9 @@ window.LIVE = {
    ]
   },
   "AAOI": {
-   "price": 97.82,
-   "perf30": -27.91,
-   "perf60": -42.13,
+   "price": 87.6,
+   "perf30": -41.64,
+   "perf60": -44.7,
    "currency": "USD",
    "name": "Applied Optoelectronics, Inc.",
    "earnings": [
@@ -2927,9 +2906,9 @@ window.LIVE = {
    ]
   },
   "ACLS": {
-   "price": 128.11,
-   "perf30": -26.05,
-   "perf60": -17.64,
+   "price": 116.49,
+   "perf30": -33.86,
+   "perf60": -22.55,
    "currency": "USD",
    "name": "Axcelis Technologies, Inc.",
    "earnings": [
@@ -2942,9 +2921,9 @@ window.LIVE = {
    ]
   },
   "ACN": {
-   "price": 154.06,
-   "perf30": 19.44,
-   "perf60": -13.64,
+   "price": 165.02,
+   "perf30": 32.29,
+   "perf60": -11.79,
    "currency": "USD",
    "name": "Accenture plc",
    "earnings": [
@@ -2957,9 +2936,9 @@ window.LIVE = {
    ]
   },
   "ADBE": {
-   "price": 237.75,
-   "perf30": 17.27,
-   "perf60": -1.53,
+   "price": 252.98,
+   "perf30": 22.55,
+   "perf60": -2.4,
    "currency": "USD",
    "name": "Adobe Inc.",
    "earnings": [
@@ -2972,9 +2951,9 @@ window.LIVE = {
    ]
   },
   "ADSK": {
-   "price": 225.91,
-   "perf30": 15.11,
-   "perf60": -6.24,
+   "price": 240.93,
+   "perf30": 23.4,
+   "perf60": 4.16,
    "currency": "USD",
    "name": "Autodesk, Inc.",
    "earnings": [
@@ -2987,9 +2966,9 @@ window.LIVE = {
    ]
   },
   "AEIS": {
-   "price": 291.95,
-   "perf30": -16.13,
-   "perf60": -7.93,
+   "price": 271.27,
+   "perf30": -22.08,
+   "perf60": -10.23,
    "currency": "USD",
    "name": "Advanced Energy Industries, Inc.",
    "earnings": [
@@ -3002,9 +2981,9 @@ window.LIVE = {
    ]
   },
   "ALAB": {
-   "price": 282.52,
-   "perf30": -27.88,
-   "perf60": -19.09,
+   "price": 263.99,
+   "perf30": -42.1,
+   "perf60": -23,
    "currency": "USD",
    "name": "Astera Labs, Inc.",
    "earnings": [
@@ -3017,9 +2996,9 @@ window.LIVE = {
    ]
   },
   "ALGM": {
-   "price": 46.8,
-   "perf30": -19.16,
-   "perf60": -8.41,
+   "price": 43.98,
+   "perf30": -33.74,
+   "perf60": -8.13,
    "currency": "USD",
    "name": "Allegro MicroSystems, Inc.",
    "earnings": [
@@ -3032,9 +3011,9 @@ window.LIVE = {
    ]
   },
   "AMBQ": {
-   "price": 68.28,
-   "perf30": -14.81,
-   "perf60": -17.71,
+   "price": 62.38,
+   "perf30": -26.66,
+   "perf60": -21.7,
    "currency": "USD",
    "name": "Ambiq Micro, Inc.",
    "earnings": [
@@ -3047,39 +3026,25 @@ window.LIVE = {
    ]
   },
   "AMKR": {
-   "price": 60.71,
-   "perf30": -22.88,
-   "perf60": -13.98,
+   "price": 45.67,
+   "perf30": -44.54,
+   "perf60": -34.35,
    "currency": "USD",
    "name": "Amkor Technology, Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "APLD": {
-   "price": 26.38,
-   "perf30": -32.65,
-   "perf60": -46.88,
+   "price": 26.81,
+   "perf30": -29.02,
+   "perf60": -43.3,
    "currency": "USD",
    "name": "Applied Digital Corporation",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "ARM": {
-   "price": 266.33,
-   "perf30": -20.32,
-   "perf60": -20.56,
+   "price": 246.03,
+   "perf30": -28.39,
+   "perf60": -30.36,
    "currency": "USD",
    "name": "Arm Holdings plc",
    "earnings": [
@@ -3092,9 +3057,9 @@ window.LIVE = {
    ]
   },
   "ASML": {
-   "price": 1655.26,
-   "perf30": -7.77,
-   "perf60": 3.08,
+   "price": 1579.03,
+   "perf30": -16.15,
+   "perf60": -2.09,
    "currency": "USD",
    "name": "ASML Holding N.V.",
    "earnings": [
@@ -3107,24 +3072,24 @@ window.LIVE = {
    ]
   },
   "ASX": {
-   "price": 36.55,
-   "perf30": -9.1,
-   "perf60": -9.98,
+   "price": 33.73,
+   "perf30": -19.94,
+   "perf60": -12.05,
    "currency": "USD",
    "name": "ASE Technology Holding Co., Ltd.",
    "earnings": [
     {
      "date": "2026-07-30",
-     "time": null,
+     "time": "BMO",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "CAMT": {
-   "price": 151.46,
-   "perf30": -1.47,
-   "perf60": -13.34,
+   "price": 138.72,
+   "perf30": -11.82,
+   "perf60": -19.19,
    "currency": "USD",
    "name": "Camtek Ltd.",
    "earnings": [
@@ -3137,9 +3102,9 @@ window.LIVE = {
    ]
   },
   "CHKP": {
-   "price": 132.75,
-   "perf30": 2.08,
-   "perf60": 1.08,
+   "price": 138.35,
+   "perf30": 7.45,
+   "perf60": 2.44,
    "currency": "USD",
    "name": "Check Point Software Technologies Ltd.",
    "earnings": [
@@ -3152,9 +3117,9 @@ window.LIVE = {
    ]
   },
   "CIEN": {
-   "price": 377.27,
-   "perf30": -21.32,
-   "perf60": -33.83,
+   "price": 341.1,
+   "perf30": -28.78,
+   "perf60": -41.21,
    "currency": "USD",
    "name": "Ciena Corporation",
    "earnings": [
@@ -3167,9 +3132,9 @@ window.LIVE = {
    ]
   },
   "CLBT": {
-   "price": 14.64,
-   "perf30": 6.4,
-   "perf60": 10.91,
+   "price": 14.82,
+   "perf30": 4.51,
+   "perf60": 0.61,
    "currency": "USD",
    "name": "Cellebrite DI Ltd.",
    "earnings": [
@@ -3182,24 +3147,17 @@ window.LIVE = {
    ]
   },
   "CLS": {
-   "price": 318.24,
-   "perf30": -5.72,
-   "perf60": -9.34,
+   "price": 335.05,
+   "perf30": -2.39,
+   "perf60": -13.06,
    "currency": "USD",
    "name": "Celestica Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "COHR": {
-   "price": 271.31,
-   "perf30": -28.71,
-   "perf60": -28.02,
+   "price": 239.28,
+   "perf30": -38.84,
+   "perf60": -33.8,
    "currency": "USD",
    "name": "Coherent Corp.",
    "earnings": [
@@ -3212,9 +3170,9 @@ window.LIVE = {
    ]
   },
   "COHU": {
-   "price": 47.81,
-   "perf30": -25.39,
-   "perf60": -11.54,
+   "price": 42.28,
+   "perf30": -37.94,
+   "perf60": -19.86,
    "currency": "USD",
    "name": "Cohu, Inc.",
    "earnings": [
@@ -3227,9 +3185,9 @@ window.LIVE = {
    ]
   },
   "DDOG": {
-   "price": 251.86,
-   "perf30": 5.04,
-   "perf60": 11.82,
+   "price": 251.87,
+   "perf30": 1.33,
+   "perf60": 1.83,
    "currency": "USD",
    "name": "Datadog, Inc.",
    "earnings": [
@@ -3242,9 +3200,9 @@ window.LIVE = {
    ]
   },
   "DELL": {
-   "price": 426.91,
-   "perf30": 6.86,
-   "perf60": 34.65,
+   "price": 383.95,
+   "perf30": -7.39,
+   "perf60": -8.78,
    "currency": "USD",
    "name": "Dell Technologies Inc.",
    "earnings": [
@@ -3257,9 +3215,9 @@ window.LIVE = {
    ]
   },
   "DOCU": {
-   "price": 52.91,
-   "perf30": 17.03,
-   "perf60": 6.72,
+   "price": 55.65,
+   "perf30": 23.56,
+   "perf60": 5.96,
    "currency": "USD",
    "name": "DocuSign, Inc.",
    "earnings": [
@@ -3272,9 +3230,9 @@ window.LIVE = {
    ]
   },
   "DT": {
-   "price": 43.72,
-   "perf30": 0.81,
-   "perf60": 7.92,
+   "price": 44.35,
+   "perf30": 0.26,
+   "perf60": 4.14,
    "currency": "USD",
    "name": "Dynatrace, Inc.",
    "earnings": [
@@ -3287,9 +3245,9 @@ window.LIVE = {
    ]
   },
   "FN": {
-   "price": 470.82,
-   "perf30": -10.28,
-   "perf60": -29.51,
+   "price": 443.32,
+   "perf30": -16.07,
+   "perf60": -32.23,
    "currency": "USD",
    "name": "Fabrinet",
    "earnings": [
@@ -3302,9 +3260,9 @@ window.LIVE = {
    ]
   },
   "FORM": {
-   "price": 98.8,
-   "perf30": -24.43,
-   "perf60": -24.13,
+   "price": 88.55,
+   "perf30": -38.58,
+   "perf60": -28.93,
    "currency": "USD",
    "name": "FormFactor, Inc.",
    "earnings": [
@@ -3317,24 +3275,24 @@ window.LIVE = {
    ]
   },
   "FOUR": {
-   "price": 49.97,
-   "perf30": 4.87,
-   "perf60": 14.01,
+   "price": 53.44,
+   "perf30": 10.81,
+   "perf60": 19.94,
    "currency": "USD",
    "name": "Shift4 Payments, Inc.",
    "earnings": [
     {
-     "date": "2026-08-04",
-     "time": null,
+     "date": "2026-08-06",
+     "time": "BMO",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "FTNT": {
-   "price": 152.38,
-   "perf30": 0.68,
-   "perf60": 17.49,
+   "price": 151.94,
+   "perf30": -2.24,
+   "perf60": 10.13,
    "currency": "USD",
    "name": "Fortinet, Inc.",
    "earnings": [
@@ -3347,9 +3305,9 @@ window.LIVE = {
    ]
   },
   "GFS": {
-   "price": 53.18,
-   "perf30": -33.34,
-   "perf60": -34.04,
+   "price": 49.36,
+   "perf30": -39.06,
+   "perf60": -38.28,
    "currency": "USD",
    "name": "GLOBALFOUNDRIES Inc.",
    "earnings": [
@@ -3362,9 +3320,9 @@ window.LIVE = {
    ]
   },
   "GLW": {
-   "price": 143.36,
-   "perf30": -35.15,
-   "perf60": -21.65,
+   "price": 121.36,
+   "perf30": -52.54,
+   "perf60": -33.01,
    "currency": "USD",
    "name": "Corning Incorporated",
    "earnings": [
@@ -3377,9 +3335,9 @@ window.LIVE = {
    ]
   },
   "GTLB": {
-   "price": 32.88,
-   "perf30": 13.11,
-   "perf60": 17.72,
+   "price": 34.17,
+   "perf30": 14.46,
+   "perf60": 10.03,
    "currency": "USD",
    "name": "GitLab Inc.",
    "earnings": [
@@ -3392,9 +3350,9 @@ window.LIVE = {
    ]
   },
   "HUBS": {
-   "price": 223.01,
-   "perf30": 20.24,
-   "perf60": 12.18,
+   "price": 237.12,
+   "perf30": 28.54,
+   "perf60": 7.47,
    "currency": "USD",
    "name": "HubSpot, Inc.",
    "earnings": [
@@ -3407,9 +3365,9 @@ window.LIVE = {
    ]
   },
   "INTC": {
-   "price": 91.67,
-   "perf30": -28.56,
-   "perf60": -24.17,
+   "price": 86.74,
+   "perf30": -34.15,
+   "perf60": -24.37,
    "currency": "USD",
    "name": "Intel Corporation",
    "earnings": [
@@ -3422,9 +3380,9 @@ window.LIVE = {
    ]
   },
   "INTU": {
-   "price": 303.91,
-   "perf30": 13.52,
-   "perf60": -2.9,
+   "price": 315.3,
+   "perf30": 18.36,
+   "perf60": -4.9,
    "currency": "USD",
    "name": "Intuit Inc.",
    "earnings": [
@@ -3437,24 +3395,24 @@ window.LIVE = {
    ]
   },
   "IONQ": {
-   "price": 35.92,
-   "perf30": -27.15,
-   "perf60": -48.79,
+   "price": 33.77,
+   "perf30": -37.32,
+   "perf60": -53.14,
    "currency": "USD",
    "name": "IonQ, Inc.",
    "earnings": [
     {
      "date": "2026-08-05",
-     "time": null,
+     "time": "AMC",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "KLIC": {
-   "price": 98.22,
-   "perf30": -21.56,
-   "perf60": -6.23,
+   "price": 89.52,
+   "perf30": -30.67,
+   "perf60": -12.14,
    "currency": "USD",
    "name": "Kulicke and Soffa Industries, Inc.",
    "earnings": [
@@ -3467,9 +3425,9 @@ window.LIVE = {
    ]
   },
   "LITE": {
-   "price": 711.96,
-   "perf30": -12.85,
-   "perf60": -17.27,
+   "price": 644.17,
+   "perf30": -24.34,
+   "perf60": -24.65,
    "currency": "USD",
    "name": "Lumentum Holdings Inc.",
    "earnings": [
@@ -3482,9 +3440,9 @@ window.LIVE = {
    ]
   },
   "LOGI": {
-   "price": 107.82,
-   "perf30": 10.73,
-   "perf60": -3.53,
+   "price": 108.71,
+   "perf30": 10.23,
+   "perf60": -10.79,
    "currency": "USD",
    "name": "Logitech International S.A.",
    "earnings": [
@@ -3497,9 +3455,9 @@ window.LIVE = {
    ]
   },
   "MCHP": {
-   "price": 77.9,
-   "perf30": -11.41,
-   "perf60": -18.89,
+   "price": 76.71,
+   "perf30": -13.87,
+   "perf60": -18.96,
    "currency": "USD",
    "name": "Microchip Technology Incorporated",
    "earnings": [
@@ -3512,9 +3470,9 @@ window.LIVE = {
    ]
   },
   "MDB": {
-   "price": 309.71,
-   "perf30": -1.37,
-   "perf60": -4.9,
+   "price": 312.3,
+   "perf30": -7.65,
+   "perf60": -6.93,
    "currency": "USD",
    "name": "MongoDB, Inc.",
    "earnings": [
@@ -3527,9 +3485,9 @@ window.LIVE = {
    ]
   },
   "MKSI": {
-   "price": 315.7,
-   "perf30": -18.76,
-   "perf60": -2.38,
+   "price": 284.27,
+   "perf30": -31.67,
+   "perf60": -12.33,
    "currency": "USD",
    "name": "MKS Inc.",
    "earnings": [
@@ -3542,9 +3500,9 @@ window.LIVE = {
    ]
   },
   "MPWR": {
-   "price": 1339.08,
-   "perf30": 1.96,
-   "perf60": -18.01,
+   "price": 1297.68,
+   "perf30": -1.15,
+   "perf60": -17.15,
    "currency": "USD",
    "name": "Monolithic Power Systems, Inc.",
    "earnings": [
@@ -3557,9 +3515,9 @@ window.LIVE = {
    ]
   },
   "MSTR": {
-   "price": 98.65,
-   "perf30": 19.85,
-   "perf60": -34.94,
+   "price": 97.36,
+   "perf30": 5.05,
+   "perf60": -38.8,
    "currency": "USD",
    "name": "Strategy Inc",
    "earnings": [
@@ -3572,9 +3530,9 @@ window.LIVE = {
    ]
   },
   "MTSI": {
-   "price": 263.08,
-   "perf30": -28.74,
-   "perf60": -32.73,
+   "price": 250.8,
+   "perf30": -32.69,
+   "perf60": -31.22,
    "currency": "USD",
    "name": "MACOM Technology Solutions Holdings, Inc.",
    "earnings": [
@@ -3587,9 +3545,9 @@ window.LIVE = {
    ]
   },
   "NBIS": {
-   "price": 187.88,
-   "perf30": -21.81,
-   "perf60": -16.99,
+   "price": 169.36,
+   "perf30": -35.15,
+   "perf60": -26.71,
    "currency": "USD",
    "name": "Nebius Group N.V.",
    "earnings": [
@@ -3602,9 +3560,9 @@ window.LIVE = {
    ]
   },
   "NET": {
-   "price": 265.61,
-   "perf30": 11.96,
-   "perf60": 16.44,
+   "price": 266.17,
+   "perf30": 9.19,
+   "perf60": 10.07,
    "currency": "USD",
    "name": "Cloudflare, Inc.",
    "earnings": [
@@ -3617,9 +3575,9 @@ window.LIVE = {
    ]
   },
   "NTNX": {
-   "price": 56.85,
-   "perf30": 14.34,
-   "perf60": 16.47,
+   "price": 58.75,
+   "perf30": 15.07,
+   "perf60": 12.84,
    "currency": "USD",
    "name": "Nutanix, Inc.",
    "earnings": [
@@ -3632,9 +3590,9 @@ window.LIVE = {
    ]
   },
   "NVMI": {
-   "price": 428.88,
-   "perf30": -12.22,
-   "perf60": -15.24,
+   "price": 402.43,
+   "perf30": -22.67,
+   "perf60": -19.89,
    "currency": "USD",
    "name": "Nova Ltd.",
    "earnings": [
@@ -3647,9 +3605,9 @@ window.LIVE = {
    ]
   },
   "NXPI": {
-   "price": 267.67,
-   "perf30": -3.38,
-   "perf60": -18.96,
+   "price": 262.22,
+   "perf30": -5.8,
+   "perf60": -18.4,
    "currency": "USD",
    "name": "NXP Semiconductors N.V.",
    "earnings": [
@@ -3662,9 +3620,9 @@ window.LIVE = {
    ]
   },
   "ON": {
-   "price": 89.04,
-   "perf30": -1.78,
-   "perf60": -28.06,
+   "price": 85.46,
+   "perf30": -3.51,
+   "perf60": -29.15,
    "currency": "USD",
    "name": "ON Semiconductor Corporation",
    "earnings": [
@@ -3677,9 +3635,9 @@ window.LIVE = {
    ]
   },
   "ONTO": {
-   "price": 262.33,
-   "perf30": -19.01,
-   "perf60": 1.36,
+   "price": 236.37,
+   "perf30": -32.74,
+   "perf60": -8.47,
    "currency": "USD",
    "name": "Onto Innovation Inc.",
    "earnings": [
@@ -3692,9 +3650,9 @@ window.LIVE = {
    ]
   },
   "PATH": {
-   "price": 11.62,
-   "perf30": 10.35,
-   "perf60": 0.35,
+   "price": 11.94,
+   "perf30": 11.75,
+   "perf60": 1.83,
    "currency": "USD",
    "name": "UiPath, Inc.",
    "earnings": [
@@ -3707,9 +3665,9 @@ window.LIVE = {
    ]
   },
   "PEGA": {
-   "price": 28.6,
-   "perf30": -7.08,
-   "perf60": -15.48,
+   "price": 29.81,
+   "perf30": -2.1,
+   "perf60": -16.57,
    "currency": "USD",
    "name": "Pegasystems Inc.",
    "earnings": [
@@ -3722,9 +3680,9 @@ window.LIVE = {
    ]
   },
   "PI": {
-   "price": 130.29,
-   "perf30": -1.69,
-   "perf60": -16.95,
+   "price": 132.99,
+   "perf30": -0.23,
+   "perf60": -11.93,
    "currency": "USD",
    "name": "Impinj, Inc.",
    "earnings": [
@@ -3737,9 +3695,9 @@ window.LIVE = {
    ]
   },
   "PLTR": {
-   "price": 131.53,
-   "perf30": 16.47,
-   "perf60": -8.24,
+   "price": 123.89,
+   "perf30": 7.08,
+   "perf60": -20.86,
    "currency": "USD",
    "name": "Palantir Technologies Inc.",
    "earnings": [
@@ -3752,9 +3710,9 @@ window.LIVE = {
    ]
   },
   "QBTS": {
-   "price": 19.51,
-   "perf30": -14.28,
-   "perf60": -33.84,
+   "price": 17.94,
+   "perf30": -24.7,
+   "perf60": -40.46,
    "currency": "USD",
    "name": "D-Wave Quantum Inc. Common Stock",
    "earnings": [
@@ -3767,9 +3725,9 @@ window.LIVE = {
    ]
   },
   "QRVO": {
-   "price": 89.76,
-   "perf30": -4.39,
-   "perf60": -15.65,
+   "price": 90.37,
+   "perf30": -3.39,
+   "perf60": -12.74,
    "currency": "USD",
    "name": "Qorvo, Inc.",
    "earnings": [
@@ -3782,9 +3740,9 @@ window.LIVE = {
    ]
   },
   "QUBT": {
-   "price": 7.96,
-   "perf30": -13.29,
-   "perf60": -34.97,
+   "price": 7.74,
+   "perf30": -21.96,
+   "perf60": -35.27,
    "currency": "USD",
    "name": "Quantum Computing Inc.",
    "earnings": [
@@ -3797,9 +3755,9 @@ window.LIVE = {
    ]
   },
   "RBRK": {
-   "price": 74.82,
-   "perf30": 3.44,
-   "perf60": 6.4,
+   "price": 73.05,
+   "perf30": -4.53,
+   "perf60": -7.1,
    "currency": "USD",
    "name": "Rubrik, Inc.",
    "earnings": [
@@ -3812,9 +3770,9 @@ window.LIVE = {
    ]
   },
   "RGTI": {
-   "price": 15.64,
-   "perf30": -14.81,
-   "perf60": -42.14,
+   "price": 14.72,
+   "perf30": -24.31,
+   "perf60": -42.38,
    "currency": "USD",
    "name": "Rigetti Computing, Inc.",
    "earnings": [
@@ -3827,9 +3785,9 @@ window.LIVE = {
    ]
   },
   "RXT": {
-   "price": 3.86,
-   "perf30": -35.45,
-   "perf60": -20.41,
+   "price": 3.8,
+   "perf30": -42.21,
+   "perf60": -26.5,
    "currency": "USD",
    "name": "Rackspace Technology, Inc.",
    "earnings": [
@@ -3842,9 +3800,9 @@ window.LIVE = {
    ]
   },
   "S": {
-   "price": 18.14,
-   "perf30": 14.02,
-   "perf60": 0.67,
+   "price": 18.27,
+   "perf30": 9.23,
+   "perf60": 10.42,
    "currency": "USD",
    "name": "SentinelOne, Inc.",
    "earnings": [
@@ -3857,9 +3815,9 @@ window.LIVE = {
    ]
   },
   "SAIL": {
-   "price": 15.34,
-   "perf30": 16.39,
-   "perf60": -7.31,
+   "price": 15.77,
+   "perf30": 14.91,
+   "perf60": -16.28,
    "currency": "USD",
    "name": "SailPoint, Inc.",
    "earnings": [
@@ -3872,24 +3830,17 @@ window.LIVE = {
    ]
   },
   "SANM": {
-   "price": 208.9,
-   "perf30": -11.69,
-   "perf60": -20.64,
+   "price": 168.93,
+   "perf30": -29.73,
+   "perf60": -34.96,
    "currency": "USD",
    "name": "Sanmina Corporation",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "SAP": {
-   "price": 171.01,
-   "perf30": 10.27,
-   "perf60": -2.54,
+   "price": 180.38,
+   "perf30": 16.45,
+   "perf60": -0.78,
    "currency": "USD",
    "name": "SAP SE",
    "earnings": [
@@ -3902,9 +3853,9 @@ window.LIVE = {
    ]
   },
   "SMCI": {
-   "price": 29.81,
-   "perf30": -2.68,
-   "perf60": -27.82,
+   "price": 28.37,
+   "perf30": 0.78,
+   "perf60": -38.45,
    "currency": "USD",
    "name": "Super Micro Computer, Inc.",
    "earnings": [
@@ -3917,9 +3868,9 @@ window.LIVE = {
    ]
   },
   "SNOW": {
-   "price": 272.92,
-   "perf30": 9.62,
-   "perf60": 14.1,
+   "price": 272.57,
+   "perf30": 8.31,
+   "perf60": 6.66,
    "currency": "USD",
    "name": "Snowflake Inc.",
    "earnings": [
@@ -3932,9 +3883,9 @@ window.LIVE = {
    ]
   },
   "SOUN": {
-   "price": 6.41,
-   "perf30": 0,
-   "perf60": -25.12,
+   "price": 6.43,
+   "perf30": 0.39,
+   "perf60": -28.61,
    "currency": "USD",
    "name": "SoundHound AI, Inc.",
    "earnings": [
@@ -3947,9 +3898,9 @@ window.LIVE = {
    ]
   },
   "SWKS": {
-   "price": 63.44,
-   "perf30": -6.71,
-   "perf60": -22.07,
+   "price": 64.03,
+   "perf30": -5.44,
+   "perf60": -17.76,
    "currency": "USD",
    "name": "Skyworks Solutions, Inc.",
    "earnings": [
@@ -3962,9 +3913,9 @@ window.LIVE = {
    ]
   },
   "SYNA": {
-   "price": 116.42,
-   "perf30": -3.79,
-   "perf60": -18.74,
+   "price": 111.93,
+   "perf30": -4.64,
+   "perf60": -18.46,
    "currency": "USD",
    "name": "Synaptics Incorporated",
    "earnings": [
@@ -3977,9 +3928,9 @@ window.LIVE = {
    ]
   },
   "TEL": {
-   "price": 207.58,
-   "perf30": 4.98,
-   "perf60": -1.31,
+   "price": 209.94,
+   "perf30": 5.87,
+   "perf60": -1.63,
    "currency": "USD",
    "name": "TE Connectivity plc",
    "earnings": [
@@ -3992,9 +3943,9 @@ window.LIVE = {
    ]
   },
   "TER": {
-   "price": 334.77,
-   "perf30": -23.37,
-   "perf60": -12.51,
+   "price": 311.04,
+   "perf30": -32.85,
+   "perf60": -16.9,
    "currency": "USD",
    "name": "Teradyne, Inc.",
    "earnings": [
@@ -4007,9 +3958,9 @@ window.LIVE = {
    ]
   },
   "TRMB": {
-   "price": 55.77,
-   "perf30": 10,
-   "perf60": 1.55,
+   "price": 57.91,
+   "perf30": 14.06,
+   "perf60": 2.66,
    "currency": "USD",
    "name": "Trimble Inc.",
    "earnings": [
@@ -4022,9 +3973,9 @@ window.LIVE = {
    ]
   },
   "TSM": {
-   "price": 399.09,
-   "perf30": -7.69,
-   "perf60": -6.07,
+   "price": 391.01,
+   "perf30": -14.08,
+   "perf60": -6.56,
    "currency": "USD",
    "name": "Taiwan Semiconductor Manufacturing Company Limited",
    "earnings": [
@@ -4037,9 +3988,9 @@ window.LIVE = {
    ]
   },
   "TTMI": {
-   "price": 123.71,
-   "perf30": -35.4,
-   "perf60": -34.12,
+   "price": 108.54,
+   "perf30": -41.89,
+   "perf60": -37.52,
    "currency": "USD",
    "name": "TTM Technologies, Inc.",
    "earnings": [
@@ -4052,9 +4003,9 @@ window.LIVE = {
    ]
   },
   "TWLO": {
-   "price": 194.47,
-   "perf30": 1.51,
-   "perf60": 5.35,
+   "price": 193.2,
+   "perf30": -2.8,
+   "perf60": 1.34,
    "currency": "USD",
    "name": "Twilio Inc.",
    "earnings": [
@@ -4067,9 +4018,9 @@ window.LIVE = {
    ]
   },
   "U": {
-   "price": 30.44,
-   "perf30": 7.83,
-   "perf60": 1.67,
+   "price": 31.44,
+   "perf30": 11.07,
+   "perf60": 3.2,
    "currency": "USD",
    "name": "Unity Software Inc.",
    "earnings": [
@@ -4082,9 +4033,9 @@ window.LIVE = {
    ]
   },
   "VNET": {
-   "price": 7.17,
-   "perf30": -6.27,
-   "perf60": -32.49,
+   "price": 6.64,
+   "perf30": -11.52,
+   "perf60": -34.08,
    "currency": "USD",
    "name": "VNET Group, Inc.",
    "earnings": [
@@ -4097,9 +4048,9 @@ window.LIVE = {
    ]
   },
   "WDAY": {
-   "price": 147.54,
-   "perf30": 18.78,
-   "perf60": 13.48,
+   "price": 157.7,
+   "perf30": 27.61,
+   "perf60": 7.87,
    "currency": "USD",
    "name": "Workday, Inc.",
    "earnings": [
@@ -4112,9 +4063,9 @@ window.LIVE = {
    ]
   },
   "WOLF": {
-   "price": 23.8,
-   "perf30": -48.23,
-   "perf60": -63.41,
+   "price": 21.49,
+   "perf30": -51.42,
+   "perf60": -63.75,
    "currency": "USD",
    "name": "Wolfspeed, Inc.",
    "earnings": [
@@ -4127,9 +4078,9 @@ window.LIVE = {
    ]
   },
   "ZM": {
-   "price": 91.22,
-   "perf30": 5.48,
-   "perf60": -9.2,
+   "price": 91.03,
+   "perf30": 5.68,
+   "perf60": -10.39,
    "currency": "USD",
    "name": "Zoom Communications, Inc.",
    "earnings": [
@@ -4142,9 +4093,9 @@ window.LIVE = {
    ]
   },
   "ZS": {
-   "price": 147.3,
-   "perf30": 11.37,
-   "perf60": 13.27,
+   "price": 152.98,
+   "perf30": 11.18,
+   "perf60": 9.48,
    "currency": "USD",
    "name": "Zscaler, Inc.",
    "earnings": [
@@ -4157,9 +4108,9 @@ window.LIVE = {
    ]
   },
   "CRWV": {
-   "price": 70.79,
-   "perf30": -26.7,
-   "perf60": -33.75,
+   "price": 66.88,
+   "perf30": -29.98,
+   "perf60": -38.94,
    "currency": "USD",
    "name": "CoreWeave, Inc.",
    "earnings": [
@@ -4172,9 +4123,9 @@ window.LIVE = {
    ]
   },
   "HUT": {
-   "price": 104.59,
-   "perf30": -14.98,
-   "perf60": -15.82,
+   "price": 101.23,
+   "perf30": -14.41,
+   "perf60": -18.91,
    "currency": "USD",
    "name": "Hut 8 Corp.",
    "earnings": [
@@ -4187,9 +4138,9 @@ window.LIVE = {
    ]
   },
   "RIOT": {
-   "price": 21.97,
-   "perf30": -23.1,
-   "perf60": -20.8,
+   "price": 20.97,
+   "perf30": -24.43,
+   "perf60": -22.65,
    "currency": "USD",
    "name": "Riot Platforms, Inc.",
    "earnings": [
@@ -4202,9 +4153,9 @@ window.LIVE = {
    ]
   },
   "CLSK": {
-   "price": 14.02,
-   "perf30": -14.12,
-   "perf60": -22.68,
+   "price": 13.61,
+   "perf30": -11.42,
+   "perf60": -25.56,
    "currency": "USD",
    "name": "CleanSpark, Inc.",
    "earnings": [
@@ -4217,9 +4168,9 @@ window.LIVE = {
    ]
   },
   "CORZ": {
-   "price": 20.74,
-   "perf30": -23.75,
-   "perf60": -25.29,
+   "price": 20.3,
+   "perf30": -21.74,
+   "perf60": -24.39,
    "currency": "USD",
    "name": "Core Scientific, Inc.",
    "earnings": [
@@ -4232,9 +4183,9 @@ window.LIVE = {
    ]
   },
   "IREN": {
-   "price": 36.29,
-   "perf30": -23.13,
-   "perf60": -43.34,
+   "price": 34.11,
+   "perf30": -25.7,
+   "perf60": -46.32,
    "currency": "USD",
    "name": "IREN Limited",
    "earnings": [
@@ -4247,9 +4198,9 @@ window.LIVE = {
    ]
   },
   "BLSH": {
-   "price": 22.8,
-   "perf30": -2.1,
-   "perf60": -36.35,
+   "price": 22.72,
+   "perf30": -4.09,
+   "perf60": -34.92,
    "currency": "USD",
    "name": "Bullish",
    "earnings": [
@@ -4262,9 +4213,9 @@ window.LIVE = {
    ]
   },
   "BMNR": {
-   "price": 17.92,
-   "perf30": 32.15,
-   "perf60": -6.91,
+   "price": 17.72,
+   "perf30": 28.41,
+   "perf60": -8.04,
    "currency": "USD",
    "name": "Bitmine Immersion Technologies, Inc.",
    "earnings": [
@@ -4277,9 +4228,9 @@ window.LIVE = {
    ]
   },
   "CRCL": {
-   "price": 65.67,
-   "perf30": -10.74,
-   "perf60": -39.33,
+   "price": 64.5,
+   "perf30": -15.09,
+   "perf60": -42.92,
    "currency": "USD",
    "name": "Circle Internet Group",
    "earnings": [
@@ -4292,9 +4243,9 @@ window.LIVE = {
    ]
   },
   "SRAD": {
-   "price": 14.68,
-   "perf30": -1.14,
-   "perf60": 12.49,
+   "price": 15.04,
+   "perf30": -0.46,
+   "perf60": 13.85,
    "currency": "USD",
    "name": "Sportradar Group AG",
    "earnings": [
@@ -4307,24 +4258,24 @@ window.LIVE = {
    ]
   },
   "OKLO": {
-   "price": 41.81,
-   "perf30": -16.38,
-   "perf60": -38.6,
+   "price": 39.94,
+   "perf30": -24.3,
+   "perf60": -40.28,
    "currency": "USD",
    "name": "Oklo Inc.",
    "earnings": [
     {
-     "date": "2026-08-10",
-     "time": null,
+     "date": "2026-08-07",
+     "time": "BMO",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "SMR": {
-   "price": 8.54,
-   "perf30": -15.45,
-   "perf60": -29.94,
+   "price": 8.23,
+   "perf30": -19.83,
+   "perf60": -35.08,
    "currency": "USD",
    "name": "NuScale Power Corporation",
    "earnings": [
@@ -4337,9 +4288,9 @@ window.LIVE = {
    ]
   },
   "DD": {
-   "price": 139.96,
-   "perf30": 2,
-   "perf60": -2.21,
+   "price": 141.51,
+   "perf30": 4.25,
+   "perf60": -2.58,
    "currency": "USD",
    "name": "DuPont de Nemours, Inc.",
    "earnings": [
@@ -4352,9 +4303,9 @@ window.LIVE = {
    ]
   },
   "ECL": {
-   "price": 271.38,
-   "perf30": -4.33,
-   "perf60": 4.28,
+   "price": 280.91,
+   "perf30": 0.83,
+   "perf60": 9.73,
    "currency": "USD",
    "name": "Ecolab Inc.",
    "earnings": [
@@ -4367,24 +4318,17 @@ window.LIVE = {
    ]
   },
   "ESI": {
-   "price": 37.84,
-   "perf30": -17.13,
-   "perf60": -9.73,
+   "price": 35.9,
+   "perf30": -22.45,
+   "perf60": -15.38,
    "currency": "USD",
    "name": "Element Solutions Inc",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "LIN": {
-   "price": 507.02,
-   "perf30": -2.42,
-   "perf60": 1,
+   "price": 518.18,
+   "perf30": 1.39,
+   "perf60": 4.12,
    "currency": "USD",
    "name": "Linde plc",
    "earnings": [
@@ -4397,9 +4341,9 @@ window.LIVE = {
    ]
   },
   "MLM": {
-   "price": 572.03,
-   "perf30": -7.15,
-   "perf60": -0.54,
+   "price": 579.22,
+   "perf30": -0.35,
+   "perf60": -0.42,
    "currency": "USD",
    "name": "Martin Marietta Materials, Inc.",
    "earnings": [
@@ -4412,24 +4356,17 @@ window.LIVE = {
    ]
   },
   "NUE": {
-   "price": 247.86,
-   "perf30": 3.37,
-   "perf60": -0.58,
+   "price": 264.5,
+   "perf30": 15.71,
+   "perf60": 5.8,
    "currency": "USD",
    "name": "Nucor Corporation",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "PKG": {
-   "price": 252.37,
-   "perf30": 4.48,
-   "perf60": 15.69,
+   "price": 254.93,
+   "perf30": 7.27,
+   "perf60": 16.45,
    "currency": "USD",
    "name": "Packaging Corporation of America",
    "earnings": [
@@ -4442,9 +4379,9 @@ window.LIVE = {
    ]
   },
   "PPG": {
-   "price": 118.47,
-   "perf30": -3.87,
-   "perf60": 4.97,
+   "price": 122.08,
+   "perf30": 0.97,
+   "perf60": 8.05,
    "currency": "USD",
    "name": "PPG Industries, Inc.",
    "earnings": [
@@ -4457,9 +4394,9 @@ window.LIVE = {
    ]
   },
   "RPM": {
-   "price": 107.77,
-   "perf30": -4.17,
-   "perf60": 0.8,
+   "price": 111.83,
+   "perf30": 1.09,
+   "perf60": 5.53,
    "currency": "USD",
    "name": "RPM International Inc.",
    "earnings": [
@@ -4472,9 +4409,9 @@ window.LIVE = {
    ]
   },
   "SHW": {
-   "price": 327.27,
-   "perf30": -4.88,
-   "perf60": 7.25,
+   "price": 354.48,
+   "perf30": 2.96,
+   "perf60": 16.67,
    "currency": "USD",
    "name": "The Sherwin-Williams Company",
    "earnings": [
@@ -4487,9 +4424,9 @@ window.LIVE = {
    ]
   },
   "APD": {
-   "price": 292.58,
-   "perf30": 5.32,
-   "perf60": 3.15,
+   "price": 295.62,
+   "perf30": 8.94,
+   "perf60": 6.1,
    "currency": "USD",
    "name": "Air Products and Chemicals, Inc.",
    "earnings": [
@@ -4502,9 +4439,9 @@ window.LIVE = {
    ]
   },
   "DOW": {
-   "price": 28.75,
-   "perf30": -1,
-   "perf60": -17.31,
+   "price": 28.71,
+   "perf30": 2.83,
+   "perf60": -14.93,
    "currency": "USD",
    "name": "Dow Inc.",
    "earnings": [
@@ -4517,9 +4454,9 @@ window.LIVE = {
    ]
   },
   "FCX": {
-   "price": 62.72,
-   "perf30": 0.43,
-   "perf60": -4.78,
+   "price": 62.06,
+   "perf30": 0.71,
+   "perf60": -5.55,
    "currency": "USD",
    "name": "Freeport-McMoRan Inc.",
    "earnings": [
@@ -4532,9 +4469,9 @@ window.LIVE = {
    ]
   },
   "BHP": {
-   "price": 83.93,
-   "perf30": 3.59,
-   "perf60": -4.41,
+   "price": 83.99,
+   "perf30": 2.75,
+   "perf60": -5.54,
    "currency": "USD",
    "name": "BHP Group Limited",
    "earnings": [
@@ -4547,9 +4484,9 @@ window.LIVE = {
    ]
   },
   "ADC": {
-   "price": 80.45,
-   "perf30": 4.44,
-   "perf60": 7.91,
+   "price": 80.67,
+   "perf30": 4.86,
+   "perf60": 8.79,
    "currency": "USD",
    "name": "Agree Realty Corporation",
    "earnings": [
@@ -4562,9 +4499,9 @@ window.LIVE = {
    ]
   },
   "AMT": {
-   "price": 166.74,
-   "perf30": -5.04,
-   "perf60": -10.68,
+   "price": 175.01,
+   "perf30": 3.76,
+   "perf60": -6.39,
    "currency": "USD",
    "name": "American Tower Corporation",
    "earnings": [
@@ -4577,9 +4514,9 @@ window.LIVE = {
    ]
   },
   "DLR": {
-   "price": 195.76,
-   "perf30": 1.43,
-   "perf60": 2.26,
+   "price": 194.78,
+   "perf30": 2.2,
+   "perf60": 2.52,
    "currency": "USD",
    "name": "Digital Realty Trust, Inc.",
    "earnings": [
@@ -4592,9 +4529,9 @@ window.LIVE = {
    ]
   },
   "EQIX": {
-   "price": 1046.79,
-   "perf30": -4.08,
-   "perf60": -2.12,
+   "price": 1047.66,
+   "perf30": -3.46,
+   "perf60": -1.91,
    "currency": "USD",
    "name": "Equinix, Inc.",
    "earnings": [
@@ -4607,9 +4544,9 @@ window.LIVE = {
    ]
   },
   "FRT": {
-   "price": 127.13,
-   "perf30": 1.64,
-   "perf60": 5.05,
+   "price": 127.18,
+   "perf30": 1.4,
+   "perf60": 6.31,
    "currency": "USD",
    "name": "Federal Realty Investment Trust",
    "earnings": [
@@ -4622,9 +4559,9 @@ window.LIVE = {
    ]
   },
   "O": {
-   "price": 65.5,
-   "perf30": 3.77,
-   "perf60": 6.18,
+   "price": 65.74,
+   "perf30": 4.28,
+   "perf60": 7.27,
    "currency": "USD",
    "name": "Realty Income Corporation",
    "earnings": [
@@ -4637,9 +4574,9 @@ window.LIVE = {
    ]
   },
   "PLD": {
-   "price": 147.26,
-   "perf30": 5.21,
-   "perf60": 1.11,
+   "price": 147.82,
+   "perf30": 6.43,
+   "perf60": 3.03,
    "currency": "USD",
    "name": "Prologis, Inc.",
    "earnings": [
@@ -4652,9 +4589,9 @@ window.LIVE = {
    ]
   },
   "PSA": {
-   "price": 324.02,
-   "perf30": -0.11,
-   "perf60": 4.78,
+   "price": 333.58,
+   "perf30": 2.81,
+   "perf60": 9.84,
    "currency": "USD",
    "name": "Public Storage",
    "earnings": [
@@ -4667,9 +4604,9 @@ window.LIVE = {
    ]
   },
   "SPG": {
-   "price": 231.67,
-   "perf30": 2.11,
-   "perf60": 12.04,
+   "price": 236.3,
+   "perf30": 3.84,
+   "perf60": 15.32,
    "currency": "USD",
    "name": "Simon Property Group, Inc.",
    "earnings": [
@@ -4682,39 +4619,25 @@ window.LIVE = {
    ]
   },
   "WELL": {
-   "price": 248.34,
-   "perf30": 9.24,
-   "perf60": 18.09,
+   "price": 244.1,
+   "perf30": 7.19,
+   "perf60": 18.88,
    "currency": "USD",
    "name": "Welltower Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "SUI": {
-   "price": 121.44,
-   "perf30": 0.16,
-   "perf60": -2.85,
+   "price": 126.28,
+   "perf30": 4.17,
+   "perf60": 2.12,
    "currency": "USD",
    "name": "Sun Communities, Inc.",
-   "earnings": [
-    {
-     "date": "2026-07-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "ATO": {
-   "price": 178.22,
-   "perf30": 1.74,
-   "perf60": 3,
+   "price": 181.4,
+   "perf30": 3.75,
+   "perf60": 7.26,
    "currency": "USD",
    "name": "Atmos Energy Corporation",
    "earnings": [
@@ -4727,9 +4650,9 @@ window.LIVE = {
    ]
   },
   "AWK": {
-   "price": 134.56,
-   "perf30": 1.42,
-   "perf60": 9.98,
+   "price": 138.21,
+   "perf30": 4.31,
+   "perf60": 12.12,
    "currency": "USD",
    "name": "American Water Works Company, Inc.",
    "earnings": [
@@ -4742,9 +4665,9 @@ window.LIVE = {
    ]
   },
   "CEG": {
-   "price": 270,
-   "perf30": 2.26,
-   "perf60": -5.7,
+   "price": 261.62,
+   "perf30": 0.89,
+   "perf60": -9.08,
    "currency": "USD",
    "name": "Constellation Energy Corporation",
    "earnings": [
@@ -4757,9 +4680,9 @@ window.LIVE = {
    ]
   },
   "CMS": {
-   "price": 74.27,
-   "perf30": -5.76,
-   "perf60": 1.5,
+   "price": 75.39,
+   "perf30": -3.25,
+   "perf60": 3.89,
    "currency": "USD",
    "name": "CMS Energy Corporation",
    "earnings": [
@@ -4772,9 +4695,9 @@ window.LIVE = {
    ]
   },
   "DUK": {
-   "price": 128.83,
-   "perf30": 0.33,
-   "perf60": 4.1,
+   "price": 130.63,
+   "perf30": 1.8,
+   "perf60": 6.44,
    "currency": "USD",
    "name": "Duke Energy Corporation",
    "earnings": [
@@ -4787,9 +4710,9 @@ window.LIVE = {
    ]
   },
   "ETR": {
-   "price": 113.76,
-   "perf30": -1.85,
-   "perf60": 3.78,
+   "price": 113.66,
+   "perf30": -2.3,
+   "perf60": 4.23,
    "currency": "USD",
    "name": "Entergy Corporation",
    "earnings": [
@@ -4802,9 +4725,9 @@ window.LIVE = {
    ]
   },
   "NEE": {
-   "price": 88.83,
-   "perf30": 0.3,
-   "perf60": 1.81,
+   "price": 89.93,
+   "perf30": 1.44,
+   "perf60": 3.36,
    "currency": "USD",
    "name": "NextEra Energy, Inc.",
    "earnings": [
@@ -4817,9 +4740,9 @@ window.LIVE = {
    ]
   },
   "NJR": {
-   "price": 59.52,
-   "perf30": 3.32,
-   "perf60": 7.13,
+   "price": 60.41,
+   "perf30": 6.11,
+   "perf60": 9.34,
    "currency": "USD",
    "name": "New Jersey Resources Corporation",
    "earnings": [
@@ -4832,9 +4755,9 @@ window.LIVE = {
    ]
   },
   "SO": {
-   "price": 96.48,
-   "perf30": -0.7,
-   "perf60": 4.28,
+   "price": 97.51,
+   "perf30": 0.79,
+   "perf60": 5.93,
    "currency": "USD",
    "name": "The Southern Company",
    "earnings": [
@@ -4847,9 +4770,9 @@ window.LIVE = {
    ]
   },
   "WEC": {
-   "price": 113.82,
-   "perf30": -4.23,
-   "perf60": 1.93,
+   "price": 114.89,
+   "perf30": -2.99,
+   "perf60": 3.46,
    "currency": "USD",
    "name": "WEC Energy Group, Inc.",
    "earnings": [
@@ -4862,9 +4785,9 @@ window.LIVE = {
    ]
   },
   "BEPC": {
-   "price": 32.6,
-   "perf30": -13.55,
-   "perf60": -18.21,
+   "price": 32.01,
+   "perf30": -14.02,
+   "perf60": -19.93,
    "currency": "USD",
    "name": "Brookfield Renewable Corporation",
    "earnings": [
@@ -4877,9 +4800,9 @@ window.LIVE = {
    ]
   },
   "FERG": {
-   "price": 234.1,
-   "perf30": -1.89,
-   "perf60": 3.36,
+   "price": 231.01,
+   "perf30": -3.19,
+   "perf60": 2.23,
    "currency": "USD",
    "name": "Ferguson Enterprises Inc.",
    "earnings": [
@@ -4892,24 +4815,24 @@ window.LIVE = {
    ]
   },
   "MKL": {
-   "price": 2014.95,
-   "perf30": 4.94,
-   "perf60": 9.13,
+   "price": 2046.91,
+   "perf30": 4.64,
+   "perf60": 12.74,
    "currency": "USD",
    "name": "Markel Group Inc.",
    "earnings": [
     {
      "date": "2026-07-29",
-     "time": null,
+     "time": "AMC",
      "estimated": false,
      "source": "Nasdaq"
     }
    ]
   },
   "NVS": {
-   "price": 156.11,
-   "perf30": 0.45,
-   "perf60": 3.11,
+   "price": 159.43,
+   "perf30": 1.17,
+   "perf60": 6.17,
    "currency": "USD",
    "name": "Novartis AG",
    "earnings": [
@@ -4922,9 +4845,9 @@ window.LIVE = {
    ]
   },
   "CBRE": {
-   "price": 143.88,
-   "perf30": 4.72,
-   "perf60": 13.81,
+   "price": 147.96,
+   "perf30": 8.72,
+   "perf60": 18.33,
    "currency": "USD",
    "name": "CBRE Group, Inc.",
    "earnings": [
@@ -4937,9 +4860,9 @@ window.LIVE = {
    ]
   },
   "INFQ": {
-   "price": 9.76,
-   "perf30": -28.39,
-   "perf60": -45.08,
+   "price": 9.47,
+   "perf30": -31.48,
+   "perf60": -41.62,
    "currency": "USD",
    "name": "Infleqtion, Inc.",
    "earnings": [
@@ -4952,17 +4875,17 @@ window.LIVE = {
    ]
   },
   "NXPX": {
-   "price": 15.8,
-   "perf30": -7,
-   "perf60": -37.18,
+   "price": 15.18,
+   "perf30": -11.53,
+   "perf60": -36.3,
    "currency": "USD",
    "name": "Tradr 2X Long NXPI Daily ETF",
    "earnings": []
   },
   "P": {
-   "price": 74.21,
-   "perf30": 7.3,
-   "perf60": 1.6,
+   "price": 72.54,
+   "perf30": 0.3,
+   "perf60": -8.77,
    "currency": "USD",
    "name": "Everpure, Inc.",
    "earnings": [
@@ -4975,9 +4898,9 @@ window.LIVE = {
    ]
   },
   "QNT": {
-   "price": 52.83,
-   "perf30": -30.09,
-   "perf60": -12.5,
+   "price": 50.73,
+   "perf30": -30.35,
+   "perf60": -15.98,
    "currency": "USD",
    "name": "Quantinuum Inc.",
    "earnings": [
