@@ -1,5 +1,5 @@
 window.LIVE = {
- "refreshedAt": "2026-08-27T20:47:03.897Z",
+ "refreshedAt": "2026-08-28T01:49:01.146Z",
  "data": {
   "DIS": {
    "price": 106.82,
@@ -153,14 +153,7 @@ window.LIVE = {
    "perf60": 7.62,
    "currency": "USD",
    "name": "Best Buy Co., Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "BMO",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "BKNG": {
    "price": 202.56,
@@ -176,14 +169,7 @@ window.LIVE = {
    "perf60": -7.73,
    "currency": "USD",
    "name": "Burlington Stores, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "BMO",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "CMG": {
    "price": 37.22,
@@ -338,14 +324,7 @@ window.LIVE = {
    "perf60": 17.64,
    "currency": "USD",
    "name": "Ulta Beauty, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "NKE": {
    "price": 38.44,
@@ -391,14 +370,7 @@ window.LIVE = {
    "perf60": 3.57,
    "currency": "USD",
    "name": "Dollar Tree, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "BMO",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "LII": {
    "price": 391.15,
@@ -445,14 +417,7 @@ window.LIVE = {
    "perf60": 7.12,
    "currency": "USD",
    "name": "Dollar General Corporation",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "BMO",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "KO": {
    "price": 89.06,
@@ -1944,14 +1909,7 @@ window.LIVE = {
    "perf60": -13.07,
    "currency": "USD",
    "name": "Marvell Technology, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "MSFT": {
    "price": 505.06,
@@ -2167,14 +2125,7 @@ window.LIVE = {
    "perf60": 38.59,
    "currency": "USD",
    "name": "Autodesk, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "AEIS": {
    "price": 287.09,
@@ -2690,14 +2641,7 @@ window.LIVE = {
    "perf60": 39.86,
    "currency": "USD",
    "name": "Rubrik, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "RGTI": {
    "price": 16.44,
@@ -2721,14 +2665,7 @@ window.LIVE = {
    "perf60": 35.74,
    "currency": "USD",
    "name": "SentinelOne, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "SAIL": {
    "price": 20.45,
@@ -2899,14 +2836,7 @@ window.LIVE = {
    "perf60": 56.64,
    "currency": "USD",
    "name": "Workday, Inc.",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "WOLF": {
    "price": 26.95,
@@ -2985,14 +2915,7 @@ window.LIVE = {
    "perf60": -11.72,
    "currency": "USD",
    "name": "IREN Limited",
-   "earnings": [
-    {
-     "date": "2026-08-27",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "BLSH": {
    "price": 33.56,
@@ -3447,9 +3370,9 @@ window.LIVE = {
    "earnings": []
   },
   "NXPX": {
-   "price": 10.54,
-   "perf30": -33.29,
-   "perf60": -37.96,
+   "price": 10.78,
+   "perf30": -27.46,
+   "perf60": -37.18,
    "currency": "USD",
    "name": "Tradr 2X Long NXPI Daily ETF",
    "earnings": []
