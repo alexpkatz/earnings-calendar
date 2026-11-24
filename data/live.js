@@ -1,5 +1,5 @@
 window.LIVE = {
- "refreshedAt": "2026-11-23T22:14:00.100Z",
+ "refreshedAt": "2026-11-24T03:30:30.596Z",
  "data": {
   "DIS": {
    "price": 120.27,
@@ -1750,14 +1750,7 @@ window.LIVE = {
    "perf60": -20.59,
    "currency": "USD",
    "name": "Symbotic Inc.",
-   "earnings": [
-    {
-     "date": "2026-11-23",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "AAPL": {
    "price": 349.08,
@@ -1896,14 +1889,7 @@ window.LIVE = {
    "perf60": -24.4,
    "currency": "USD",
    "name": "Hewlett Packard Enterprise Company",
-   "earnings": [
-    {
-     "date": "2026-11-23",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "IBM": {
    "price": 233,
@@ -2931,14 +2917,7 @@ window.LIVE = {
    "perf60": -63.29,
    "currency": "USD",
    "name": "VNET Group, Inc.",
-   "earnings": [
-    {
-     "date": "2026-11-23",
-     "time": "BMO",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "WDAY": {
    "price": 176.08,
@@ -2969,14 +2948,7 @@ window.LIVE = {
    "perf60": -4.78,
    "currency": "USD",
    "name": "Zoom Communications, Inc.",
-   "earnings": [
-    {
-     "date": "2026-11-23",
-     "time": "AMC",
-     "estimated": false,
-     "source": "Nasdaq"
-    }
-   ]
+   "earnings": []
   },
   "ZS": {
    "price": 229.24,
