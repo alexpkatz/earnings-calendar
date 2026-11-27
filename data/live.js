@@ -1,5 +1,5 @@
 window.LIVE = {
- "refreshedAt": "2026-11-26T19:50:17.097Z",
+ "refreshedAt": "2026-11-27T01:11:31.894Z",
  "data": {
   "DIS": {
    "price": 125.6,
@@ -3370,8 +3370,8 @@ window.LIVE = {
   },
   "NXPX": {
    "price": 10.58,
-   "perf30": -11.34,
-   "perf60": 0.34,
+   "perf30": 0,
+   "perf60": 0,
    "currency": "USD",
    "name": "Tradr 2X Long NXPI Daily ETF",
    "earnings": []
