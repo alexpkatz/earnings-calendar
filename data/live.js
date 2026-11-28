@@ -1,5 +1,5 @@
 window.LIVE = {
- "refreshedAt": "2026-11-27T19:39:45.225Z",
+ "refreshedAt": "2026-11-28T00:43:53.260Z",
  "data": {
   "DIS": {
    "price": 127.24,
